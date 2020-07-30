@@ -1,0 +1,434 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:Affinity Propagation Clustering</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="affinity-propagation-clustering">Affinity Propagation Clustering</h1>
+<ul>
+<li>Description</li>
+</ul>
+<p>Perform Affinity Propagation Clustering of data.</p>
+<table>
+<thead>
+<tr>
+<th>category</th>
+<th>sub_category</th>
+<th>type</th>
+<th>cpu</th>
+<th>gpu</th>
+<th>memory</th>
+<th>pipe_status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Machine Learning</td>
+<td>Clustering</td>
+<td>DOCKER</td>
+<td>1</td>
+<td>0</td>
+<td>2048</td>
+<td>keep</td>
+</tr>
+</tbody>
+</table>
+<h1 id="parameter-detail">Parameter Detail</h1>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>is_input</th>
+<th>category</th>
+<th>default</th>
+<th>required</th>
+<th>selector_model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>input_file1</td>
+<td>True</td>
+<td>FILE</td>
+<td></td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>damping</td>
+<td>True</td>
+<td>STRING</td>
+<td>0.5</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>max_iter</td>
+<td>True</td>
+<td>STRING</td>
+<td>200</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>convergence_iter</td>
+<td>True</td>
+<td>STRING</td>
+<td>15</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>output_model_file</td>
+<td>False</td>
+<td>FILE</td>
+<td></td>
+<td>False</td>
+<td>None</td>
+</tr>
+<tr>
+<td>output_model</td>
+<td>False</td>
+<td>DIRECTORY</td>
+<td>module</td>
+<td>False</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h1 id="detailed-info-of-parameters">Detailed Info of Parameters</h1>
+<h2 id="input-parameters">Input Parameters</h2>
+<h3 id="1-input_file1">1.input_file1</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>input csv file for trainer</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FILE</td>
+<td></td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-damping">2.damping</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>Damping factor (between 0.5 and 1) is the extent to which the current value is maintained relative to incoming values (weighted 1 - damping). This in order to avoid numerical oscillations when updating these values (messages).</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>0.5</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-max_iter">3.max_iter</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>Maximum number of iterations.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>200</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-convergence_iter">4.convergence_iter</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>Number of iterations with no change in the number of estimated clusters that stops the convergence.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>15</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h2 id="output-parameters">Output Parameters</h2>
+<h3 id="1-output_model_file">1.output_model_file</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>output module</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FILE</td>
+<td></td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-output_model">2.output_model</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>output module</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DIRECTORY</td>
+<td>module</td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h1 id="test-case">Test Case</h1>
+<h2 id="case1">Case1</h2>
+<h2 id="desc-ap-">Desc:AP聚类对鸢尾花数据集进行聚类</h2>
+<h3 id="input-params">Input Params</h3>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>damping</td>
+<td>0.5</td>
+<td>阻尼系数设置为0.5,</td>
+</tr>
+<tr>
+<td>max_iter</td>
+<td>200</td>
+<td>最大迭代次数限制为200</td>
+</tr>
+<tr>
+<td>convergence_iter</td>
+<td>15</td>
+<td>cluster经过15轮迭代未发生变化就停止</td>
+</tr>
+</tbody>
+</table>
+<h3 id="post-json-format">Post Json Format</h3>
+<table>
+<thead>
+<tr>
+<th>sepal-length</th>
+<th>sepal-width</th>
+<th>petal-length</th>
+<th>petal-width</th>
+<th>Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.4</td>
+<td>3.7</td>
+<td>1.5</td>
+<td>0.2</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom-test-report">Custom Test Report</h3>
+<ul>
+<li>Test Example</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sepal-length</td>
+<td>5.4</td>
+</tr>
+<tr>
+<td>sepal-width</td>
+<td>3.7</td>
+</tr>
+<tr>
+<td>petal-length</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>petal-width</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>Class</td>
+<td>0.0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Predict Result</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#39;class&#39;: &#39;1&#39;}</td>
+</tr>
+</tbody>
+</table>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>

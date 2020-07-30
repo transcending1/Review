@@ -1,0 +1,606 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:Multi-Class Decision Tree</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="multi-class-decision-tree">Multi-Class Decision Tree</h1>
+<ul>
+<li>Description</li>
+</ul>
+<p>A decision tree classifier.</p>
+<table>
+<thead>
+<tr>
+<th>category</th>
+<th>sub_category</th>
+<th>type</th>
+<th>cpu</th>
+<th>gpu</th>
+<th>memory</th>
+<th>pipe_status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Machine Learning</td>
+<td>Multi Classification</td>
+<td>DOCKER</td>
+<td>1</td>
+<td>0</td>
+<td>2048</td>
+<td>keep</td>
+</tr>
+</tbody>
+</table>
+<h1 id="parameter-detail">Parameter Detail</h1>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>is_input</th>
+<th>category</th>
+<th>default</th>
+<th>required</th>
+<th>selector_model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td>True</td>
+<td>STRING</td>
+<td></td>
+<td>True</td>
+<td>SINGLE</td>
+</tr>
+<tr>
+<td>input_file1</td>
+<td>True</td>
+<td>FILE</td>
+<td></td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>criterion</td>
+<td>True</td>
+<td>STRING</td>
+<td>gini</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>max_depth</td>
+<td>True</td>
+<td>STRING</td>
+<td>None</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>min_samples_leaf</td>
+<td>True</td>
+<td>STRING</td>
+<td>1</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>output_model_file</td>
+<td>False</td>
+<td>FILE</td>
+<td></td>
+<td>False</td>
+<td>None</td>
+</tr>
+<tr>
+<td>output_model</td>
+<td>False</td>
+<td>DIRECTORY</td>
+<td>module</td>
+<td>False</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h1 id="detailed-info-of-parameters">Detailed Info of Parameters</h1>
+<h2 id="input-parameters">Input Parameters</h2>
+<h3 id="1-label">1.label</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>target feature</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td></td>
+<td>Yes</td>
+<td>SINGLE</td>
+<td>input_file1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-input_file1">2.input_file1</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>input csv file for trainer</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FILE</td>
+<td></td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-criterion">3.criterion</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>The function to measure the quality of a split. Sup ported criteria are &quot;gini&quot; for the Gini imp urity and &quot;entropy&quot; for the information gain.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>gini</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>choices</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>choice</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gini</td>
+<td></td>
+</tr>
+<tr>
+<td>entropy</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-max_depth">4.max_depth</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or u ntil all leaves contain less than min_sampl es_split samples.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>None</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="5-min_samples_leaf">5.min_samples_leaf</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>The minimum number of samples required to be at a l eaf node. A split point at any depth will o nly be considered if it leaves at least <code>m in_samples_leaf</code> training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression. - If int, then consider <code>min _samples_leaf</code> as the minimum number. - If float, then <code>min_samples_leaf</code> is a fraction and <code>ceil(min_samples_leaf * n_samples)</code> are t he minimum number of samples for each nod e.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>1</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h2 id="output-parameters">Output Parameters</h2>
+<h3 id="1-output_model_file">1.output_model_file</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>output module</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FILE</td>
+<td></td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-output_model">2.output_model</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>output module</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DIRECTORY</td>
+<td>module</td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h1 id="test-case">Test Case</h1>
+<h2 id="case1">Case1</h2>
+<h2 id="desc-">Desc:鸢尾花决策树多分类</h2>
+<h3 id="input-params">Input Params</h3>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td>SURVIVED</td>
+<td>标签</td>
+</tr>
+<tr>
+<td>criterion</td>
+<td>gini</td>
+<td>分类标准采用基尼系数</td>
+</tr>
+<tr>
+<td>max_depth</td>
+<td>5</td>
+<td>这里树的最大深度设置成5</td>
+</tr>
+<tr>
+<td>min_samples_leaf</td>
+<td>1</td>
+<td>叶子节点最小样本数量</td>
+</tr>
+</tbody>
+</table>
+<h3 id="post-json-format">Post Json Format</h3>
+<table>
+<thead>
+<tr>
+<th>AGE</th>
+<th>FARE</th>
+<th>one_hot_0</th>
+<th>one_hot_1</th>
+<th>one_hot_2</th>
+<th>one_hot_3</th>
+<th>one_hot_4</th>
+<th>one_hot_5</th>
+<th>one_hot_6</th>
+<th>one_hot_7</th>
+<th>one_hot_8</th>
+<th>one_hot_9</th>
+<th>one_hot_10</th>
+<th>one_hot_11</th>
+<th>one_hot_12</th>
+<th>one_hot_13</th>
+<th>one_hot_14</th>
+<th>one_hot_15</th>
+<th>one_hot_16</th>
+<th>one_hot_17</th>
+<th>one_hot_18</th>
+<th>one_hot_19</th>
+<th>one_hot_20</th>
+<th>one_hot_21</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-0.5924805998028931</td>
+<td>-0.5024451714361923</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom-test-report">Custom Test Report</h3>
+<ul>
+<li>Test Example</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AGE</td>
+<td>-0.5924805998028931</td>
+</tr>
+<tr>
+<td>FARE</td>
+<td>-0.5024451714361923</td>
+</tr>
+<tr>
+<td>one_hot_0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_1</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_2</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>one_hot_3</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_4</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>one_hot_5</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_6</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_7</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_8</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_9</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_10</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>one_hot_11</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_12</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_13</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_14</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_15</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_16</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_17</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_18</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>one_hot_19</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_20</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>one_hot_21</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Predict Result</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#39;class&#39;: &#39;0&#39;, &#39;score&#39;: {&#39;0&#39;: 0.8987654320987655, &#39;1&#39;: 0.10123456790123457}}</td>
+</tr>
+</tbody>
+</table>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>

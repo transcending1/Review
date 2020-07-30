@@ -1,0 +1,868 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:SGD Regression</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="sgd-regression">SGD Regression</h1>
+<ul>
+<li>Description</li>
+</ul>
+<p>Linear model fitted by minimizing a regularized emp irical loss with SGD SGD stands for Stochastic Gradient Descent: the gradient of the loss is e stimated each sample at a time and the model is up dated along the way with a decreasing strength schedule (aka learning rate). The regularizer i s a penalty added to the loss function that shrink s model parameters towards the zero vector usin g either the squared euclidean norm L2 or the a bsolute norm L1 or a combination of both (Elastic Net). If the parameter update crosses the 0.0 v alue because of the regularizer, the update is truncated to 0.0 to allow for learning sparse mode ls and achieve online feature selection. Thi s implementation works with data represented as de nse numpy arrays of floating point values for t he features.</p>
+<table>
+<thead>
+<tr>
+<th>category</th>
+<th>sub_category</th>
+<th>type</th>
+<th>cpu</th>
+<th>gpu</th>
+<th>memory</th>
+<th>pipe_status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Machine Learning</td>
+<td>Regression</td>
+<td>DOCKER</td>
+<td>1</td>
+<td>0</td>
+<td>2048</td>
+<td>keep</td>
+</tr>
+</tbody>
+</table>
+<h1 id="parameter-detail">Parameter Detail</h1>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>is_input</th>
+<th>category</th>
+<th>default</th>
+<th>required</th>
+<th>selector_model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td>True</td>
+<td>STRING</td>
+<td></td>
+<td>True</td>
+<td>SINGLE</td>
+</tr>
+<tr>
+<td>input_file1</td>
+<td>True</td>
+<td>FILE</td>
+<td></td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>loss</td>
+<td>True</td>
+<td>STRING</td>
+<td>squared_loss</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>penalty</td>
+<td>True</td>
+<td>STRING</td>
+<td>l2</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>alpha</td>
+<td>True</td>
+<td>STRING</td>
+<td>0.0001</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>l1_ratio</td>
+<td>True</td>
+<td>STRING</td>
+<td>0.15</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>max_iter</td>
+<td>True</td>
+<td>STRING</td>
+<td>1000</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>tol</td>
+<td>True</td>
+<td>STRING</td>
+<td>0.001</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>shuffle</td>
+<td>True</td>
+<td>STRING</td>
+<td>True</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>learning_rate</td>
+<td>True</td>
+<td>STRING</td>
+<td>invscaling</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>early_stopping</td>
+<td>True</td>
+<td>STRING</td>
+<td>False</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>output_model_file</td>
+<td>False</td>
+<td>FILE</td>
+<td></td>
+<td>False</td>
+<td>None</td>
+</tr>
+<tr>
+<td>output_model</td>
+<td>False</td>
+<td>DIRECTORY</td>
+<td>module</td>
+<td>False</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h1 id="detailed-info-of-parameters">Detailed Info of Parameters</h1>
+<h2 id="input-parameters">Input Parameters</h2>
+<h3 id="1-label">1.label</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>target feature</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td></td>
+<td>Yes</td>
+<td>SINGLE</td>
+<td>input_file1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-input_file1">2.input_file1</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>input csv file for trainer</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FILE</td>
+<td></td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-loss">3.loss</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>The loss function to be used. The possible values a re &#39;squared_loss&#39;, &#39;huber&#39;, &#39;epsilon_insens itive&#39;, or &#39;squared_epsilon_insensitive&#39; Th e &#39;squared_loss&#39; refers to the ordinary least squa res fit. &#39;huber&#39; modifies &#39;squared_loss&#39; to focus less on getting outliers correct by switching from squared to linear loss past a dista nce of epsilon. &#39;epsilon_insensitive&#39; ignor es errors less than epsilon and is linear p ast that; this is the loss function used in SVR. &#39;squared_epsilon_insensitive&#39; is the same bu t becomes squared loss past a tolerance of epsilon.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>squared_loss</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>choices</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>choice</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>squared_loss</td>
+<td></td>
+</tr>
+<tr>
+<td>huber</td>
+<td></td>
+</tr>
+<tr>
+<td>epsilon_insensitive</td>
+<td></td>
+</tr>
+<tr>
+<td>squared_epsilon_insensitive</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-penalty">4.penalty</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>The penalty (aka regularization term) to be used. D efaults to &#39;l2&#39; which is the standard regul arizer for linear SVM models. &#39;l1&#39; and &#39;ela sticnet&#39; might bring sparsity to the model (featur e selection) not achievable with &#39;l2&#39;.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>l2</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>choices</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>choice</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>l2</td>
+<td></td>
+</tr>
+<tr>
+<td>l1</td>
+<td></td>
+</tr>
+<tr>
+<td>elasticnet</td>
+</tr>
+</tbody>
+</table>
+<h3 id="5-alpha">5.alpha</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>Constant that multiplies the regularization term. Also used to compute learning_rate when set to &#39;optimal&#39;.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>0.0001</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6-l1_ratio">6.l1_ratio</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>The Elastic Net mixing parameter, with 0 &lt;= l1_rati o &lt;= 1. l1_ratio=0 corresponds to L2 penalt y, l1_ratio=1 to L1.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>0.15</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="7-max_iter">7.max_iter</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>The maximum number of passes over the training data (aka epochs). It only impacts the behavior in the <code>fit</code> method, and not the :meth:<code>partial_fit</code> method. .. versionadded:: 0.19 </p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>1000</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="8-tol">8.tol</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>The stopping criterion. If it is not None, the iter ations will stop when (loss &gt; best_loss - t ol) for <code>n_iter_no_change</code> consecutive ep ochs. .. versionadded:: 0.19</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>0.001</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-shuffle">9.shuffle</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>Whether or not the training data should be shuffled after each epoch.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>True</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>choices</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>choice</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True</td>
+<td></td>
+</tr>
+<tr>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<h3 id="10-learning_rate">10.learning_rate</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>The learning rate schedule: &#39;constant&#39;: eta = eta0 &#39;optimal&#39;: eta = 1.0 / (alpha * (t + t0)) where t0 is chosen by a heuristic proposed by Leon Bottou. &#39;invscaling&#39;: [default] eta = eta0 / pow(t, power_t) &#39;adaptive&#39;: e ta = eta0, as long as the training keeps decreasin g. Each time n_iter_no_change consecuti ve epochs fail to decrease the training loss by tol or fail to increase validation score by tol if early_stopping is True, the c urrent learning rate is divided by 5.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>invscaling</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>choices</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>choice</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constant</td>
+<td></td>
+</tr>
+<tr>
+<td>optimal</td>
+<td></td>
+</tr>
+<tr>
+<td>invscaling</td>
+<td></td>
+</tr>
+<tr>
+<td>adaptive</td>
+</tr>
+</tbody>
+</table>
+<h3 id="11-early_stopping">11.early_stopping</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>Whether to use early stopping to terminate training when validation score is not improving. If set to True, it will automatically set aside a fraction of training data as validation and t erminate training when validation score is not improving by at least tol for n_iter_no _change consecutive epochs.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>False</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>choices</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>choice</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True</td>
+<td></td>
+</tr>
+<tr>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<h2 id="output-parameters">Output Parameters</h2>
+<h3 id="1-output_model_file">1.output_model_file</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>output module</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FILE</td>
+<td></td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-output_model">2.output_model</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>output module</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DIRECTORY</td>
+<td>module</td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h1 id="test-case">Test Case</h1>
+<h2 id="case1">Case1</h2>
+<h2 id="desc-sgd-">Desc:波士顿房价SGD回归,参数没设置好产生了梯度爆炸的结果</h2>
+<h3 id="input-params">Input Params</h3>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td>PRICE</td>
+<td>标签</td>
+</tr>
+<tr>
+<td>loss</td>
+<td>squared_loss</td>
+<td>损失函数设置为:均方误差</td>
+</tr>
+<tr>
+<td>penalty</td>
+<td>l2</td>
+<td>l2 正则惩罚项</td>
+</tr>
+<tr>
+<td>alpha</td>
+<td>0.0001</td>
+<td>选择一个常量0.0001来乘以惩罚项</td>
+</tr>
+<tr>
+<td>l1_ratio</td>
+<td>0.15</td>
+<td>ElasticNet L1惩罚项占比,选取了L2惩罚项,这里不生效</td>
+</tr>
+<tr>
+<td>max_iter</td>
+<td>1000</td>
+<td>最大迭代次数设置为1000</td>
+</tr>
+<tr>
+<td>tol</td>
+<td>0.001</td>
+<td>梯度下降停止容忍度设置小一点为0.001</td>
+</tr>
+<tr>
+<td>shuffle</td>
+<td>True</td>
+<td>每批次训练是否打乱数据集</td>
+</tr>
+<tr>
+<td>learning_rate</td>
+<td>invscaling</td>
+<td>学习率不为常量,选用eta = eta0/ pow(t, power_t)的方式优化学习率</td>
+</tr>
+<tr>
+<td>early_stopping</td>
+<td>False</td>
+<td>不采用早停策略</td>
+</tr>
+</tbody>
+</table>
+<h3 id="post-json-format">Post Json Format</h3>
+<table>
+<thead>
+<tr>
+<th>CRIM</th>
+<th>ZN</th>
+<th>INDUS</th>
+<th>CHAS</th>
+<th>NOX</th>
+<th>RM</th>
+<th>AGE</th>
+<th>DIS</th>
+<th>RAD</th>
+<th>TAX</th>
+<th>PTRATIO</th>
+<th>B</th>
+<th>LSTAT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.00632</td>
+<td>18.0</td>
+<td>2.31</td>
+<td>0</td>
+<td>0.5379999999999999</td>
+<td>6.575</td>
+<td>65.2</td>
+<td>4.09</td>
+<td>1</td>
+<td>296</td>
+<td>15.3</td>
+<td>396.9</td>
+<td>4.98</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom-test-report">Custom Test Report</h3>
+<ul>
+<li>Test Example</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CRIM</td>
+<td>0.00632</td>
+</tr>
+<tr>
+<td>ZN</td>
+<td>18.0</td>
+</tr>
+<tr>
+<td>INDUS</td>
+<td>2.31</td>
+</tr>
+<tr>
+<td>CHAS</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>NOX</td>
+<td>0.5379999999999999</td>
+</tr>
+<tr>
+<td>RM</td>
+<td>6.575</td>
+</tr>
+<tr>
+<td>AGE</td>
+<td>65.2</td>
+</tr>
+<tr>
+<td>DIS</td>
+<td>4.09</td>
+</tr>
+<tr>
+<td>RAD</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>TAX</td>
+<td>296.0</td>
+</tr>
+<tr>
+<td>PTRATIO</td>
+<td>15.3</td>
+</tr>
+<tr>
+<td>B</td>
+<td>396.9</td>
+</tr>
+<tr>
+<td>LSTAT</td>
+<td>4.98</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Predict Result</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#39;result&#39;: &#39;-51737334304412.72&#39;}</td>
+</tr>
+</tbody>
+</table>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>

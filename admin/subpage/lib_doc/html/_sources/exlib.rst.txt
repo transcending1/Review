@@ -1,0 +1,84 @@
+exlib package
+=============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   exlib.apis
+   exlib.exceptions
+   exlib.manager
+   exlib.serializer
+   exlib.service
+   exlib.tests
+   exlib.utils
+
+Submodules
+----------
+
+exlib.cli module
+----------------
+
+.. automodule:: exlib.cli
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.config module
+-------------------
+
+.. automodule:: exlib.config
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.env module
+----------------
+
+.. automodule:: exlib.env
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.globals module
+--------------------
+
+.. automodule:: exlib.globals
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.model module
+------------------
+
+.. automodule:: exlib.model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.pipeline module
+---------------------
+
+.. automodule:: exlib.pipeline
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.run\_all\_cases module
+----------------------------
+
+.. automodule:: exlib.run_all_cases
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib
+   :members:
+   :undoc-members:
+   :show-inheritance:

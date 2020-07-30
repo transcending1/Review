@@ -1,0 +1,806 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:Replace Missing Data</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="replace-missing-data">Replace Missing Data</h1>
+<ul>
+<li>Description</li>
+</ul>
+<p>fill the missing value in your dataset with a certain value</p>
+<table>
+<thead>
+<tr>
+<th>category</th>
+<th>sub_category</th>
+<th>type</th>
+<th>cpu</th>
+<th>gpu</th>
+<th>memory</th>
+<th>pipe_status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Transformation</td>
+<td>Manipulation</td>
+<td>DOCKER</td>
+<td>1</td>
+<td>0</td>
+<td>2048</td>
+<td>keep</td>
+</tr>
+</tbody>
+</table>
+<h1 id="parameter-detail">Parameter Detail</h1>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>is_input</th>
+<th>category</th>
+<th>default</th>
+<th>required</th>
+<th>selector_model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>columns1</td>
+<td>True</td>
+<td>STRING</td>
+<td></td>
+<td>True</td>
+<td>MULTIPLE</td>
+</tr>
+<tr>
+<td>input_file1</td>
+<td>True</td>
+<td>FILE</td>
+<td></td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>filling_method</td>
+<td>True</td>
+<td>STRING</td>
+<td>zero</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>value</td>
+<td>True</td>
+<td>STRING</td>
+<td></td>
+<td>False</td>
+<td>None</td>
+</tr>
+<tr>
+<td>output_file</td>
+<td>False</td>
+<td>FILE</td>
+<td></td>
+<td>False</td>
+<td>None</td>
+</tr>
+<tr>
+<td>output_model</td>
+<td>False</td>
+<td>DIRECTORY</td>
+<td>module</td>
+<td>False</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h1 id="detailed-info-of-parameters">Detailed Info of Parameters</h1>
+<h2 id="input-parameters">Input Parameters</h2>
+<h3 id="1-columns1">1.columns1</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>column selector for field input_file1</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td></td>
+<td>Yes</td>
+<td>MULTIPLE</td>
+<td>input_file1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-input_file1">2.input_file1</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>csv file</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FILE</td>
+<td></td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-filling_method">3.filling_method</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>the strategy used for filling missing data who&#39;s type is number</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>zero</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>choices</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>choice</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zero</td>
+<td>filling with zero</td>
+</tr>
+<tr>
+<td>minimum</td>
+<td>filling with minimum value</td>
+</tr>
+<tr>
+<td>maximum</td>
+<td>filling with maximum value</td>
+</tr>
+<tr>
+<td>average</td>
+<td>filling with average value</td>
+</tr>
+<tr>
+<td>median</td>
+<td>filling with median value</td>
+</tr>
+<tr>
+<td>value</td>
+<td>filling with a certain value to category type</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-value">4.value</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>replace with a certain value</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td></td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h2 id="output-parameters">Output Parameters</h2>
+<h3 id="1-output_file">1.output_file</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>merged csv file</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FILE</td>
+<td></td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-output_model">2.output_model</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>output module</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DIRECTORY</td>
+<td>module</td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h1 id="test-case">Test Case</h1>
+<h2 id="case1">Case1</h2>
+<h2 id="desc-embarked-">Desc:泰坦尼克实验,字符串按值填充缺失值,默认用频率最高的词来填充,可以发现里面的EMBARKED这一列有一个缺失值</h2>
+<h3 id="input-params">Input Params</h3>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>columns1</td>
+<td>[&#39;EMBARKED&#39;]</td>
+<td>选择一个字符串的列</td>
+</tr>
+<tr>
+<td>filling_method</td>
+<td>value</td>
+<td>填充方式选择为按值填充,需要选择自己想要填充的值</td>
+</tr>
+<tr>
+<td>value</td>
+<td>C</td>
+<td>按照值C进行填充</td>
+</tr>
+</tbody>
+</table>
+<h3 id="post-json-format">Post Json Format</h3>
+<table>
+<thead>
+<tr>
+<th>PASSENGERID</th>
+<th>SURVIVED</th>
+<th>PCLASS</th>
+<th>NAME</th>
+<th>SEX</th>
+<th>AGE</th>
+<th>SIBSP</th>
+<th>PARCH</th>
+<th>TICKET</th>
+<th>FARE</th>
+<th>CABIN</th>
+<th>EMBARKED</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>Braund, Mr. Owen Harris</td>
+<td>male</td>
+<td>22.0</td>
+<td>1</td>
+<td>0</td>
+<td>A/5 21171</td>
+<td>7.25</td>
+<td>nan</td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom-test-report">Custom Test Report</h3>
+<ul>
+<li>Data Format Before Transform</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1, 12)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Data Example Before Transform</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PASSENGERID</td>
+<td>1</td>
+</tr>
+<tr>
+<td>SURVIVED</td>
+<td>0</td>
+</tr>
+<tr>
+<td>PCLASS</td>
+<td>3</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>Braund, Mr. Owen Harris</td>
+</tr>
+<tr>
+<td>SEX</td>
+<td>male</td>
+</tr>
+<tr>
+<td>AGE</td>
+<td>22.0</td>
+</tr>
+<tr>
+<td>SIBSP</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PARCH</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TICKET</td>
+<td>A/5 21171</td>
+</tr>
+<tr>
+<td>FARE</td>
+<td>7.25</td>
+</tr>
+<tr>
+<td>CABIN</td>
+<td>nan</td>
+</tr>
+<tr>
+<td>EMBARKED</td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Data Format After Transform</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1, 12)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Data Example After Transform</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PASSENGERID</td>
+<td>1</td>
+</tr>
+<tr>
+<td>SURVIVED</td>
+<td>0</td>
+</tr>
+<tr>
+<td>PCLASS</td>
+<td>3</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>Braund, Mr. Owen Harris</td>
+</tr>
+<tr>
+<td>SEX</td>
+<td>male</td>
+</tr>
+<tr>
+<td>AGE</td>
+<td>22.0</td>
+</tr>
+<tr>
+<td>SIBSP</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PARCH</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TICKET</td>
+<td>A/5 21171</td>
+</tr>
+<tr>
+<td>FARE</td>
+<td>7.25</td>
+</tr>
+<tr>
+<td>CABIN</td>
+<td>nan</td>
+</tr>
+<tr>
+<td>EMBARKED</td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+<h2 id="case2">Case2</h2>
+<h2 id="desc-">Desc:泰坦尼克实验,数值类型的数据按照均值填充,可以发现年龄里面有相关缺失值.</h2>
+<h3 id="input-params">Input Params</h3>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>columns1</td>
+<td>[&#39;AGE&#39;]</td>
+<td>一个数值类型的列,里面包含缺失值</td>
+</tr>
+<tr>
+<td>filling_method</td>
+<td>average</td>
+<td>填充方式选择为按均值填充</td>
+</tr>
+<tr>
+<td>value</td>
+<td></td>
+<td>无需填写</td>
+</tr>
+</tbody>
+</table>
+<h3 id="post-json-format">Post Json Format</h3>
+<table>
+<thead>
+<tr>
+<th>PASSENGERID</th>
+<th>SURVIVED</th>
+<th>PCLASS</th>
+<th>NAME</th>
+<th>SEX</th>
+<th>AGE</th>
+<th>SIBSP</th>
+<th>PARCH</th>
+<th>TICKET</th>
+<th>FARE</th>
+<th>CABIN</th>
+<th>EMBARKED</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>Braund, Mr. Owen Harris</td>
+<td>male</td>
+<td>22.0</td>
+<td>1</td>
+<td>0</td>
+<td>A/5 21171</td>
+<td>7.25</td>
+<td>nan</td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom-test-report">Custom Test Report</h3>
+<ul>
+<li>Data Format Before Transform</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1, 12)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Data Example Before Transform</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PASSENGERID</td>
+<td>1</td>
+</tr>
+<tr>
+<td>SURVIVED</td>
+<td>0</td>
+</tr>
+<tr>
+<td>PCLASS</td>
+<td>3</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>Braund, Mr. Owen Harris</td>
+</tr>
+<tr>
+<td>SEX</td>
+<td>male</td>
+</tr>
+<tr>
+<td>AGE</td>
+<td>22.0</td>
+</tr>
+<tr>
+<td>SIBSP</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PARCH</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TICKET</td>
+<td>A/5 21171</td>
+</tr>
+<tr>
+<td>FARE</td>
+<td>7.25</td>
+</tr>
+<tr>
+<td>CABIN</td>
+<td>nan</td>
+</tr>
+<tr>
+<td>EMBARKED</td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Data Format After Transform</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1, 12)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Data Example After Transform</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PASSENGERID</td>
+<td>1</td>
+</tr>
+<tr>
+<td>SURVIVED</td>
+<td>0</td>
+</tr>
+<tr>
+<td>PCLASS</td>
+<td>3</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>Braund, Mr. Owen Harris</td>
+</tr>
+<tr>
+<td>SEX</td>
+<td>male</td>
+</tr>
+<tr>
+<td>AGE</td>
+<td>22.0</td>
+</tr>
+<tr>
+<td>SIBSP</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PARCH</td>
+<td>0</td>
+</tr>
+<tr>
+<td>TICKET</td>
+<td>A/5 21171</td>
+</tr>
+<tr>
+<td>FARE</td>
+<td>7.25</td>
+</tr>
+<tr>
+<td>CABIN</td>
+<td>nan</td>
+</tr>
+<tr>
+<td>EMBARKED</td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>

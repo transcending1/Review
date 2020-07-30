@@ -1,0 +1,30 @@
+exlib.tests.test\_argument\_parser package
+==========================================
+
+Submodules
+----------
+
+exlib.tests.test\_argument\_parser.test\_argument\_parser module
+----------------------------------------------------------------
+
+.. automodule:: exlib.tests.test_argument_parser.test_argument_parser
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.tests.test\_argument\_parser.test\_wrong\_params module
+-------------------------------------------------------------
+
+.. automodule:: exlib.tests.test_argument_parser.test_wrong_params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.tests.test_argument_parser
+   :members:
+   :undoc-members:
+   :show-inheritance:

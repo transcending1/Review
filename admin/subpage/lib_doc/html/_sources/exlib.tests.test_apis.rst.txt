@@ -1,0 +1,22 @@
+exlib.tests.test\_apis package
+==============================
+
+Submodules
+----------
+
+exlib.tests.test\_apis.test\_upload module
+------------------------------------------
+
+.. automodule:: exlib.tests.test_apis.test_upload
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.tests.test_apis
+   :members:
+   :undoc-members:
+   :show-inheritance:

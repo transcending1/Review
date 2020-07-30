@@ -1,0 +1,30 @@
+exlib.serializer.extractor package
+==================================
+
+Submodules
+----------
+
+exlib.serializer.extractor.csv module
+-------------------------------------
+
+.. automodule:: exlib.serializer.extractor.csv
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.serializer.extractor.supervised module
+--------------------------------------------
+
+.. automodule:: exlib.serializer.extractor.supervised
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.serializer.extractor
+   :members:
+   :undoc-members:
+   :show-inheritance:

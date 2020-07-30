@@ -1,0 +1,38 @@
+exlib.tests.test\_mlflow\_mixin package
+=======================================
+
+Submodules
+----------
+
+exlib.tests.test\_mlflow\_mixin.test\_pipeline module
+-----------------------------------------------------
+
+.. automodule:: exlib.tests.test_mlflow_mixin.test_pipeline
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.tests.test\_mlflow\_mixin.test\_save\_model module
+--------------------------------------------------------
+
+.. automodule:: exlib.tests.test_mlflow_mixin.test_save_model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.tests.test\_mlflow\_mixin.test\_save\_sklearn\_model module
+-----------------------------------------------------------------
+
+.. automodule:: exlib.tests.test_mlflow_mixin.test_save_sklearn_model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.tests.test_mlflow_mixin
+   :members:
+   :undoc-members:
+   :show-inheritance:

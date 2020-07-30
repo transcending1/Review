@@ -1,0 +1,39 @@
+exlib.serializer package
+========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   exlib.serializer.extractor
+   exlib.serializer.plugin
+
+Submodules
+----------
+
+exlib.serializer.external\_serializer module
+--------------------------------------------
+
+.. automodule:: exlib.serializer.external_serializer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.serializer.parser module
+------------------------------
+
+.. automodule:: exlib.serializer.parser
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.serializer
+   :members:
+   :undoc-members:
+   :show-inheritance:

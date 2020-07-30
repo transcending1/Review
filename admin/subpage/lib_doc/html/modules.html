@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exlib &#8212; ML Manager 1.0 文档</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="exlib">
+<h1>exlib<a class="headerlink" href="#exlib" title="永久链接至标题">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="exlib.html">exlib package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exlib.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="exlib.apis.html">exlib.apis package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.apis.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.apis.html#module-exlib.apis.address">exlib.apis.address module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.apis.html#module-exlib.apis.datasets">exlib.apis.datasets module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.apis.html#module-exlib.apis.jobs">exlib.apis.jobs module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.apis.html#module-exlib.apis.modules">exlib.apis.modules module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.apis.html#module-exlib.apis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.exceptions.html">exlib.exceptions package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.exceptions.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.exceptions.html#module-exlib.exceptions.base">exlib.exceptions.base module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.exceptions.html#module-exlib.exceptions.http">exlib.exceptions.http module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.exceptions.html#module-exlib.exceptions">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.manager.html">exlib.manager package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.manager.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.manager.html#module-exlib.manager.manager">exlib.manager.manager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.manager.html#module-exlib.manager.python_func_manager">exlib.manager.python_func_manager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.manager.html#module-exlib.manager.sklearn_manager">exlib.manager.sklearn_manager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.manager.html#module-exlib.manager">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.serializer.html">exlib.serializer package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.html#module-exlib.serializer.external_serializer">exlib.serializer.external_serializer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.html#module-exlib.serializer.parser">exlib.serializer.parser module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.html#module-exlib.serializer">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.service.html">exlib.service package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.service.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.service.html#module-exlib.service.cli">exlib.service.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.service.html#module-exlib.service">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.tests.html">exlib.tests package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.html#module-exlib.tests.utils">exlib.tests.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.html#module-exlib.tests">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.utils.html">exlib.utils package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.utils.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.utils.html#module-exlib.utils.basic">exlib.utils.basic module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.utils.html#module-exlib.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.html#module-exlib.cli">exlib.cli module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.html#module-exlib.config">exlib.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.html#module-exlib.env">exlib.env module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.html#module-exlib.globals">exlib.globals module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.html#module-exlib.model">exlib.model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.html#module-exlib.pipeline">exlib.pipeline module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.html#exlib-run-all-cases-module">exlib.run_all_cases module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.html#module-exlib">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ML Manager</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Jeferry.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

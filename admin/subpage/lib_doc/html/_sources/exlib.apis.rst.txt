@@ -1,0 +1,46 @@
+exlib.apis package
+==================
+
+Submodules
+----------
+
+exlib.apis.address module
+-------------------------
+
+.. automodule:: exlib.apis.address
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.apis.datasets module
+--------------------------
+
+.. automodule:: exlib.apis.datasets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.apis.jobs module
+----------------------
+
+.. automodule:: exlib.apis.jobs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.apis.modules module
+-------------------------
+
+.. automodule:: exlib.apis.modules
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.apis
+   :members:
+   :undoc-members:
+   :show-inheritance:

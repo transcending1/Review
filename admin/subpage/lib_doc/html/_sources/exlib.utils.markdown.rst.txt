@@ -1,0 +1,30 @@
+exlib.utils.markdown package
+============================
+
+Submodules
+----------
+
+exlib.utils.markdown.fields module
+----------------------------------
+
+.. automodule:: exlib.utils.markdown.fields
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.utils.markdown.manager module
+-----------------------------------
+
+.. automodule:: exlib.utils.markdown.manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.utils.markdown
+   :members:
+   :undoc-members:
+   :show-inheritance:

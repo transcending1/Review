@@ -1,0 +1,650 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:Bi-Class SVM</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="bi-class-svm">Bi-Class SVM</h1>
+<ul>
+<li>Description</li>
+</ul>
+<p>C-Support Vector Classification. The implementat ion is based on libsvm. The fit time scales at lea st quadratically with the number of samples and may be impractical beyond tens of thousands of samples. For large datasets consider using :cl ass:<code>sklearn.svm.LinearSVC</code> or :class:<code>sklearn. linear_model.SGDClassifier</code> instead, possibly afte r a :class:<code>sklearn.kernel_approximation.Nystro em</code> transformer. The multiclass support is hand led according to a one-vs-one scheme. For detai ls on the precise mathematical formulation of the provided kernel functions and how <code>gamma</code>, <code>coe f0</code> and <code>degree</code> affect each other, see the cor responding section in the narrative documentation: :ref:<code>svm_kernels</code>.</p>
+<table>
+<thead>
+<tr>
+<th>category</th>
+<th>sub_category</th>
+<th>type</th>
+<th>cpu</th>
+<th>gpu</th>
+<th>memory</th>
+<th>pipe_status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Machine Learning</td>
+<td>Binary Classification</td>
+<td>DOCKER</td>
+<td>1</td>
+<td>0</td>
+<td>2048</td>
+<td>keep</td>
+</tr>
+</tbody>
+</table>
+<h1 id="parameter-detail">Parameter Detail</h1>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>is_input</th>
+<th>category</th>
+<th>default</th>
+<th>required</th>
+<th>selector_model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td>True</td>
+<td>STRING</td>
+<td></td>
+<td>True</td>
+<td>SINGLE</td>
+</tr>
+<tr>
+<td>input_file1</td>
+<td>True</td>
+<td>FILE</td>
+<td></td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>C</td>
+<td>True</td>
+<td>STRING</td>
+<td>1.0</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>kernel</td>
+<td>True</td>
+<td>STRING</td>
+<td>rbf</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>gamma</td>
+<td>True</td>
+<td>STRING</td>
+<td>scale</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>degree</td>
+<td>True</td>
+<td>STRING</td>
+<td>3</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>coef0</td>
+<td>True</td>
+<td>STRING</td>
+<td>0.0</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>tol</td>
+<td>True</td>
+<td>STRING</td>
+<td>0.001</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>max_iter</td>
+<td>True</td>
+<td>STRING</td>
+<td>-1</td>
+<td>True</td>
+<td>None</td>
+</tr>
+<tr>
+<td>output_model_file</td>
+<td>False</td>
+<td>FILE</td>
+<td></td>
+<td>False</td>
+<td>None</td>
+</tr>
+<tr>
+<td>output_model</td>
+<td>False</td>
+<td>DIRECTORY</td>
+<td>module</td>
+<td>False</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h1 id="detailed-info-of-parameters">Detailed Info of Parameters</h1>
+<h2 id="input-parameters">Input Parameters</h2>
+<h3 id="1-label">1.label</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>target feature</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td></td>
+<td>Yes</td>
+<td>SINGLE</td>
+<td>input_file1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-input_file1">2.input_file1</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>input csv file for trainer</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FILE</td>
+<td></td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-c">3.C</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>float, optional (default=1.0) Regularization parameter. The strength of the regularization is inversely proportional to C. Must be strictly positive. The penalty is a squared l2 penalty.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>1.0</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-kernel">4.kernel</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>string, optional (default=&#39;rbf&#39;) Specifies the kernel type to be used in the algorithm. It must be one of &#39;linear&#39;, &#39;poly&#39;, &#39;rbf&#39;, &#39;sigmoid&#39;, &#39;precomputed&#39; or a callable. If none is given, &#39;rbf&#39; will be used. If a callable is given it is used to pre-compute the kernel matrix from data matrices; that matrix should be an array of shape <code>(n_samples, n_samples)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>rbf</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>choices</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>choice</th>
+<th>help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>linear</td>
+<td></td>
+</tr>
+<tr>
+<td>poly</td>
+<td></td>
+</tr>
+<tr>
+<td>rbf</td>
+<td></td>
+</tr>
+<tr>
+<td>sigmoid</td>
+<td></td>
+</tr>
+<tr>
+<td>precomputed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="5-gamma">5.gamma</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>{&#39;scale&#39;, &#39;auto&#39;} or float, optional (default=&#39;scale&#39;) Kernel coefficient for &#39;rbf&#39;, &#39;poly&#39; and &#39;sigmoid&#39;. - if <code>gamma=&#39;scale&#39;</code> (default) is passed then it uses 1 / (n_features * x.var()) as value of gamma, - if &#39;auto&#39;, uses 1 / n_features.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>scale</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6-degree">6.degree</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>Degree of the polynomial kernel function (&#39;poly&#39;). Ignored by all other kernels.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>3</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="7-coef0">7.coef0</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>Independent term in kernel function. It is only significant in &#39;poly&#39; and &#39;sigmoid&#39;.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>0.0</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="8-tol">8.tol</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>Tolerance for stopping criterion.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>0.001</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-max_iter">9.max_iter</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>Hard limit on iterations within solver, or -1 for n o limit.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>-1</td>
+<td>Yes</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h2 id="output-parameters">Output Parameters</h2>
+<h3 id="1-output_model_file">1.output_model_file</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>output module</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FILE</td>
+<td></td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-output_model">2.output_model</h3>
+<ul>
+<li>Description</li>
+</ul>
+<p>output module</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Default Value</th>
+<th>Is Required</th>
+<th>Selector Model</th>
+<th>Selector Super Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DIRECTORY</td>
+<td>module</td>
+<td>No</td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h1 id="test-case">Test Case</h1>
+<h2 id="case1">Case1</h2>
+<h2 id="desc-svm-">Desc:鸢尾花SVM分类</h2>
+<h3 id="input-params">Input Params</h3>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td>Class</td>
+<td>标签</td>
+</tr>
+<tr>
+<td>C</td>
+<td>1.0</td>
+<td>正则化惩罚力度设置为 1.0</td>
+</tr>
+<tr>
+<td>kernel</td>
+<td>rbf</td>
+<td>核函数选为高斯核函数</td>
+</tr>
+<tr>
+<td>gamma</td>
+<td>scale</td>
+<td>参数gamma的计算规则选用:1 / (n_features * x.var())</td>
+</tr>
+<tr>
+<td>degree</td>
+<td>3</td>
+<td>由于选取了高斯核rbf作为激活函数,此处的参数为多项式核函数的degree参数,对算法无效</td>
+</tr>
+<tr>
+<td>coef0</td>
+<td>0.0</td>
+<td>由于选取了高斯核rbf作为激活函数,此处的参数为多项式核函数以及sigmod激活函数的coef0参数,对算法无效</td>
+</tr>
+<tr>
+<td>tol</td>
+<td>0.001</td>
+<td>早停容忍度设置小一点为0.001</td>
+</tr>
+<tr>
+<td>max_iter</td>
+<td>-1</td>
+<td>不限制最大迭代次数</td>
+</tr>
+</tbody>
+</table>
+<h3 id="post-json-format">Post Json Format</h3>
+<table>
+<thead>
+<tr>
+<th>sepal-length</th>
+<th>sepal-width</th>
+<th>petal-length</th>
+<th>petal-width</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.3</td>
+<td>2.9</td>
+<td>5.6</td>
+<td>1.8</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom-test-report">Custom Test Report</h3>
+<ul>
+<li>Test Example</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sepal-length</td>
+<td>6.3</td>
+</tr>
+<tr>
+<td>sepal-width</td>
+<td>2.9</td>
+</tr>
+<tr>
+<td>petal-length</td>
+<td>5.6</td>
+</tr>
+<tr>
+<td>petal-width</td>
+<td>1.8</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Predict Result</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#39;class&#39;: &#39;1&#39;}</td>
+</tr>
+</tbody>
+</table>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>

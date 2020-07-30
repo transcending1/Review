@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modules Document</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Ionicons -->
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/AdminLTE.css">
+    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect. -->
+    <link rel="stylesheet" href="css/skin-blue.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-table.css">
+
+    <!-- jQuery 3 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/adminlte.js"></script>
+    <style type="text/css">
+        html, body {
+            margin: 0 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .sidebar-menu-cst {
+            height: 77vh;
+            overflow-y: auto !important;
+        }
+        .sidebar-menu-cst::-webkit-scrollbar {
+        width: 0px;
+        /*height: 1px;*/
+        }
+    </style>
+
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="img/image.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>Modules</p>
+                <!-- Status -->
+                <a href="#"><i class="fa fa-circle text-success"></i> Detective</a>
+            </div>
+        </div>
+
+        <!-- search form (Optional) -->
+        <form action="#" method="get" class="sidebar-form" style="overflow: unset" autocomplete="off">
+            <div class="input-group">
+                <input id="search" type="text" name="q" class="form-control" placeholder="Search...">
+                  <ul class="dropdown-menu">
+                    <li id="zjy"><a href="#">Action</a></li>
+                  </ul>
+            </div>
+        </form>
+        <!-- /.search form -->
+
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu tree sidebar-menu-cst" data-widget="tree">
+            <li class="header"><span class="fa-lg">Module Category</span></li>
+            <!-- Optionally, you can add icons to the links -->
+            
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-link"></i> <span>Default</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                             </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="javascript:void(0)" class="FirstMenu">OverView</a></li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Others</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                 </ul>
+                                </li>
+                    
+                        </ul>
+                    </li>
+                
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-link"></i> <span>Executive Framework</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                             </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="javascript:void(0)" class="FirstMenu">OverView</a></li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Others</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                 </ul>
+                                </li>
+                    
+                        </ul>
+                    </li>
+                
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-link"></i> <span>Data Input and Output</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                             </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="javascript:void(0)" class="FirstMenu">OverView</a></li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Import</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Import From Database</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Import From Hdfs</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Import From Url</a></li>
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Export</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Export To Dataset</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Export To HDFS</a></li>
+                                    
+                                 </ul>
+                                </li>
+                    
+                        </ul>
+                    </li>
+                
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-link"></i> <span>Data Transformation</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                             </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="javascript:void(0)" class="FirstMenu">OverView</a></li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Sampling And Split</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">ADASYN</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Number Sampling</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Proportional Sampling</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Random Over Sampling</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">SMOTE</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Split Data</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Split Number Sampling</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Split Proportion Sampling</a></li>
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Manipulation</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Add Columns</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Add Rows</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Clean Missing Data</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Convert To CSV</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Remove Duplicate Rows</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Replace Missing Data</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Select Columns</a></li>
+                                    
+                                 </ul>
+                                </li>
+                    
+                        </ul>
+                    </li>
+                
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-link"></i> <span>Feature Engineering</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                             </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="javascript:void(0)" class="FirstMenu">OverView</a></li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Feature Conversion</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Feature Binarization</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">KBins Discretizer</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Label Encoder</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Max Abs Normalization</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Min Max Normalization</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Normalizer</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">One-Hot Encoding</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">PCA</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Polynomial Expansion</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Standardization</a></li>
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Feature Selection</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                 </ul>
+                                </li>
+                    
+                        </ul>
+                    </li>
+                
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-link"></i> <span>Machine Learning</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                             </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="javascript:void(0)" class="FirstMenu">OverView</a></li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Anomaly Detection</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Binary Classification</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Bi-Class AdaBoost</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Bi-Class GBDT</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Bi-Class Logistic Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Bi-Class Neural Network</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Bi-Class SVM</a></li>
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Multi Classification</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Multi-Class Decision Tree</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Multi-Class Gaussian Naive Bayes</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Multi-Class K_neighbors</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Multi-Class Logistic Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Multi-Class Naive Bayes</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Multi-Class Neural Network</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Multi-Class Random Forest</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Multi-Class SVM</a></li>
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Regression</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">AdaBoost Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Decision Tree Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Elastic Net Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">GBDT Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Lasso Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Linear Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Neutral Network Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Random Forest Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Ridge Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">SGD Regression</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">SVM Regression</a></li>
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Clustering</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Affinity Propagation Clustering</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Agglomerative Clustering</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Birch Clustering</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">DBSCAN Clustering</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">K-Means Clustering</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Mean Shift Clustering</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Mini-Batch K-Means Clustering</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Optics Clustering</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Spectral Clustering</a></li>
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Evaluation</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Bi-Class Evaluation</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Bi-Class Model Selector</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Clustering Evaluation</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Multi-Class Evaluation</a></li>
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Regression Evaluation</a></li>
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Time Series</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                 </ul>
+                                </li>
+                    
+                        </ul>
+                    </li>
+                
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-link"></i> <span>Deep NN</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                             </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="javascript:void(0)" class="FirstMenu">OverView</a></li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>NLP</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>CV</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                 </ul>
+                                </li>
+                    
+                        </ul>
+                    </li>
+                
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-link"></i> <span>Visualization</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                             </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="javascript:void(0)" class="FirstMenu">OverView</a></li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Statistical Analysis</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">Data Distribution Report</a></li>
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Relation</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Distribution</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Compare</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                 </ul>
+                                </li>
+                    
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>Combine</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    
+                                 </ul>
+                                </li>
+                    
+                        </ul>
+                    </li>
+                
+            </ul>
+
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+<div class="content-wrapper">
+    <iframe src="module_doc/preview/Bi-Class%20AdaBoost.html" allowfullscreen style="height: 100vh"
+            id="iframe"></iframe>
+</div>
+<!-- /.content-wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+<script>
+    //点击按钮切换文档
+    $('.myLeftMenu').click(function (e) {
+        var content = $(this).text();
+        $("#iframe").attr("src", "module_doc/preview/" + content + ".html");
+        var a = $("body").height();
+        $("#iframe").css("height", a);
+    });
+
+    $(".FirstMenu").click(function () {
+        var name = $(this).parent().parent().parent().children(":first").text().trim();
+        $("#iframe").attr("src", "module_doc/preview/" + name + ".html");
+    });
+
+    //正则模糊查询
+    function fuzzyQuery(list, keyWord) {
+        if(!keyWord){
+            return []
+        }
+        var reg = new RegExp(keyWord);
+        var arr = [];
+        for (var i = 0; i < list.length; i++) {
+            if (reg.test(list[i])) {
+                arr.push(list[i]);
+            }
+        }
+        return arr.slice(0,15);
+    }
+
+</script>
+<script>
+    $("#search").bind('input propertychange', function () {
+        var content=$(this).val();
+        var all_kinds = ['Export To Dataset', 'Export To HDFS', 'Import From Database', 'Import From Hdfs', 'Import From Url', 'Add Columns', 'Add Rows', 'Clean Missing Data', 'Convert To CSV', 'Remove Duplicate Rows', 'Replace Missing Data', 'Select Columns', 'ADASYN', 'Number Sampling', 'Proportional Sampling', 'Random Over Sampling', 'SMOTE', 'Split Data', 'Split Number Sampling', 'Split Proportion Sampling', 'Feature Binarization', 'KBins Discretizer', 'Label Encoder', 'Max Abs Normalization', 'Min Max Normalization', 'Normalizer', 'One-Hot Encoding', 'PCA', 'Polynomial Expansion', 'Standardization', 'Bi-Class AdaBoost', 'Bi-Class GBDT', 'Bi-Class Logistic Regression', 'Bi-Class Neural Network', 'Bi-Class SVM', 'Affinity Propagation Clustering', 'Agglomerative Clustering', 'Birch Clustering', 'DBSCAN Clustering', 'K-Means Clustering', 'Mean Shift Clustering', 'Mini-Batch K-Means Clustering', 'Optics Clustering', 'Spectral Clustering', 'Bi-Class Evaluation', 'Bi-Class Model Selector', 'Clustering Evaluation', 'Multi-Class Evaluation', 'Regression Evaluation', 'Multi-Class Decision Tree', 'Multi-Class Gaussian Naive Bayes', 'Multi-Class K_neighbors', 'Multi-Class Logistic Regression', 'Multi-Class Naive Bayes', 'Multi-Class Neural Network', 'Multi-Class Random Forest', 'Multi-Class SVM', 'AdaBoost Regression', 'Decision Tree Regression', 'Elastic Net Regression', 'GBDT Regression', 'Lasso Regression', 'Linear Regression', 'Neutral Network Regression', 'Random Forest Regression', 'Ridge Regression', 'SGD Regression', 'SVM Regression', 'Data Distribution Report'];
+        var value = fuzzyQuery(all_kinds,content);
+        console.log(value);
+        var inner_content = '';
+        for (i=0;i<value.length ;i++){
+            inner_content+='<li class="mybutton"><a href="#">'+value[i]+ '</a></li>'
+        }
+
+        $(".dropdown-menu")[0].innerHTML = inner_content;
+
+        if(!inner_content){
+            $('.dropdown-menu').fadeOut(0);
+            return
+        }
+        $('.dropdown-menu').fadeIn(150);
+        $(".dropdown-menu li").each(function(){
+            // console.debug("menu item => ", $(this));
+            $(this).click(function () {
+                console.log($(this).text());
+                $("#iframe").attr("src", "module_doc/preview/" + $(this).text() + ".html")
+            })
+        })
+    });
+    $('#search').blur(function () {
+        $('.dropdown-menu').fadeOut(150)
+    });
+    $('#dropdown-menu li').on('click', function () {
+        alert(1)
+    })
+</script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</body>
+</html>

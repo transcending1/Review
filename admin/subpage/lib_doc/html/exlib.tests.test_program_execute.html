@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exlib.tests.test_program_execute package &#8212; ML Manager 1.0 文档</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="exlib-tests-test-program-execute-package">
+<h1>exlib.tests.test_program_execute package<a class="headerlink" href="#exlib-tests-test-program-execute-package" title="永久链接至标题">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-exlib.tests.test_program_execute.test_doc">
+<span id="exlib-tests-test-program-execute-test-doc-module"></span><h2>exlib.tests.test_program_execute.test_doc module<a class="headerlink" href="#module-exlib.tests.test_program_execute.test_doc" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.tests.test_program_execute.test_doc.TestCase">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.tests.test_program_execute.test_doc.</code><code class="sig-name descname">TestCase</code><a class="headerlink" href="#exlib.tests.test_program_execute.test_doc.TestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="exlib.manager.html#exlib.manager.manager.Manager" title="exlib.manager.manager.Manager"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.manager.manager.Manager</span></code></a></p>
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_doc.TestCase.execute">
+<code class="sig-name descname">execute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.tests.test_program_execute.test_doc.TestCase.execute" title="永久链接至目标">¶</a></dt>
+<dd><p>核心函数的执行</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.tests.test_program_execute.test_doc.TestDoc">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.tests.test_program_execute.test_doc.</code><code class="sig-name descname">TestDoc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.tests.test_program_execute.test_doc.TestDoc" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_doc.TestDoc.setUp">
+<code class="sig-name descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#exlib.tests.test_program_execute.test_doc.TestDoc.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_doc.TestDoc.tearDown">
+<code class="sig-name descname">tearDown</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#exlib.tests.test_program_execute.test_doc.TestDoc.tearDown" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_doc.TestDoc.test_gen_markdown_file">
+<code class="sig-name descname">test_gen_markdown_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.tests.test_program_execute.test_doc.TestDoc.test_gen_markdown_file" title="永久链接至目标">¶</a></dt>
+<dd><p>1.测试生成md文件
+2.测试md转换为html,默认跳过测试
+3.测试生成的md是否符合自己预期
+Returns:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_doc.TestDoc.test_markdown_generator">
+<code class="sig-name descname">test_markdown_generator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.tests.test_program_execute.test_doc.TestDoc.test_markdown_generator" title="永久链接至目标">¶</a></dt>
+<dd><p>测试Md语句的生成方式</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.tests.test_program_execute.test_manager">
+<span id="exlib-tests-test-program-execute-test-manager-module"></span><h2>exlib.tests.test_program_execute.test_manager module<a class="headerlink" href="#module-exlib.tests.test_program_execute.test_manager" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.tests.test_program_execute.test_manager.TestManagerBasicFunction">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.tests.test_program_execute.test_manager.</code><code class="sig-name descname">TestManagerBasicFunction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.tests.test_program_execute.test_manager.TestManagerBasicFunction" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_manager.TestManagerBasicFunction.setUp">
+<code class="sig-name descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#exlib.tests.test_program_execute.test_manager.TestManagerBasicFunction.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_manager.TestManagerBasicFunction.tearDown">
+<code class="sig-name descname">tearDown</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#exlib.tests.test_program_execute.test_manager.TestManagerBasicFunction.tearDown" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_manager.TestManagerBasicFunction.test_to_csv">
+<code class="sig-name descname">test_to_csv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.tests.test_program_execute.test_manager.TestManagerBasicFunction.test_to_csv" title="永久链接至目标">¶</a></dt>
+<dd><p>测试生成csv文件</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.tests.test_program_execute.test_pandas_extractor">
+<span id="exlib-tests-test-program-execute-test-pandas-extractor-module"></span><h2>exlib.tests.test_program_execute.test_pandas_extractor module<a class="headerlink" href="#module-exlib.tests.test_program_execute.test_pandas_extractor" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.tests.test_program_execute.test_pandas_extractor.TestCase">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.tests.test_program_execute.test_pandas_extractor.</code><code class="sig-name descname">TestCase</code><a class="headerlink" href="#exlib.tests.test_program_execute.test_pandas_extractor.TestCase" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="exlib.manager.html#exlib.manager.python_func_manager.PythonFunctionManager" title="exlib.manager.python_func_manager.PythonFunctionManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.manager.python_func_manager.PythonFunctionManager</span></code></a></p>
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_pandas_extractor.TestCase.execute">
+<code class="sig-name descname">execute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.tests.test_program_execute.test_pandas_extractor.TestCase.execute" title="永久链接至目标">¶</a></dt>
+<dd><p>核心函数的执行</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.tests.test_program_execute.test_pandas_extractor.</code><code class="sig-name descname">TestPandasExtractor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor.setUp">
+<code class="sig-name descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor.setUp" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor.tearDown">
+<code class="sig-name descname">tearDown</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor.tearDown" title="永久链接至目标">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor.test_extract_most_frequency_value">
+<code class="sig-name descname">test_extract_most_frequency_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor.test_extract_most_frequency_value" title="永久链接至目标">¶</a></dt>
+<dd><p>测试extractor自动提取最大频率的值作为预备缺失值补全</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor.test_get_data">
+<code class="sig-name descname">test_get_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor.test_get_data" title="永久链接至目标">¶</a></dt>
+<dd><p>测试extractor提取数据格式是否符合预期</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor.test_post_request_json_to_dataframe">
+<code class="sig-name descname">test_post_request_json_to_dataframe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.tests.test_program_execute.test_pandas_extractor.TestPandasExtractor.test_post_request_json_to_dataframe" title="永久链接至目标">¶</a></dt>
+<dd><p>测试发送post请求后把对应的json转换为Dataframe的数据类型
+测试extractor提取Label的功能
+Returns:</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.tests.test_program_execute">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-exlib.tests.test_program_execute" title="永久链接至标题">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ML Manager</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Jeferry.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/exlib.tests.test_program_execute.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

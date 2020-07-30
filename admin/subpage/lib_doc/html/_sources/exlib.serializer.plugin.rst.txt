@@ -1,0 +1,38 @@
+exlib.serializer.plugin package
+===============================
+
+Submodules
+----------
+
+exlib.serializer.plugin.choice module
+-------------------------------------
+
+.. automodule:: exlib.serializer.plugin.choice
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.serializer.plugin.selector module
+---------------------------------------
+
+.. automodule:: exlib.serializer.plugin.selector
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.serializer.plugin.test module
+-----------------------------------
+
+.. automodule:: exlib.serializer.plugin.test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.serializer.plugin
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exlib.manager package &#8212; ML Manager 1.0 文档</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="exlib-manager-package">
+<h1>exlib.manager package<a class="headerlink" href="#exlib-manager-package" title="永久链接至标题">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-exlib.manager.manager">
+<span id="exlib-manager-manager-module"></span><h2>exlib.manager.manager module<a class="headerlink" href="#module-exlib.manager.manager" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.manager.manager.Manager">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.manager.manager.</code><code class="sig-name descname">Manager</code><a class="headerlink" href="#exlib.manager.manager.Manager" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.manager._apis.Api</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.manager._doc.Doc</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.manager._test.Test</span></code></p>
+<dl class="py method">
+<dt id="exlib.manager.manager.Manager.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.manager.manager.Manager.save" title="永久链接至目标">¶</a></dt>
+<dd><p>训练过程中参数持久化到服务端,对象保存
+Args:</p>
+<blockquote>
+<div><p><a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs: 需要持久化的参数</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.manager.manager.Manager.save_model">
+<code class="sig-name descname">save_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">module_dir</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#exlib.manager.manager.Manager.save_model" title="永久链接至目标">¶</a></dt>
+<dd><p>自定制pandas,sklearn模型持久化</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.manager.manager.Manager.to_csv">
+<em class="property">static </em><code class="sig-name descname">to_csv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">output_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.manager.manager.Manager.to_csv" title="永久链接至目标">¶</a></dt>
+<dd><p>生成csv文件
+Args:</p>
+<blockquote>
+<div><p>data(pandas.Dataframe):pandas 数据
+output_file: 输出文件的路径</p>
+</div></blockquote>
+<p>Returns:</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.manager.python_func_manager">
+<span id="exlib-manager-python-func-manager-module"></span><h2>exlib.manager.python_func_manager module<a class="headerlink" href="#module-exlib.manager.python_func_manager" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.manager.python_func_manager.PythonFunctionManager">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.manager.python_func_manager.</code><code class="sig-name descname">PythonFunctionManager</code><a class="headerlink" href="#exlib.manager.python_func_manager.PythonFunctionManager" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.manager.manager.Manager" title="exlib.manager.manager.Manager"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.manager.manager.Manager</span></code></a></p>
+<p>专门针对Python的自定制transform函数封装的管理类</p>
+<dl class="py method">
+<dt id="exlib.manager.python_func_manager.PythonFunctionManager.transform_test">
+<code class="sig-name descname">transform_test</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; dict<a class="headerlink" href="#exlib.manager.python_func_manager.PythonFunctionManager.transform_test" title="永久链接至目标">¶</a></dt>
+<dd><dl class="simple">
+<dt>测试环境下测试pandas服务端的效果:</dt><dd><p>数据特征转换测试</p>
+</dd>
+<dt>Returns:</dt><dd><p>测试报告用于生成测试文档</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.manager.sklearn_manager">
+<span id="exlib-manager-sklearn-manager-module"></span><h2>exlib.manager.sklearn_manager module<a class="headerlink" href="#module-exlib.manager.sklearn_manager" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.manager.sklearn_manager.SklearnManager">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.manager.sklearn_manager.</code><code class="sig-name descname">SklearnManager</code><a class="headerlink" href="#exlib.manager.sklearn_manager.SklearnManager" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.manager.manager.Manager" title="exlib.manager.manager.Manager"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.manager.manager.Manager</span></code></a></p>
+<p>针对sklearn模型有predict功能的封装的定制管理类</p>
+<dl class="py method">
+<dt id="exlib.manager.sklearn_manager.SklearnManager.classification_learning_predict">
+<code class="sig-name descname">classification_learning_predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.manager.sklearn_manager.SklearnManager.classification_learning_predict" title="永久链接至目标">¶</a></dt>
+<dd><p>监督学习分类预测结果
+Args:</p>
+<blockquote>
+<div><p>x: 特征值</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>预测结果: dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.manager.sklearn_manager.SklearnManager.clustering_predict">
+<code class="sig-name descname">clustering_predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.manager.sklearn_manager.SklearnManager.clustering_predict" title="永久链接至目标">¶</a></dt>
+<dd><p>聚类结果预测
+Args:</p>
+<blockquote>
+<div><p>x: 特征值</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>预测结果类别: dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.manager.sklearn_manager.SklearnManager.dump_model">
+<code class="sig-name descname">dump_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.manager.sklearn_manager.SklearnManager.dump_model" title="永久链接至目标">¶</a></dt>
+<dd><p>持久化sklearn模型作为后续评估标准
+Returns:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.manager.sklearn_manager.SklearnManager.regression_predict">
+<code class="sig-name descname">regression_predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.manager.sklearn_manager.SklearnManager.regression_predict" title="永久链接至目标">¶</a></dt>
+<dd><p>监督学习回归预测结果
+Args:</p>
+<blockquote>
+<div><p>x: 特征值</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>预测结果: dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.manager.sklearn_manager.SklearnManager.transform_test">
+<code class="sig-name descname">transform_test</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; dict<a class="headerlink" href="#exlib.manager.sklearn_manager.SklearnManager.transform_test" title="永久链接至目标">¶</a></dt>
+<dd><p>sklearn 有预测功能的模型 predict 预测测试
+Returns:</p>
+<blockquote>
+<div><p>测试报告:仅仅支持单层字典套str</p>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.manager">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-exlib.manager" title="永久链接至标题">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ML Manager</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Jeferry.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/exlib.manager.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

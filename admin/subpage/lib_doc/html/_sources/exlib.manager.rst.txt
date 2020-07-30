@@ -1,0 +1,38 @@
+exlib.manager package
+=====================
+
+Submodules
+----------
+
+exlib.manager.manager module
+----------------------------
+
+.. automodule:: exlib.manager.manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.manager.python\_func\_manager module
+------------------------------------------
+
+.. automodule:: exlib.manager.python_func_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.manager.sklearn\_manager module
+-------------------------------------
+
+.. automodule:: exlib.manager.sklearn_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.manager
+   :members:
+   :undoc-members:
+   :show-inheritance:

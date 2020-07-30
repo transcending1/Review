@@ -1,0 +1,30 @@
+exlib.utils package
+===================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   exlib.utils.markdown
+
+Submodules
+----------
+
+exlib.utils.basic module
+------------------------
+
+.. automodule:: exlib.utils.basic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:

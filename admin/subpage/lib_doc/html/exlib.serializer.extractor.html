@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exlib.serializer.extractor package &#8212; ML Manager 1.0 文档</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="exlib-serializer-extractor-package">
+<h1>exlib.serializer.extractor package<a class="headerlink" href="#exlib-serializer-extractor-package" title="永久链接至标题">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-exlib.serializer.extractor.csv">
+<span id="exlib-serializer-extractor-csv-module"></span><h2>exlib.serializer.extractor.csv module<a class="headerlink" href="#module-exlib.serializer.extractor.csv" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.serializer.extractor.csv.CsvExtractor">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.serializer.extractor.csv.</code><code class="sig-name descname">CsvExtractor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_file</span></em>, <em class="sig-param"><span class="n">label</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.serializer.extractor.csv.CsvExtractor" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.serializer.extractor._base.BaseExtractor</span></code></p>
+<dl class="py method">
+<dt id="exlib.serializer.extractor.csv.CsvExtractor.data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#exlib.serializer.extractor.csv.CsvExtractor.data" title="永久链接至目标">¶</a></dt>
+<dd><p>从路径中提取Dataframe数据,提取的同时持久化每列频率最高的值,用作后续缺失值填充</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>Dataframe</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.serializer.extractor.csv.CsvExtractor.data2json">
+<code class="sig-name descname">data2json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span> &#x2192; dict<a class="headerlink" href="#exlib.serializer.extractor.csv.CsvExtractor.data2json" title="永久链接至目标">¶</a></dt>
+<dd><p>transform 之后的数据格式为Dataframe(转换结果)或者dict(预测结果),需要把它变成json返回给前端
+Returns:</p>
+<blockquote>
+<div><p>json 类型的数据</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.serializer.extractor.csv.CsvExtractor.json2data">
+<code class="sig-name descname">json2data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">post_json</span></em><span class="sig-paren">)</span> &#x2192; pandas.core.frame.DataFrame<a class="headerlink" href="#exlib.serializer.extractor.csv.CsvExtractor.json2data" title="永久链接至目标">¶</a></dt>
+<dd><p>服务端post请求json ==&gt; Dataframe,在服务端调用此类方法进行数据提取
+Args:</p>
+<blockquote>
+<div><p>post_json: 前端传递的字典类型的数据</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>单条Dataframe类型的数据</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.serializer.extractor.csv.CsvExtractor.json_post_input">
+<em class="property">property </em><code class="sig-name descname">json_post_input</code><a class="headerlink" href="#exlib.serializer.extractor.csv.CsvExtractor.json_post_input" title="永久链接至目标">¶</a></dt>
+<dd><p>服务端Post请求json字符串格式,由data拓展获取
+Returns:</p>
+<blockquote>
+<div><p>json字典</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.serializer.extractor.csv.CsvExtractor.one_unit">
+<em class="property">property </em><code class="sig-name descname">one_unit</code><a class="headerlink" href="#exlib.serializer.extractor.csv.CsvExtractor.one_unit" title="永久链接至目标">¶</a></dt>
+<dd><p>Dataframe中提取单条数据,为了给服务端测试使用
+Returns:</p>
+<blockquote>
+<div><p>shape为(1,xxx)的Dataframe</p>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.serializer.extractor.supervised">
+<span id="exlib-serializer-extractor-supervised-module"></span><h2>exlib.serializer.extractor.supervised module<a class="headerlink" href="#module-exlib.serializer.extractor.supervised" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.serializer.extractor.supervised.SupervisedLearningExtractor">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.serializer.extractor.supervised.</code><code class="sig-name descname">SupervisedLearningExtractor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_file</span></em>, <em class="sig-param"><span class="n">label</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.serializer.extractor.supervised.SupervisedLearningExtractor" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.serializer.extractor.csv.CsvExtractor" title="exlib.serializer.extractor.csv.CsvExtractor"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.serializer.extractor.csv.CsvExtractor</span></code></a></p>
+<dl class="py method">
+<dt id="exlib.serializer.extractor.supervised.SupervisedLearningExtractor.data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#exlib.serializer.extractor.supervised.SupervisedLearningExtractor.data" title="永久链接至目标">¶</a></dt>
+<dd><p>从路径中提取Dataframe数据,补全最大频率</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.serializer.extractor.supervised.SupervisedLearningExtractor.feature_label">
+<em class="property">property </em><code class="sig-name descname">feature_label</code><a class="headerlink" href="#exlib.serializer.extractor.supervised.SupervisedLearningExtractor.feature_label" title="永久链接至目标">¶</a></dt>
+<dd><p>特征label分离</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.serializer.extractor.supervised.SupervisedLearningExtractor.json2data">
+<code class="sig-name descname">json2data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">post_json</span></em><span class="sig-paren">)</span> &#x2192; pandas.core.frame.DataFrame<a class="headerlink" href="#exlib.serializer.extractor.supervised.SupervisedLearningExtractor.json2data" title="永久链接至目标">¶</a></dt>
+<dd><p>基于CSV的Extractor并且排除label影响
+Args:</p>
+<blockquote>
+<div><p>post_json:</p>
+</div></blockquote>
+<p>Returns:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.serializer.extractor.supervised.SupervisedLearningExtractor.one_unit">
+<em class="property">property </em><code class="sig-name descname">one_unit</code><a class="headerlink" href="#exlib.serializer.extractor.supervised.SupervisedLearningExtractor.one_unit" title="永久链接至目标">¶</a></dt>
+<dd><p>Dataframe中提取单条数据,为了给服务端测试使用,监督学习无label,其他的都是完整输入数据</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.serializer.extractor">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-exlib.serializer.extractor" title="永久链接至标题">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ML Manager</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Jeferry.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/exlib.serializer.extractor.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

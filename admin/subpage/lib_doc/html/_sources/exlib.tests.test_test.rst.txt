@@ -1,0 +1,22 @@
+exlib.tests.test\_test package
+==============================
+
+Submodules
+----------
+
+exlib.tests.test\_test.test\_test\_plugin module
+------------------------------------------------
+
+.. automodule:: exlib.tests.test_test.test_test_plugin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.tests.test_test
+   :members:
+   :undoc-members:
+   :show-inheritance:

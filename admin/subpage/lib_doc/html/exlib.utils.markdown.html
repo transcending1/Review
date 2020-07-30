@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exlib.utils.markdown package &#8212; ML Manager 1.0 文档</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="exlib-utils-markdown-package">
+<h1>exlib.utils.markdown package<a class="headerlink" href="#exlib-utils-markdown-package" title="永久链接至标题">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-exlib.utils.markdown.fields">
+<span id="exlib-utils-markdown-fields-module"></span><h2>exlib.utils.markdown.fields module<a class="headerlink" href="#module-exlib.utils.markdown.fields" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.utils.markdown.fields.BaseField">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.utils.markdown.fields.</code><code class="sig-name descname">BaseField</code><a class="headerlink" href="#exlib.utils.markdown.fields.BaseField" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="exlib.utils.markdown.fields.BaseField.to_md">
+<em class="property">abstract </em><code class="sig-name descname">to_md</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#exlib.utils.markdown.fields.BaseField.to_md" title="永久链接至目标">¶</a></dt>
+<dd><p>Field To Markdown Sentence</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.utils.markdown.fields.H1Field">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.utils.markdown.fields.</code><code class="sig-name descname">H1Field</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.H1Field" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.utils.markdown.fields.BaseField" title="exlib.utils.markdown.fields.BaseField"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.utils.markdown.fields.BaseField</span></code></a></p>
+<p># content</p>
+<dl class="py method">
+<dt id="exlib.utils.markdown.fields.H1Field.to_md">
+<code class="sig-name descname">to_md</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.H1Field.to_md" title="永久链接至目标">¶</a></dt>
+<dd><p>Field To Markdown Sentence</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.utils.markdown.fields.H2Field">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.utils.markdown.fields.</code><code class="sig-name descname">H2Field</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.H2Field" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.utils.markdown.fields.BaseField" title="exlib.utils.markdown.fields.BaseField"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.utils.markdown.fields.BaseField</span></code></a></p>
+<p>## content</p>
+<dl class="py method">
+<dt id="exlib.utils.markdown.fields.H2Field.to_md">
+<code class="sig-name descname">to_md</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.H2Field.to_md" title="永久链接至目标">¶</a></dt>
+<dd><p>Field To Markdown Sentence</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.utils.markdown.fields.H3Field">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.utils.markdown.fields.</code><code class="sig-name descname">H3Field</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.H3Field" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.utils.markdown.fields.BaseField" title="exlib.utils.markdown.fields.BaseField"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.utils.markdown.fields.BaseField</span></code></a></p>
+<p>### content</p>
+<dl class="py method">
+<dt id="exlib.utils.markdown.fields.H3Field.to_md">
+<code class="sig-name descname">to_md</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.H3Field.to_md" title="永久链接至目标">¶</a></dt>
+<dd><p>Field To Markdown Sentence</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.utils.markdown.fields.TableField">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.utils.markdown.fields.</code><code class="sig-name descname">TableField</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">List<span class="p">[</span>dict<span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.TableField" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.utils.markdown.fields.BaseField" title="exlib.utils.markdown.fields.BaseField"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.utils.markdown.fields.BaseField</span></code></a></p>
+<p>[{‘name’:’xxx’,’sex’:’male’},{‘name’:’111’,’sex’:’female’}] ==&gt; Table Format in Markdown</p>
+<dl class="py method">
+<dt id="exlib.utils.markdown.fields.TableField.to_md">
+<code class="sig-name descname">to_md</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.TableField.to_md" title="永久链接至目标">¶</a></dt>
+<dd><p>Field To Markdown Sentence</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.utils.markdown.fields.TableInfoField">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.utils.markdown.fields.</code><code class="sig-name descname">TableInfoField</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">info</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.TableInfoField" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.utils.markdown.fields.TableField" title="exlib.utils.markdown.fields.TableField"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.utils.markdown.fields.TableField</span></code></a></p>
+<p>[{‘name’:’xxx’,’sex’:’male’},{‘name’:’111’,’sex’:’female’}] and detailed info of table</p>
+<dl class="py method">
+<dt id="exlib.utils.markdown.fields.TableInfoField.to_md">
+<code class="sig-name descname">to_md</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.TableInfoField.to_md" title="永久链接至目标">¶</a></dt>
+<dd><p>Field To Markdown Sentence</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.utils.markdown.fields.TextField">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.utils.markdown.fields.</code><code class="sig-name descname">TextField</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.TextField" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.utils.markdown.fields.BaseField" title="exlib.utils.markdown.fields.BaseField"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.utils.markdown.fields.BaseField</span></code></a></p>
+<p>content</p>
+<dl class="py method">
+<dt id="exlib.utils.markdown.fields.TextField.to_md">
+<code class="sig-name descname">to_md</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.TextField.to_md" title="永久链接至目标">¶</a></dt>
+<dd><p>Field To Markdown Sentence</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.utils.markdown.fields.UnorderedListField">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.utils.markdown.fields.</code><code class="sig-name descname">UnorderedListField</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.UnorderedListField" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.utils.markdown.fields.BaseField" title="exlib.utils.markdown.fields.BaseField"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.utils.markdown.fields.BaseField</span></code></a></p>
+<ul class="simple">
+<li><p>content</p></li>
+</ul>
+<dl class="py method">
+<dt id="exlib.utils.markdown.fields.UnorderedListField.to_md">
+<code class="sig-name descname">to_md</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.fields.UnorderedListField.to_md" title="永久链接至目标">¶</a></dt>
+<dd><p>Field To Markdown Sentence</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.utils.markdown.manager">
+<span id="exlib-utils-markdown-manager-module"></span><h2>exlib.utils.markdown.manager module<a class="headerlink" href="#module-exlib.utils.markdown.manager" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.utils.markdown.manager.MarkDownManager">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.utils.markdown.manager.</code><code class="sig-name descname">MarkDownManager</code><a class="headerlink" href="#exlib.utils.markdown.manager.MarkDownManager" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="exlib.utils.markdown.manager.MarkDownManager.add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">field</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.manager.MarkDownManager.add" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="exlib.utils.markdown.manager.MarkDownManager.save_markdown_sentence">
+<em class="property">static </em><code class="sig-name descname">save_markdown_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">markdown_sentence</span></em>, <em class="sig-param"><span class="n">output</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.manager.MarkDownManager.save_markdown_sentence" title="永久链接至目标">¶</a></dt>
+<dd><p>保存markdown语句到对应的md文件
+Args:</p>
+<blockquote>
+<div><p>markdown_sentence: markdown语句
+output:输出文件路径</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.utils.markdown.manager.MarkDownManager.to_md">
+<code class="sig-name descname">to_md</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.utils.markdown.manager.MarkDownManager.to_md" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.utils.markdown">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-exlib.utils.markdown" title="永久链接至标题">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ML Manager</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Jeferry.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/exlib.utils.markdown.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

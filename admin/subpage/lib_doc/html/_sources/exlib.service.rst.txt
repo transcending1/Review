@@ -1,0 +1,22 @@
+exlib.service package
+=====================
+
+Submodules
+----------
+
+exlib.service.cli module
+------------------------
+
+.. automodule:: exlib.service.cli
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.service
+   :members:
+   :undoc-members:
+   :show-inheritance:

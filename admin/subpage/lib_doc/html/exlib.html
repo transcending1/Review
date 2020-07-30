@@ -1,0 +1,842 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exlib package &#8212; ML Manager 1.0 文档</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="exlib-package">
+<h1>exlib package<a class="headerlink" href="#exlib-package" title="永久链接至标题">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="永久链接至标题">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="exlib.apis.html">exlib.apis package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exlib.apis.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.apis.html#module-exlib.apis.address">exlib.apis.address module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.apis.html#module-exlib.apis.datasets">exlib.apis.datasets module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.apis.html#module-exlib.apis.jobs">exlib.apis.jobs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.apis.html#module-exlib.apis.modules">exlib.apis.modules module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.apis.html#module-exlib.apis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exlib.exceptions.html">exlib.exceptions package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exlib.exceptions.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.exceptions.html#module-exlib.exceptions.base">exlib.exceptions.base module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.exceptions.html#module-exlib.exceptions.http">exlib.exceptions.http module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.exceptions.html#module-exlib.exceptions">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exlib.manager.html">exlib.manager package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exlib.manager.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.manager.html#module-exlib.manager.manager">exlib.manager.manager module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.manager.html#module-exlib.manager.python_func_manager">exlib.manager.python_func_manager module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.manager.html#module-exlib.manager.sklearn_manager">exlib.manager.sklearn_manager module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.manager.html#module-exlib.manager">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exlib.serializer.html">exlib.serializer package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exlib.serializer.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="exlib.serializer.extractor.html">exlib.serializer.extractor package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.extractor.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.extractor.html#module-exlib.serializer.extractor.csv">exlib.serializer.extractor.csv module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.extractor.html#module-exlib.serializer.extractor.supervised">exlib.serializer.extractor.supervised module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.extractor.html#module-exlib.serializer.extractor">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.serializer.plugin.html">exlib.serializer.plugin package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.plugin.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.plugin.html#module-exlib.serializer.plugin.choice">exlib.serializer.plugin.choice module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.plugin.html#module-exlib.serializer.plugin.selector">exlib.serializer.plugin.selector module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.plugin.html#module-exlib.serializer.plugin.test">exlib.serializer.plugin.test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.serializer.plugin.html#module-exlib.serializer.plugin">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.serializer.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.serializer.html#module-exlib.serializer.external_serializer">exlib.serializer.external_serializer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.serializer.html#module-exlib.serializer.parser">exlib.serializer.parser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.serializer.html#module-exlib.serializer">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exlib.service.html">exlib.service package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exlib.service.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.service.html#module-exlib.service.cli">exlib.service.cli module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.service.html#module-exlib.service">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exlib.tests.html">exlib.tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exlib.tests.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="exlib.tests.test_add_argument.html">exlib.tests.test_add_argument package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_add_argument.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_add_argument.html#module-exlib.tests.test_add_argument.test_basic_fields">exlib.tests.test_add_argument.test_basic_fields module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_add_argument.html#module-exlib.tests.test_add_argument.test_choice_field">exlib.tests.test_add_argument.test_choice_field module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_add_argument.html#module-exlib.tests.test_add_argument.test_column_selector">exlib.tests.test_add_argument.test_column_selector module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_add_argument.html#module-exlib.tests.test_add_argument.test_required_field">exlib.tests.test_add_argument.test_required_field module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_add_argument.html#module-exlib.tests.test_add_argument">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.tests.test_apis.html">exlib.tests.test_apis package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_apis.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_apis.html#module-exlib.tests.test_apis.test_upload">exlib.tests.test_apis.test_upload module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_apis.html#module-exlib.tests.test_apis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.tests.test_argument_parser.html">exlib.tests.test_argument_parser package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_argument_parser.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_argument_parser.html#module-exlib.tests.test_argument_parser.test_argument_parser">exlib.tests.test_argument_parser.test_argument_parser module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_argument_parser.html#module-exlib.tests.test_argument_parser.test_wrong_params">exlib.tests.test_argument_parser.test_wrong_params module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_argument_parser.html#module-exlib.tests.test_argument_parser">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.tests.test_mlflow_mixin.html">exlib.tests.test_mlflow_mixin package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_mlflow_mixin.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_mlflow_mixin.html#module-exlib.tests.test_mlflow_mixin.test_pipeline">exlib.tests.test_mlflow_mixin.test_pipeline module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_mlflow_mixin.html#module-exlib.tests.test_mlflow_mixin.test_save_model">exlib.tests.test_mlflow_mixin.test_save_model module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_mlflow_mixin.html#module-exlib.tests.test_mlflow_mixin.test_save_sklearn_model">exlib.tests.test_mlflow_mixin.test_save_sklearn_model module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_mlflow_mixin.html#module-exlib.tests.test_mlflow_mixin">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.tests.test_program_execute.html">exlib.tests.test_program_execute package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_program_execute.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_program_execute.html#module-exlib.tests.test_program_execute.test_doc">exlib.tests.test_program_execute.test_doc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_program_execute.html#module-exlib.tests.test_program_execute.test_manager">exlib.tests.test_program_execute.test_manager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_program_execute.html#module-exlib.tests.test_program_execute.test_pandas_extractor">exlib.tests.test_program_execute.test_pandas_extractor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_program_execute.html#module-exlib.tests.test_program_execute">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exlib.tests.test_test.html">exlib.tests.test_test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_test.html#module-exlib.tests.test_test.test_test_plugin">exlib.tests.test_test.test_test_plugin module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.tests.test_test.html#module-exlib.tests.test_test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.tests.html#module-exlib.tests.utils">exlib.tests.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.tests.html#module-exlib.tests">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exlib.utils.html">exlib.utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exlib.utils.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="exlib.utils.markdown.html">exlib.utils.markdown package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="exlib.utils.markdown.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.utils.markdown.html#module-exlib.utils.markdown.fields">exlib.utils.markdown.fields module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.utils.markdown.html#module-exlib.utils.markdown.manager">exlib.utils.markdown.manager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exlib.utils.markdown.html#module-exlib.utils.markdown">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.utils.html#module-exlib.utils.basic">exlib.utils.basic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exlib.utils.html#module-exlib.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-exlib.cli">
+<span id="exlib-cli-module"></span><h2>exlib.cli module<a class="headerlink" href="#module-exlib.cli" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-exlib.config">
+<span id="exlib-config-module"></span><h2>exlib.config module<a class="headerlink" href="#module-exlib.config" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.config.ConfigAttribute">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.config.</code><code class="sig-name descname">ConfigAttribute</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">defaults</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.config.ConfigAttribute" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>Makes an attribute forward to the config</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.env">
+<span id="exlib-env-module"></span><h2>exlib.env module<a class="headerlink" href="#module-exlib.env" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.env.Env">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.env.</code><code class="sig-name descname">Env</code><a class="headerlink" href="#exlib.env.Env" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="exlib.env.Env.SERVING">
+<code class="sig-name descname">SERVING</code><em class="property"> = 'SERVING'</em><a class="headerlink" href="#exlib.env.Env.SERVING" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.env.Env.TEST">
+<code class="sig-name descname">TEST</code><em class="property"> = 'TEST'</em><a class="headerlink" href="#exlib.env.Env.TEST" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="exlib.env.Env.del_serving_env">
+<em class="property">classmethod </em><code class="sig-name descname">del_serving_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.env.Env.del_serving_env" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="exlib.env.Env.del_test_env">
+<em class="property">classmethod </em><code class="sig-name descname">del_test_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.env.Env.del_test_env" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="exlib.env.Env.has_serving_env">
+<em class="property">classmethod </em><code class="sig-name descname">has_serving_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#exlib.env.Env.has_serving_env" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="exlib.env.Env.has_test_env">
+<em class="property">classmethod </em><code class="sig-name descname">has_test_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#exlib.env.Env.has_test_env" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="exlib.env.Env.set_serving_env">
+<em class="property">classmethod </em><code class="sig-name descname">set_serving_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.env.Env.set_serving_env" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="exlib.env.Env.set_test_env">
+<em class="property">classmethod </em><code class="sig-name descname">set_test_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.env.Env.set_test_env" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.globals">
+<span id="exlib-globals-module"></span><h2>exlib.globals module<a class="headerlink" href="#module-exlib.globals" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.globals.Category">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">Category</code><a class="headerlink" href="#exlib.globals.Category" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.Category.DATA_INPUT_AND_OUTPUT">
+<code class="sig-name descname">DATA_INPUT_AND_OUTPUT</code><em class="property"> = 'Data Input and Output'</em><a class="headerlink" href="#exlib.globals.Category.DATA_INPUT_AND_OUTPUT" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.DATA_INPUT_AND_OUTPUT_SUB">
+<code class="sig-name descname">DATA_INPUT_AND_OUTPUT_SUB</code><a class="headerlink" href="#exlib.globals.Category.DATA_INPUT_AND_OUTPUT_SUB" title="永久链接至目标">¶</a></dt>
+<dd><p><a class="reference internal" href="#exlib.globals.DataInputAndOutputSubCategory" title="exlib.globals.DataInputAndOutputSubCategory"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataInputAndOutputSubCategory</span></code></a> 的别名</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.DATA_TRANSFORMATION">
+<code class="sig-name descname">DATA_TRANSFORMATION</code><em class="property"> = 'Data Transformation'</em><a class="headerlink" href="#exlib.globals.Category.DATA_TRANSFORMATION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.DATA_TRANSFORMATION_SUB">
+<code class="sig-name descname">DATA_TRANSFORMATION_SUB</code><a class="headerlink" href="#exlib.globals.Category.DATA_TRANSFORMATION_SUB" title="永久链接至目标">¶</a></dt>
+<dd><p><a class="reference internal" href="#exlib.globals.DataTransformationSubCategory" title="exlib.globals.DataTransformationSubCategory"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataTransformationSubCategory</span></code></a> 的别名</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.DEEP_LEARNING">
+<code class="sig-name descname">DEEP_LEARNING</code><em class="property"> = 'Deep NN'</em><a class="headerlink" href="#exlib.globals.Category.DEEP_LEARNING" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.DEEP_LEARNING_SUB">
+<code class="sig-name descname">DEEP_LEARNING_SUB</code><a class="headerlink" href="#exlib.globals.Category.DEEP_LEARNING_SUB" title="永久链接至目标">¶</a></dt>
+<dd><p><a class="reference internal" href="#exlib.globals.DeepLearningSubCategory" title="exlib.globals.DeepLearningSubCategory"><code class="xref py py-class docutils literal notranslate"><span class="pre">DeepLearningSubCategory</span></code></a> 的别名</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.DEFAULT">
+<code class="sig-name descname">DEFAULT</code><em class="property"> = 'Default'</em><a class="headerlink" href="#exlib.globals.Category.DEFAULT" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.DEFAULT_SUB">
+<code class="sig-name descname">DEFAULT_SUB</code><em class="property"> = None</em><a class="headerlink" href="#exlib.globals.Category.DEFAULT_SUB" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.EXECUTIVE_FRAMEWORK">
+<code class="sig-name descname">EXECUTIVE_FRAMEWORK</code><em class="property"> = 'Executive Framework'</em><a class="headerlink" href="#exlib.globals.Category.EXECUTIVE_FRAMEWORK" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.EXECUTIVE_FRAMEWORK_SUB">
+<code class="sig-name descname">EXECUTIVE_FRAMEWORK_SUB</code><em class="property"> = None</em><a class="headerlink" href="#exlib.globals.Category.EXECUTIVE_FRAMEWORK_SUB" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.FEATURE_ENGINEERING">
+<code class="sig-name descname">FEATURE_ENGINEERING</code><em class="property"> = 'Feature Engineering'</em><a class="headerlink" href="#exlib.globals.Category.FEATURE_ENGINEERING" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.FEATURE_ENGINEERING_SUB">
+<code class="sig-name descname">FEATURE_ENGINEERING_SUB</code><a class="headerlink" href="#exlib.globals.Category.FEATURE_ENGINEERING_SUB" title="永久链接至目标">¶</a></dt>
+<dd><p><a class="reference internal" href="#exlib.globals.FeatureEngineeringSubCategory" title="exlib.globals.FeatureEngineeringSubCategory"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureEngineeringSubCategory</span></code></a> 的别名</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.MACHINE_LEARNING">
+<code class="sig-name descname">MACHINE_LEARNING</code><em class="property"> = 'Machine Learning'</em><a class="headerlink" href="#exlib.globals.Category.MACHINE_LEARNING" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.MACHINE_LEARNING_SUB">
+<code class="sig-name descname">MACHINE_LEARNING_SUB</code><a class="headerlink" href="#exlib.globals.Category.MACHINE_LEARNING_SUB" title="永久链接至目标">¶</a></dt>
+<dd><p><a class="reference internal" href="#exlib.globals.MachineLearningSubCategory" title="exlib.globals.MachineLearningSubCategory"><code class="xref py py-class docutils literal notranslate"><span class="pre">MachineLearningSubCategory</span></code></a> 的别名</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.SAVED_DATASET">
+<code class="sig-name descname">SAVED_DATASET</code><em class="property"> = 'Saved Datasets'</em><a class="headerlink" href="#exlib.globals.Category.SAVED_DATASET" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.SAVED_DATASET_SUB">
+<code class="sig-name descname">SAVED_DATASET_SUB</code><a class="headerlink" href="#exlib.globals.Category.SAVED_DATASET_SUB" title="永久链接至目标">¶</a></dt>
+<dd><p><a class="reference internal" href="#exlib.globals.SavedDatasetSubCategory" title="exlib.globals.SavedDatasetSubCategory"><code class="xref py py-class docutils literal notranslate"><span class="pre">SavedDatasetSubCategory</span></code></a> 的别名</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.VISUALIZATION">
+<code class="sig-name descname">VISUALIZATION</code><em class="property"> = 'Visualization'</em><a class="headerlink" href="#exlib.globals.Category.VISUALIZATION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Category.VISUALIZATION_SUB">
+<code class="sig-name descname">VISUALIZATION_SUB</code><a class="headerlink" href="#exlib.globals.Category.VISUALIZATION_SUB" title="永久链接至目标">¶</a></dt>
+<dd><p><a class="reference internal" href="#exlib.globals.VisualizationSubCategory" title="exlib.globals.VisualizationSubCategory"><code class="xref py py-class docutils literal notranslate"><span class="pre">VisualizationSubCategory</span></code></a> 的别名</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.ConfigBase">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">ConfigBase</code><a class="headerlink" href="#exlib.globals.ConfigBase" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="exlib.globals.ConfigBase.choices">
+<em class="property">classmethod </em><code class="sig-name descname">choices</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; list<a class="headerlink" href="#exlib.globals.ConfigBase.choices" title="永久链接至目标">¶</a></dt>
+<dd><p>choices of a class
+Returns:</p>
+<blockquote>
+<div><p>All choices user can choose</p>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.Cpu">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">Cpu</code><a class="headerlink" href="#exlib.globals.Cpu" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.Cpu.EIGHT_CORE">
+<code class="sig-name descname">EIGHT_CORE</code><em class="property"> = 8</em><a class="headerlink" href="#exlib.globals.Cpu.EIGHT_CORE" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Cpu.FOUR_CORE">
+<code class="sig-name descname">FOUR_CORE</code><em class="property"> = 4</em><a class="headerlink" href="#exlib.globals.Cpu.FOUR_CORE" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Cpu.HALF_CORE">
+<code class="sig-name descname">HALF_CORE</code><em class="property"> = 0.5</em><a class="headerlink" href="#exlib.globals.Cpu.HALF_CORE" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Cpu.ONE_CORE">
+<code class="sig-name descname">ONE_CORE</code><em class="property"> = 1</em><a class="headerlink" href="#exlib.globals.Cpu.ONE_CORE" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Cpu.TWO_CORE">
+<code class="sig-name descname">TWO_CORE</code><em class="property"> = 2</em><a class="headerlink" href="#exlib.globals.Cpu.TWO_CORE" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.DataInputAndOutputSubCategory">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">DataInputAndOutputSubCategory</code><a class="headerlink" href="#exlib.globals.DataInputAndOutputSubCategory" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.DataInputAndOutputSubCategory.EXPORT">
+<code class="sig-name descname">EXPORT</code><em class="property"> = 'Export'</em><a class="headerlink" href="#exlib.globals.DataInputAndOutputSubCategory.EXPORT" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.DataInputAndOutputSubCategory.IMPORT">
+<code class="sig-name descname">IMPORT</code><em class="property"> = 'Import'</em><a class="headerlink" href="#exlib.globals.DataInputAndOutputSubCategory.IMPORT" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.DataTransformationSubCategory">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">DataTransformationSubCategory</code><a class="headerlink" href="#exlib.globals.DataTransformationSubCategory" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.DataTransformationSubCategory.MANIPULATION">
+<code class="sig-name descname">MANIPULATION</code><em class="property"> = 'Manipulation'</em><a class="headerlink" href="#exlib.globals.DataTransformationSubCategory.MANIPULATION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.DataTransformationSubCategory.SAMPLING_AND_SPLIT">
+<code class="sig-name descname">SAMPLING_AND_SPLIT</code><em class="property"> = 'Sampling And Split'</em><a class="headerlink" href="#exlib.globals.DataTransformationSubCategory.SAMPLING_AND_SPLIT" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.DeepLearningSubCategory">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">DeepLearningSubCategory</code><a class="headerlink" href="#exlib.globals.DeepLearningSubCategory" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.DeepLearningSubCategory.CV">
+<code class="sig-name descname">CV</code><em class="property"> = 'CV'</em><a class="headerlink" href="#exlib.globals.DeepLearningSubCategory.CV" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.DeepLearningSubCategory.NLP">
+<code class="sig-name descname">NLP</code><em class="property"> = 'NLP'</em><a class="headerlink" href="#exlib.globals.DeepLearningSubCategory.NLP" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.FeatureEngineeringSubCategory">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">FeatureEngineeringSubCategory</code><a class="headerlink" href="#exlib.globals.FeatureEngineeringSubCategory" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.FeatureEngineeringSubCategory.FEATURE_CONVERSION">
+<code class="sig-name descname">FEATURE_CONVERSION</code><em class="property"> = 'Feature Conversion'</em><a class="headerlink" href="#exlib.globals.FeatureEngineeringSubCategory.FEATURE_CONVERSION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.FeatureEngineeringSubCategory.FEATURE_SELECTION">
+<code class="sig-name descname">FEATURE_SELECTION</code><em class="property"> = 'Feature Selection'</em><a class="headerlink" href="#exlib.globals.FeatureEngineeringSubCategory.FEATURE_SELECTION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.Gpu">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">Gpu</code><a class="headerlink" href="#exlib.globals.Gpu" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.Gpu.NO_GPU">
+<code class="sig-name descname">NO_GPU</code><em class="property"> = 0</em><a class="headerlink" href="#exlib.globals.Gpu.NO_GPU" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Gpu.ONE_GPU">
+<code class="sig-name descname">ONE_GPU</code><em class="property"> = 1</em><a class="headerlink" href="#exlib.globals.Gpu.ONE_GPU" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.Image">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">Image</code><a class="headerlink" href="#exlib.globals.Image" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="exlib.globals.Image.DEFAULT">
+<code class="sig-name descname">DEFAULT</code><em class="property"> = 'Your Image'</em><a class="headerlink" href="#exlib.globals.Image.DEFAULT" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.InputOutputConfig">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">InputOutputConfig</code><a class="headerlink" href="#exlib.globals.InputOutputConfig" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.InputOutputConfig.DIRECTORY">
+<code class="sig-name descname">DIRECTORY</code><em class="property"> = 'DIRECTORY'</em><a class="headerlink" href="#exlib.globals.InputOutputConfig.DIRECTORY" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.InputOutputConfig.FILE">
+<code class="sig-name descname">FILE</code><em class="property"> = 'FILE'</em><a class="headerlink" href="#exlib.globals.InputOutputConfig.FILE" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.InputOutputConfig.STRING">
+<code class="sig-name descname">STRING</code><em class="property"> = 'STRING'</em><a class="headerlink" href="#exlib.globals.InputOutputConfig.STRING" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.MachineLearningSubCategory">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">MachineLearningSubCategory</code><a class="headerlink" href="#exlib.globals.MachineLearningSubCategory" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.MachineLearningSubCategory.ANOMALY_DETECTION">
+<code class="sig-name descname">ANOMALY_DETECTION</code><em class="property"> = 'Anomaly Detection'</em><a class="headerlink" href="#exlib.globals.MachineLearningSubCategory.ANOMALY_DETECTION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.MachineLearningSubCategory.BINARY_CLASSIFICATION">
+<code class="sig-name descname">BINARY_CLASSIFICATION</code><em class="property"> = 'Binary Classification'</em><a class="headerlink" href="#exlib.globals.MachineLearningSubCategory.BINARY_CLASSIFICATION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.MachineLearningSubCategory.CLUSTERING">
+<code class="sig-name descname">CLUSTERING</code><em class="property"> = 'Clustering'</em><a class="headerlink" href="#exlib.globals.MachineLearningSubCategory.CLUSTERING" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.MachineLearningSubCategory.EVALUATION">
+<code class="sig-name descname">EVALUATION</code><em class="property"> = 'Evaluation'</em><a class="headerlink" href="#exlib.globals.MachineLearningSubCategory.EVALUATION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.MachineLearningSubCategory.MULTI_CLASSIFICATION">
+<code class="sig-name descname">MULTI_CLASSIFICATION</code><em class="property"> = 'Multi Classification'</em><a class="headerlink" href="#exlib.globals.MachineLearningSubCategory.MULTI_CLASSIFICATION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.MachineLearningSubCategory.REGRESSION">
+<code class="sig-name descname">REGRESSION</code><em class="property"> = 'Regression'</em><a class="headerlink" href="#exlib.globals.MachineLearningSubCategory.REGRESSION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.MachineLearningSubCategory.TIMESERIES">
+<code class="sig-name descname">TIMESERIES</code><em class="property"> = 'Time Series'</em><a class="headerlink" href="#exlib.globals.MachineLearningSubCategory.TIMESERIES" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.Memory">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">Memory</code><a class="headerlink" href="#exlib.globals.Memory" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.Memory.MEMORY_1024">
+<code class="sig-name descname">MEMORY_1024</code><em class="property"> = 1024</em><a class="headerlink" href="#exlib.globals.Memory.MEMORY_1024" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Memory.MEMORY_2048">
+<code class="sig-name descname">MEMORY_2048</code><em class="property"> = 2048</em><a class="headerlink" href="#exlib.globals.Memory.MEMORY_2048" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Memory.MEMORY_256">
+<code class="sig-name descname">MEMORY_256</code><em class="property"> = 256</em><a class="headerlink" href="#exlib.globals.Memory.MEMORY_256" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Memory.MEMORY_4096">
+<code class="sig-name descname">MEMORY_4096</code><em class="property"> = 4096</em><a class="headerlink" href="#exlib.globals.Memory.MEMORY_4096" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.Memory.MEMORY_512">
+<code class="sig-name descname">MEMORY_512</code><em class="property"> = 512</em><a class="headerlink" href="#exlib.globals.Memory.MEMORY_512" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.PipeStatus">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">PipeStatus</code><a class="headerlink" href="#exlib.globals.PipeStatus" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.PipeStatus.ALLOW">
+<code class="sig-name descname">ALLOW</code><em class="property"> = 'allow'</em><a class="headerlink" href="#exlib.globals.PipeStatus.ALLOW" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.PipeStatus.DENY">
+<code class="sig-name descname">DENY</code><em class="property"> = 'deny'</em><a class="headerlink" href="#exlib.globals.PipeStatus.DENY" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.PipeStatus.KEEP">
+<code class="sig-name descname">KEEP</code><em class="property"> = 'keep'</em><a class="headerlink" href="#exlib.globals.PipeStatus.KEEP" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.SavedDatasetSubCategory">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">SavedDatasetSubCategory</code><a class="headerlink" href="#exlib.globals.SavedDatasetSubCategory" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.SavedDatasetSubCategory.PUBLIC_DATASET">
+<code class="sig-name descname">PUBLIC_DATASET</code><em class="property"> = 'Public Datasets'</em><a class="headerlink" href="#exlib.globals.SavedDatasetSubCategory.PUBLIC_DATASET" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.SavedDatasetSubCategory.USER_DATASET">
+<code class="sig-name descname">USER_DATASET</code><em class="property"> = 'User Datasets'</em><a class="headerlink" href="#exlib.globals.SavedDatasetSubCategory.USER_DATASET" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.SelectorModel">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">SelectorModel</code><a class="headerlink" href="#exlib.globals.SelectorModel" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.SelectorModel.MULTIPLE">
+<code class="sig-name descname">MULTIPLE</code><em class="property"> = 'MULTIPLE'</em><a class="headerlink" href="#exlib.globals.SelectorModel.MULTIPLE" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.SelectorModel.SINGLE">
+<code class="sig-name descname">SINGLE</code><em class="property"> = 'SINGLE'</em><a class="headerlink" href="#exlib.globals.SelectorModel.SINGLE" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.SelectorModel.UNLIMIT">
+<code class="sig-name descname">UNLIMIT</code><em class="property"> = 'None'</em><a class="headerlink" href="#exlib.globals.SelectorModel.UNLIMIT" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.TestEnv">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">TestEnv</code><a class="headerlink" href="#exlib.globals.TestEnv" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="exlib.globals.TestEnv.EXTERNAL">
+<code class="sig-name descname">EXTERNAL</code><em class="property"> = 'external'</em><a class="headerlink" href="#exlib.globals.TestEnv.EXTERNAL" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.TestEnv.INTERNAL">
+<code class="sig-name descname">INTERNAL</code><em class="property"> = 'internal'</em><a class="headerlink" href="#exlib.globals.TestEnv.INTERNAL" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.TestStatus">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">TestStatus</code><a class="headerlink" href="#exlib.globals.TestStatus" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.TestStatus.NORMAL">
+<code class="sig-name descname">NORMAL</code><em class="property"> = 'normal'</em><a class="headerlink" href="#exlib.globals.TestStatus.NORMAL" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.TestStatus.PASSED">
+<code class="sig-name descname">PASSED</code><em class="property"> = 'passed'</em><a class="headerlink" href="#exlib.globals.TestStatus.PASSED" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.TestStatus.PENDING">
+<code class="sig-name descname">PENDING</code><em class="property"> = 'pending'</em><a class="headerlink" href="#exlib.globals.TestStatus.PENDING" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.Type">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">Type</code><a class="headerlink" href="#exlib.globals.Type" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.Type.DOCKER">
+<code class="sig-name descname">DOCKER</code><em class="property"> = 'DOCKER'</em><a class="headerlink" href="#exlib.globals.Type.DOCKER" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="exlib.globals.VisualizationSubCategory">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">VisualizationSubCategory</code><a class="headerlink" href="#exlib.globals.VisualizationSubCategory" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.globals.ConfigBase" title="exlib.globals.ConfigBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.ConfigBase</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.globals.VisualizationSubCategory.COMBINE">
+<code class="sig-name descname">COMBINE</code><em class="property"> = 'Combine'</em><a class="headerlink" href="#exlib.globals.VisualizationSubCategory.COMBINE" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.VisualizationSubCategory.COMPARE">
+<code class="sig-name descname">COMPARE</code><em class="property"> = 'Compare'</em><a class="headerlink" href="#exlib.globals.VisualizationSubCategory.COMPARE" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.VisualizationSubCategory.DISTRIBUTION">
+<code class="sig-name descname">DISTRIBUTION</code><em class="property"> = 'Distribution'</em><a class="headerlink" href="#exlib.globals.VisualizationSubCategory.DISTRIBUTION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.VisualizationSubCategory.RELATION">
+<code class="sig-name descname">RELATION</code><em class="property"> = 'Relation'</em><a class="headerlink" href="#exlib.globals.VisualizationSubCategory.RELATION" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.VisualizationSubCategory.STATISTICAL_ANALYSIS">
+<code class="sig-name descname">STATISTICAL_ANALYSIS</code><em class="property"> = 'Statistical Analysis'</em><a class="headerlink" href="#exlib.globals.VisualizationSubCategory.STATISTICAL_ANALYSIS" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.globals.value">
+<code class="sig-prename descclassname">exlib.globals.</code><code class="sig-name descname">value</code><a class="headerlink" href="#exlib.globals.value" title="永久链接至目标">¶</a></dt>
+<dd><p><a class="reference internal" href="#exlib.globals.VisualizationSubCategory" title="exlib.globals.VisualizationSubCategory"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.globals.VisualizationSubCategory</span></code></a> 的别名</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.model">
+<span id="exlib-model-module"></span><h2>exlib.model module<a class="headerlink" href="#module-exlib.model" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.model.MLFlowModel">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.model.</code><code class="sig-name descname">MLFlowModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.model.MLFlowModel" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="exlib.model.MLFlowModel.python_model_predict">
+<code class="sig-name descname">python_model_predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.model.MLFlowModel.python_model_predict" title="永久链接至目标">¶</a></dt>
+<dd><p>Raw Predict Function in Python Model</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.model.MLFlowModel.transform">
+<code class="sig-name descname">transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span> &#x2192; dict<a class="headerlink" href="#exlib.model.MLFlowModel.transform" title="永久链接至目标">¶</a></dt>
+<dd><p>Transform Func in Keep Module
+Args:</p>
+<blockquote>
+<div><p>x: Json</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>Json</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.pipeline">
+<span id="exlib-pipeline-module"></span><h2>exlib.pipeline module<a class="headerlink" href="#module-exlib.pipeline" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="exlib.pipeline.PipeLine">
+<em class="property">class </em><code class="sig-prename descclassname">exlib.pipeline.</code><code class="sig-name descname">PipeLine</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.pipeline.PipeLine" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="simple">
+<dt>过程中就是一条管道:优先级加载:</dt><dd><p>1.python 对象的transform方法
+2.python 对象的predict方法
+3.mlflow 对象的predict方法</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="exlib.pipeline.PipeLine.transform">
+<code class="sig-name descname">transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span> &#x2192; dict<a class="headerlink" href="#exlib.pipeline.PipeLine.transform" title="永久链接至目标">¶</a></dt>
+<dd><p>Dynamic Interface For All Modules
+Args:</p>
+<blockquote>
+<div><p>x: Json Format Data Passed From FrontEnd</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>Result of Keep Modules</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="exlib-run-all-cases-module">
+<h2>exlib.run_all_cases module<a class="headerlink" href="#exlib-run-all-cases-module" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-exlib">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-exlib" title="永久链接至标题">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ML Manager</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Jeferry.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/exlib.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

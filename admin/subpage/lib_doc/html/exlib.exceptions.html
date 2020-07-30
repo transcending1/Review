@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exlib.exceptions package &#8212; ML Manager 1.0 文档</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="exlib-exceptions-package">
+<h1>exlib.exceptions package<a class="headerlink" href="#exlib-exceptions-package" title="永久链接至标题">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-exlib.exceptions.base">
+<span id="exlib-exceptions-base-module"></span><h2>exlib.exceptions.base module<a class="headerlink" href="#module-exlib.exceptions.base" title="永久链接至标题">¶</a></h2>
+<dl class="py exception">
+<dt id="exlib.exceptions.base.CapBaseException">
+<em class="property">exception </em><code class="sig-prename descclassname">exlib.exceptions.base.</code><code class="sig-name descname">CapBaseException</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">description</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.exceptions.base.CapBaseException" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Base class for all exceptions.</p>
+<dl class="py attribute">
+<dt id="exlib.exceptions.base.CapBaseException.code">
+<code class="sig-name descname">code</code><em class="property"> = None</em><a class="headerlink" href="#exlib.exceptions.base.CapBaseException.code" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.exceptions.base.CapBaseException.description">
+<code class="sig-name descname">description</code><em class="property"> = None</em><a class="headerlink" href="#exlib.exceptions.base.CapBaseException.description" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="exlib.exceptions.base.HttpBaseException">
+<em class="property">exception </em><code class="sig-prename descclassname">exlib.exceptions.base.</code><code class="sig-name descname">HttpBaseException</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">description</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.exceptions.base.HttpBaseException" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.exceptions.base.CapBaseException" title="exlib.exceptions.base.CapBaseException"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.exceptions.base.CapBaseException</span></code></a></p>
+<dl class="py attribute">
+<dt id="exlib.exceptions.base.HttpBaseException.code">
+<code class="sig-name descname">code</code><em class="property"> = None</em><a class="headerlink" href="#exlib.exceptions.base.HttpBaseException.code" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.exceptions.base.HttpBaseException.description">
+<code class="sig-name descname">description</code><em class="property"> = None</em><a class="headerlink" href="#exlib.exceptions.base.HttpBaseException.description" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="exlib.exceptions.base.HttpBaseException.get_response">
+<code class="sig-name descname">get_response</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#exlib.exceptions.base.HttpBaseException.get_response" title="永久链接至目标">¶</a></dt>
+<dd><p>Http Error
+Returns:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="exlib.exceptions.base.HttpBaseException.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#exlib.exceptions.base.HttpBaseException.name" title="永久链接至目标">¶</a></dt>
+<dd><p>The status name.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.exceptions.http">
+<span id="exlib-exceptions-http-module"></span><h2>exlib.exceptions.http module<a class="headerlink" href="#module-exlib.exceptions.http" title="永久链接至标题">¶</a></h2>
+<dl class="py exception">
+<dt id="exlib.exceptions.http.BadRequest">
+<em class="property">exception </em><code class="sig-prename descclassname">exlib.exceptions.http.</code><code class="sig-name descname">BadRequest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">description</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.exceptions.http.BadRequest" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.exceptions.base.HttpBaseException" title="exlib.exceptions.base.HttpBaseException"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.exceptions.base.HttpBaseException</span></code></a></p>
+<p><em>400</em> <cite>Bad Request</cite></p>
+<p>Raise if the browser sends something to the application the application
+or server cannot handle.</p>
+<dl class="py attribute">
+<dt id="exlib.exceptions.http.BadRequest.code">
+<code class="sig-name descname">code</code><em class="property"> = 400</em><a class="headerlink" href="#exlib.exceptions.http.BadRequest.code" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.exceptions.http.BadRequest.description">
+<code class="sig-name descname">description</code><em class="property"> = 'The browser (or proxy) sent a request that this server could not understand.'</em><a class="headerlink" href="#exlib.exceptions.http.BadRequest.description" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="exlib.exceptions.http.InternalServerError">
+<em class="property">exception </em><code class="sig-prename descclassname">exlib.exceptions.http.</code><code class="sig-name descname">InternalServerError</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">description</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#exlib.exceptions.http.InternalServerError" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#exlib.exceptions.base.HttpBaseException" title="exlib.exceptions.base.HttpBaseException"><code class="xref py py-class docutils literal notranslate"><span class="pre">exlib.exceptions.base.HttpBaseException</span></code></a></p>
+<p><em>500</em> <cite>Internal Server Error</cite></p>
+<p>Raise if an internal server error occurred.  This is a good fallback if an
+unknown error occurred in the dispatcher.</p>
+<dl class="py attribute">
+<dt id="exlib.exceptions.http.InternalServerError.code">
+<code class="sig-name descname">code</code><em class="property"> = 500</em><a class="headerlink" href="#exlib.exceptions.http.InternalServerError.code" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="exlib.exceptions.http.InternalServerError.description">
+<code class="sig-name descname">description</code><em class="property"> = 'The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.'</em><a class="headerlink" href="#exlib.exceptions.http.InternalServerError.description" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-exlib.exceptions">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-exlib.exceptions" title="永久链接至标题">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ML Manager</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Jeferry.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/exlib.exceptions.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

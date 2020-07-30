@@ -1,0 +1,38 @@
+exlib.tests.test\_program\_execute package
+==========================================
+
+Submodules
+----------
+
+exlib.tests.test\_program\_execute.test\_doc module
+---------------------------------------------------
+
+.. automodule:: exlib.tests.test_program_execute.test_doc
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.tests.test\_program\_execute.test\_manager module
+-------------------------------------------------------
+
+.. automodule:: exlib.tests.test_program_execute.test_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.tests.test\_program\_execute.test\_pandas\_extractor module
+-----------------------------------------------------------------
+
+.. automodule:: exlib.tests.test_program_execute.test_pandas_extractor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.tests.test_program_execute
+   :members:
+   :undoc-members:
+   :show-inheritance:

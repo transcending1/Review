@@ -1,0 +1,46 @@
+exlib.tests.test\_add\_argument package
+=======================================
+
+Submodules
+----------
+
+exlib.tests.test\_add\_argument.test\_basic\_fields module
+----------------------------------------------------------
+
+.. automodule:: exlib.tests.test_add_argument.test_basic_fields
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.tests.test\_add\_argument.test\_choice\_field module
+----------------------------------------------------------
+
+.. automodule:: exlib.tests.test_add_argument.test_choice_field
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.tests.test\_add\_argument.test\_column\_selector module
+-------------------------------------------------------------
+
+.. automodule:: exlib.tests.test_add_argument.test_column_selector
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+exlib.tests.test\_add\_argument.test\_required\_field module
+------------------------------------------------------------
+
+.. automodule:: exlib.tests.test_add_argument.test_required_field
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: exlib.tests.test_add_argument
+   :members:
+   :undoc-members:
+   :show-inheritance:

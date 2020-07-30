@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modules Document</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Ionicons -->
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/AdminLTE.css">
+    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect. -->
+    <link rel="stylesheet" href="css/skin-blue.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-table.css">
+
+    <!-- jQuery 3 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/adminlte.js"></script>
+    <style type="text/css">
+        html, body {
+            margin: 0 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .sidebar-menu-cst {
+            height: 77vh;
+            overflow-y: auto !important;
+        }
+        .sidebar-menu-cst::-webkit-scrollbar {
+        width: 0px;
+        /*height: 1px;*/
+        }
+    </style>
+
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="img/image.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>Modules</p>
+                <!-- Status -->
+                <a href="#"><i class="fa fa-circle text-success"></i> Detective</a>
+            </div>
+        </div>
+
+        <!-- search form (Optional) -->
+        <form action="#" method="get" class="sidebar-form" style="overflow: unset" autocomplete="off">
+            <div class="input-group">
+                <input id="search" type="text" name="q" class="form-control" placeholder="Search...">
+                  <ul class="dropdown-menu">
+                    <li id="zjy"><a href="#">Action</a></li>
+                  </ul>
+            </div>
+        </form>
+        <!-- /.search form -->
+
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu tree sidebar-menu-cst" data-widget="tree">
+            <li class="header"><span class="fa-lg">Module Category</span></li>
+            <!-- Optionally, you can add icons to the links -->
+            {% for category,sub_category_obj in category_info.items() %}
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-link"></i> <span>{{ category }}</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                             </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="javascript:void(0)" class="FirstMenu">OverView</a></li>
+                    {% for sub_category,module_list in sub_category_obj.items() %}
+                            <li class="treeview">
+                                <a href="#"><i class="fa fa-link"></i> <span>{{ sub_category }}</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                 </span>
+                                </a>
+
+                                <ul class="treeview-menu">
+                                    {% for module in module_list %}
+                                    <li class=""><a href="javascript:void(0)" class="myLeftMenu">{{ module }}</a></li>
+                                    {% endfor %}
+                                 </ul>
+                                </li>
+                    {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
+
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+<div class="content-wrapper">
+    <iframe src="module_doc/preview/Bi-Class%20AdaBoost.html" allowfullscreen style="height: 100vh"
+            id="iframe"></iframe>
+</div>
+<!-- /.content-wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+<script>
+    //点击按钮切换文档
+    $('.myLeftMenu').click(function (e) {
+        var content = $(this).text();
+        $("#iframe").attr("src", "module_doc/preview/" + content + ".html");
+        var a = $("body").height();
+        $("#iframe").css("height", a);
+    });
+
+    $(".FirstMenu").click(function () {
+        var name = $(this).parent().parent().parent().children(":first").text().trim();
+        $("#iframe").attr("src", "module_doc/preview/" + name + ".html");
+    });
+
+    //正则模糊查询
+    function fuzzyQuery(list, keyWord) {
+        if(!keyWord){
+            return []
+        }
+        var reg = new RegExp(keyWord);
+        var arr = [];
+        for (var i = 0; i < list.length; i++) {
+            if (reg.test(list[i])) {
+                arr.push(list[i]);
+            }
+        }
+        return arr.slice(0,15);
+    }
+
+</script>
+<script>
+    $("#search").bind('input propertychange', function () {
+        var content=$(this).val();
+        var all_kinds = {{ all_categories }};
+        var value = fuzzyQuery(all_kinds,content);
+        console.log(value);
+        var inner_content = '';
+        for (i=0;i<value.length ;i++){
+            inner_content+='<li class="mybutton"><a href="#">'+value[i]+ '</a></li>'
+        }
+
+        $(".dropdown-menu")[0].innerHTML = inner_content;
+
+        if(!inner_content){
+            $('.dropdown-menu').fadeOut(0);
+            return
+        }
+        $('.dropdown-menu').fadeIn(150);
+        $(".dropdown-menu li").each(function(){
+            // console.debug("menu item => ", $(this));
+            $(this).click(function () {
+                console.log($(this).text());
+                $("#iframe").attr("src", "module_doc/preview/" + $(this).text() + ".html")
+            })
+        })
+    });
+    $('#search').blur(function () {
+        $('.dropdown-menu').fadeOut(150)
+    });
+    $('#dropdown-menu li').on('click', function () {
+        alert(1)
+    })
+</script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</body>
+</html>
