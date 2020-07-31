@@ -66,11 +66,9 @@
         <div id='readme' style='width:70%;margin-left:20%;'>
           	<article class='markdown-body'>
             	<h1 id="bi-class-logistic-regression">Bi-Class Logistic Regression</h1>
-<ul>
-<li><p>Description</p>
-<p>Logistic Regression (aka logit, MaxEnt) classif ier. In the multiclass case, the training algor ithm uses the one-vs-rest (OvR) scheme if the &#39; multi_class&#39; option is set to &#39;ovr&#39;, and uses the cross-entropy loss if the &#39;multi_class&#39; option is set to &#39;multinomial&#39;. (Currently the &#39;multin omial&#39; option is supported only by the &#39;lbfgs&#39;, &#39;sag&#39;, &#39;saga&#39; and &#39;newton-cg&#39; solvers.) This c lass implements regularized logistic regression us ing the &#39;liblinear&#39; library, &#39;newton-cg&#39;, &#39;sag&#39; , &#39;saga&#39; and &#39;lbfgs&#39; solvers. <strong>Note that regul arization is applied by default</strong>. It can handle b oth dense and sparse input. Use C-ordered array s or CSR matrices containing 64-bit floats for optimal performance; any other input format will b e converted (and copied). The &#39;newton-cg&#39;, &#39; sag&#39;, and &#39;lbfgs&#39; solvers support only L2 regulari zation with primal formulation, or no regulariz ation. The &#39;liblinear&#39; solver supports both L1 and L2 regularization, with a dual formulation onl y for the L2 penalty. The Elastic-Net regulariz ation is only supported by the &#39;saga&#39; solver. </p>
-</li>
-</ul>
+<h2 id="detailed-info">Detailed Info</h2>
+<h3 id="description">Description</h3>
+<p>&quot;    Logistic Regression (aka logit, MaxEnt) classif\n             ier.    In the multiclass case, the training algor\n             ithm uses the one-vs-rest (OvR)    scheme if the &#39;\n             multi_class&#39; option is set to &#39;ovr&#39;, and uses the \n                cross-entropy loss if the &#39;multi_class&#39; option \n             is set to &#39;multinomial&#39;.    (Currently the &#39;multin\n             omial&#39; option is supported only by the &#39;lbfgs&#39;,   \n              &#39;sag&#39;, &#39;saga&#39; and &#39;newton-cg&#39; solvers.)    This c\n             lass implements regularized logistic regression us\n             ing the    &#39;liblinear&#39; library, &#39;newton-cg&#39;, &#39;sag&#39;\n             , &#39;saga&#39; and &#39;lbfgs&#39; solvers. <strong>Note    that regul\n             arization is applied by default</strong>. It can handle b\n             oth dense    and sparse input. Use C-ordered array\n             s or CSR matrices containing 64-bit    floats for \n             optimal performance; any other input format will b\n             e converted    (and copied).    The &#39;newton-cg&#39;, &#39;\n             sag&#39;, and &#39;lbfgs&#39; solvers support only L2 regulari\n             zation    with primal formulation, or no regulariz\n             ation. The &#39;liblinear&#39; solver    supports both L1 \n             and L2 regularization, with a dual formulation onl\n             y for    the L2 penalty. The Elastic-Net regulariz\n             ation is only supported by the    &#39;saga&#39; solver.  \n             &quot;</p>
 <table>
 <thead>
 <tr>
@@ -95,7 +93,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="parameter-detail">Parameter Detail</h1>
+<h3 id="parameter-detail">Parameter Detail</h3>
 <table>
 <thead>
 <tr>
@@ -201,10 +199,7 @@
 <h1 id="detailed-info-of-parameters">Detailed Info of Parameters</h1>
 <h2 id="input-parameters">Input Parameters</h2>
 <h3 id="1-label">1.label</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>target feature</p>
+<p>&#39;target feature&#39;</p>
 <table>
 <thead>
 <tr>
@@ -226,10 +221,7 @@
 </tbody>
 </table>
 <h3 id="2-input_file1">2.input_file1</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>input csv file for trainer</p>
+<p>&#39;input csv file for trainer&#39;</p>
 <table>
 <thead>
 <tr>
@@ -251,10 +243,7 @@
 </tbody>
 </table>
 <h3 id="3-penalty">3.penalty</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Used to specify the norm used in the penalization. The &#39;newton-cg&#39;, &#39;sag&#39; and &#39;lbfgs&#39; solvers support only l2 penalties. &#39;elasticnet&#39; is only supported by the &#39;saga&#39; solver. If &#39;none&#39; (no t supported by the liblinear solver), no re gularization is applied.</p>
+<p>&quot;Used to specify the norm used in the penalization. \n             The &#39;newton-cg&#39;,        &#39;sag&#39; and &#39;lbfgs&#39; solvers \n             support only l2 penalties. &#39;elasticnet&#39; is        \n             only supported by the &#39;saga&#39; solver. If &#39;none&#39; (no\n             t supported by the        liblinear solver), no re\n             gularization is applied.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -304,10 +293,7 @@
 </tbody>
 </table>
 <h3 id="4-tol">4.tol</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Tolerance for stopping criteria.</p>
+<p>&#39;Tolerance for stopping criteria.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -329,10 +315,7 @@
 </tbody>
 </table>
 <h3 id="5-c">5.C</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Inverse of regularization strength; must be a posit ive float. Like in support vector machines, smaller values specify stronger regulariza tion.</p>
+<p>&#39;Inverse of regularization strength; must be a posit\n             ive float.        Like in support vector machines,\n              smaller values specify stronger        regulariza\n             tion.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -354,10 +337,7 @@
 </tbody>
 </table>
 <h3 id="6-fit_intercept">6.fit_intercept</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Specifies if a constant (a.k.a. bias or intercept) should be added to the decision function.</p>
+<p>&#39;Specifies if a constant (a.k.a. bias or intercept) \n             should be        added to the decision function.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -379,10 +359,7 @@
 </tbody>
 </table>
 <h3 id="7-max_iter">7.max_iter</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Maximum number of iterations taken for the solvers to converge.</p>
+<p>&#39;Maximum number of iterations taken for the solvers \n             to converge.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -404,10 +381,7 @@
 </tbody>
 </table>
 <h3 id="8-multi_class">8.multi_class</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>If the option chosen is &#39;ovr&#39;, then a binary proble m is fit for each label. For &#39;multinomial&#39; the loss minimised is the multinomial loss fit across the entire probability distribution, <em>e ven when the data is binary</em>. &#39;multinomial&#39; is unavailable when solver=&#39;liblinear&#39;. &#39;a uto&#39; selects &#39;ovr&#39; if the data is binary, or if so lver=&#39;liblinear&#39;, and otherwise selects &#39;mu ltinomial&#39;.</p>
+<p>&quot;If the option chosen is &#39;ovr&#39;, then a binary proble\n             m is fit for each        label. For &#39;multinomial&#39; \n             the loss minimised is the multinomial loss fit    \n                 across the entire probability distribution, <em>e\n             ven when the data is        binary</em>. &#39;multinomial&#39;\n              is unavailable when solver=&#39;liblinear&#39;.        &#39;a\n             uto&#39; selects &#39;ovr&#39; if the data is binary, or if so\n             lver=&#39;liblinear&#39;,        and otherwise selects &#39;mu\n             ltinomial&#39;.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -429,10 +403,7 @@
 </tbody>
 </table>
 <h3 id="9-l1_ratio">9.l1_ratio</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The Elastic-Net mixing parameter, with <code>0 &lt;= l1_ra tio &lt;= 1</code>. Only used if <code>penalty=&#39;elastic net&#39;`. Setting</code>l1_ratio=0<code>is equivalent to using</code>penalty=&#39;l2&#39;<code>, while setting</code>l1_rat io=1<code>is equivalent to using</code>penalty=&#39;l1 &#39;<code>. For</code>0 &lt; l1_ratio &lt;1<code></code>, the penalty is a combination of L1 and L2. Attributes</p>
+<p>&quot;The Elastic-Net mixing parameter, with <code>0 &lt;= l1_ra\n             tio &lt;= 1</code>. Only        used if <code>penalty=&#39;elastic\n             net&#39;`. Setting</code>l1_ratio=0<code>is equivalent       \n              to using</code>penalty=&#39;l2&#39;<code>, while setting</code>l1_rat\n             io=1<code>is equivalent        to using</code>penalty=&#39;l1\n             &#39;<code>. For</code>0 &lt; l1_ratio &lt;1<code></code>, the penalty is a    \n                 combination of L1 and L2.    Attributes&quot;</p>
 <table>
 <thead>
 <tr>
@@ -455,10 +426,7 @@
 </table>
 <h2 id="output-parameters">Output Parameters</h2>
 <h3 id="1-output_model_file">1.output_model_file</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>output module</p>
+<p>&#39;output module&#39;</p>
 <table>
 <thead>
 <tr>
@@ -480,10 +448,7 @@
 </tbody>
 </table>
 <h3 id="2-output_model">2.output_model</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>output module</p>
+<p>&#39;output module&#39;</p>
 <table>
 <thead>
 <tr>

@@ -66,10 +66,9 @@
         <div id='readme' style='width:70%;margin-left:20%;'>
           	<article class='markdown-body'>
             	<h1 id="sgd-regression">SGD Regression</h1>
-<ul>
-<li>Description</li>
-</ul>
-<p>Linear model fitted by minimizing a regularized emp irical loss with SGD SGD stands for Stochastic Gradient Descent: the gradient of the loss is e stimated each sample at a time and the model is up dated along the way with a decreasing strength schedule (aka learning rate). The regularizer i s a penalty added to the loss function that shrink s model parameters towards the zero vector usin g either the squared euclidean norm L2 or the a bsolute norm L1 or a combination of both (Elastic Net). If the parameter update crosses the 0.0 v alue because of the regularizer, the update is truncated to 0.0 to allow for learning sparse mode ls and achieve online feature selection. Thi s implementation works with data represented as de nse numpy arrays of floating point values for t he features.</p>
+<h2 id="detailed-info">Detailed Info</h2>
+<h3 id="description">Description</h3>
+<p>&#39;Linear model fitted by minimizing a regularized emp\n             irical loss with SGD    SGD stands for Stochastic \n             Gradient Descent: the gradient of the loss is    e\n             stimated each sample at a time and the model is up\n             dated along the way with    a decreasing strength \n             schedule (aka learning rate).    The regularizer i\n             s a penalty added to the loss function that shrink\n             s model    parameters towards the zero vector usin\n             g either the squared euclidean norm    L2 or the a\n             bsolute norm L1 or a combination of both (Elastic \n             Net). If the    parameter update crosses the 0.0 v\n             alue because of the regularizer, the    update is \n             truncated to 0.0 to allow for learning sparse mode\n             ls and achieve    online feature selection.    Thi\n             s implementation works with data represented as de\n             nse numpy arrays of    floating point values for t\n             he features.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -94,7 +93,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="parameter-detail">Parameter Detail</h1>
+<h3 id="parameter-detail">Parameter Detail</h3>
 <table>
 <thead>
 <tr>
@@ -216,10 +215,7 @@
 <h1 id="detailed-info-of-parameters">Detailed Info of Parameters</h1>
 <h2 id="input-parameters">Input Parameters</h2>
 <h3 id="1-label">1.label</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>target feature</p>
+<p>&#39;target feature&#39;</p>
 <table>
 <thead>
 <tr>
@@ -241,10 +237,7 @@
 </tbody>
 </table>
 <h3 id="2-input_file1">2.input_file1</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>input csv file for trainer</p>
+<p>&#39;input csv file for trainer&#39;</p>
 <table>
 <thead>
 <tr>
@@ -266,10 +259,7 @@
 </tbody>
 </table>
 <h3 id="3-loss">3.loss</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The loss function to be used. The possible values a re &#39;squared_loss&#39;, &#39;huber&#39;, &#39;epsilon_insens itive&#39;, or &#39;squared_epsilon_insensitive&#39; Th e &#39;squared_loss&#39; refers to the ordinary least squa res fit. &#39;huber&#39; modifies &#39;squared_loss&#39; to focus less on getting outliers correct by switching from squared to linear loss past a dista nce of epsilon. &#39;epsilon_insensitive&#39; ignor es errors less than epsilon and is linear p ast that; this is the loss function used in SVR. &#39;squared_epsilon_insensitive&#39; is the same bu t becomes squared loss past a tolerance of epsilon.</p>
+<p>&quot;The loss function to be used. The possible values a\n             re &#39;squared_loss&#39;,        &#39;huber&#39;, &#39;epsilon_insens\n             itive&#39;, or &#39;squared_epsilon_insensitive&#39;        Th\n             e &#39;squared_loss&#39; refers to the ordinary least squa\n             res fit.        &#39;huber&#39; modifies &#39;squared_loss&#39; to\n              focus less on getting outliers        correct by \n             switching from squared to linear loss past a dista\n             nce of        epsilon. &#39;epsilon_insensitive&#39; ignor\n             es errors less than epsilon and is        linear p\n             ast that; this is the loss function used in SVR.  \n                   &#39;squared_epsilon_insensitive&#39; is the same bu\n             t becomes squared loss past        a tolerance of \n             epsilon.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -319,10 +309,7 @@
 </tbody>
 </table>
 <h3 id="4-penalty">4.penalty</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The penalty (aka regularization term) to be used. D efaults to &#39;l2&#39; which is the standard regul arizer for linear SVM models. &#39;l1&#39; and &#39;ela sticnet&#39; might bring sparsity to the model (featur e selection) not achievable with &#39;l2&#39;.</p>
+<p>&quot;The penalty (aka regularization term) to be used. D\n             efaults to &#39;l2&#39;        which is the standard regul\n             arizer for linear SVM models. &#39;l1&#39; and        &#39;ela\n             sticnet&#39; might bring sparsity to the model (featur\n             e selection)        not achievable with &#39;l2&#39;.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -368,10 +355,7 @@
 </tbody>
 </table>
 <h3 id="5-alpha">5.alpha</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Constant that multiplies the regularization term. Also used to compute learning_rate when set to &#39;optimal&#39;.</p>
+<p>&quot;Constant that multiplies the regularization term.  \n                   Also used to compute learning_rate when set \n             to &#39;optimal&#39;.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -393,10 +377,7 @@
 </tbody>
 </table>
 <h3 id="6-l1_ratio">6.l1_ratio</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The Elastic Net mixing parameter, with 0 &lt;= l1_rati o &lt;= 1. l1_ratio=0 corresponds to L2 penalt y, l1_ratio=1 to L1.</p>
+<p>&#39;The Elastic Net mixing parameter, with 0 &lt;= l1_rati\n             o &lt;= 1.        l1_ratio=0 corresponds to L2 penalt\n             y, l1_ratio=1 to L1.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -418,10 +399,7 @@
 </tbody>
 </table>
 <h3 id="7-max_iter">7.max_iter</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The maximum number of passes over the training data (aka epochs). It only impacts the behavior in the <code>fit</code> method, and not the :meth:<code>partial_fit</code> method. .. versionadded:: 0.19 </p>
+<p>&#39;The maximum number of passes over the training data\n              (aka epochs).        It only impacts the behavior\n              in the <code>fit</code> method, and not the        :meth:<code>\n             partial_fit</code> method.        .. versionadded:: 0.19\n             &#39;</p>
 <table>
 <thead>
 <tr>
@@ -443,10 +421,7 @@
 </tbody>
 </table>
 <h3 id="8-tol">8.tol</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The stopping criterion. If it is not None, the iter ations will stop when (loss &gt; best_loss - t ol) for <code>n_iter_no_change</code> consecutive ep ochs. .. versionadded:: 0.19</p>
+<p>&#39;The stopping criterion. If it is not None, the iter\n             ations will stop        when (loss &gt; best_loss - t\n             ol) for <code>n_iter_no_change</code> consecutive        ep\n             ochs.        .. versionadded:: 0.19&#39;</p>
 <table>
 <thead>
 <tr>
@@ -468,10 +443,7 @@
 </tbody>
 </table>
 <h3 id="9-shuffle">9.shuffle</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Whether or not the training data should be shuffled after each epoch.</p>
+<p>&#39;Whether or not the training data should be shuffled\n              after each epoch.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -513,10 +485,7 @@
 </tbody>
 </table>
 <h3 id="10-learning_rate">10.learning_rate</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The learning rate schedule: &#39;constant&#39;: eta = eta0 &#39;optimal&#39;: eta = 1.0 / (alpha * (t + t0)) where t0 is chosen by a heuristic proposed by Leon Bottou. &#39;invscaling&#39;: [default] eta = eta0 / pow(t, power_t) &#39;adaptive&#39;: e ta = eta0, as long as the training keeps decreasin g. Each time n_iter_no_change consecuti ve epochs fail to decrease the training loss by tol or fail to increase validation score by tol if early_stopping is True, the c urrent learning rate is divided by 5.</p>
+<p>&quot;The learning rate schedule:        &#39;constant&#39;:     \n                    eta = eta0        &#39;optimal&#39;:            eta\n              = 1.0 / (alpha * (t + t0))            where t0 is\n              chosen by a heuristic proposed by Leon Bottou.   \n                  &#39;invscaling&#39;: [default]            eta = eta0\n              / pow(t, power_t)        &#39;adaptive&#39;:            e\n             ta = eta0, as long as the training keeps decreasin\n             g.            Each time n_iter_no_change consecuti\n             ve epochs fail to decrease the            training\n              loss by tol or fail to increase validation score \n             by tol if            early_stopping is True, the c\n             urrent learning rate is divided by 5.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -566,10 +535,7 @@
 </tbody>
 </table>
 <h3 id="11-early_stopping">11.early_stopping</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Whether to use early stopping to terminate training when validation score is not improving. If set to True, it will automatically set aside a fraction of training data as validation and t erminate training when validation score is not improving by at least tol for n_iter_no _change consecutive epochs.</p>
+<p>&#39;Whether to use early stopping to terminate training\n              when validation        score is not improving. If\n              set to True, it will automatically set aside     \n                a fraction of training data as validation and t\n             erminate        training when validation score is \n             not improving by at least tol for        n_iter_no\n             _change consecutive epochs.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -612,10 +578,7 @@
 </table>
 <h2 id="output-parameters">Output Parameters</h2>
 <h3 id="1-output_model_file">1.output_model_file</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>output module</p>
+<p>&#39;output module&#39;</p>
 <table>
 <thead>
 <tr>
@@ -637,10 +600,7 @@
 </tbody>
 </table>
 <h3 id="2-output_model">2.output_model</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>output module</p>
+<p>&#39;output module&#39;</p>
 <table>
 <thead>
 <tr>
@@ -840,7 +800,7 @@
 </thead>
 <tbody>
 <tr>
-<td>{&#39;result&#39;: &#39;-51737334304412.72&#39;}</td>
+<td>{&#39;result&#39;: &#39;229343958774862.9&#39;}</td>
 </tr>
 </tbody>
 </table>

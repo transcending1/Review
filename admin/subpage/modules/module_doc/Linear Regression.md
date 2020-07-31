@@ -1,14 +1,15 @@
 # Linear Regression
-+ Description
+## Detailed Info
+### Description
+'    Ordinary least squares Linear Regression.    Li\n             nearRegression fits a linear model with coefficien\n             ts w = (w1, ..., wp)    to minimize the residual s\n             um of squares between the observed targets in    t\n             he dataset, and the targets predicted by the linea\n             r approximation.'
 
- Ordinary least squares Linear Regression. Li nearRegression fits a linear model with coefficien ts w = (w1, ..., wp) to minimize the residual s um of squares between the observed targets in t he dataset, and the targets predicted by the linea r approximation.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Regression | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -21,9 +22,8 @@
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -31,9 +31,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,9 +41,8 @@ input csv file for trainer
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -52,9 +50,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

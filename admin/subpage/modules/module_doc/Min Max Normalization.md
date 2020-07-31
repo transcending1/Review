@@ -1,14 +1,15 @@
 # Min Max Normalization
-+ Description
+## Detailed Info
+### Description
+'Minimax normalization adjusts each feature to a specific range (usually (0,1))'
 
-Minimax normalization adjusts each feature to a specific range (usually (0,1))
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Feature Engineering | Feature Conversion | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -21,9 +22,8 @@ Minimax normalization adjusts each feature to a specific range (usually (0,1))
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.columns1
-+ Description
+'column selector for field input_file1'
 
-column selector for field input_file1
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -31,9 +31,8 @@ column selector for field input_file1
 
 
 ### 2.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,9 +41,8 @@ csv file
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'output dataset'
 
-output dataset
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -52,9 +50,8 @@ output dataset
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

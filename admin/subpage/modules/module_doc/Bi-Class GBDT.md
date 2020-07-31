@@ -1,14 +1,15 @@
 # Bi-Class GBDT
-+ Description
+## Detailed Info
+### Description
+'Gradient Boosting for classification.    GB builds \n             an additive model in a    forward stage-wise fashi\n             on; it allows for the optimization of    arbitrary\n              differentiable loss functions. In each stage ``n_\n             classes_``    regression trees are fit on the nega\n             tive gradient of the    binomial or multinomial de\n             viance loss function. Binary classification    is \n             a special case where only a single regression tree\n              is induced.'
 
-Gradient Boosting for classification. GB builds an additive model in a forward stage-wise fashi on; it allows for the optimization of arbitrary differentiable loss functions. In each stage ``n_ classes_`` regression trees are fit on the nega tive gradient of the binomial or multinomial de viance loss function. Binary classification is a special case where only a single regression tree is induced.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Binary Classification | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -27,9 +28,8 @@ Gradient Boosting for classification. GB builds an additive model in a forward s
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -37,9 +37,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -47,9 +46,8 @@ input csv file for trainer
 
 
 ### 3.loss
-+ Description
+"loss function to be optimized. 'deviance' refers to\n                     deviance (= logistic regression) for class\n             ification        with probabilistic outputs. For l\n             oss 'exponential' gradient        boosting recover\n             s the AdaBoost algorithm."
 
-loss function to be optimized. 'deviance' refers to deviance (= logistic regression) for class ification with probabilistic outputs. For l oss 'exponential' gradient boosting recover s the AdaBoost algorithm.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -66,9 +64,8 @@ loss function to be optimized. 'deviance' refers to deviance (= logistic regress
 
 
 ### 4.learning_rate
-+ Description
+'learning rate shrinks the contribution of each tree\n              by `learning_rate`.        There is a trade-off b\n             etween learning_rate and n_estimators.'
 
-learning rate shrinks the contribution of each tree by `learning_rate`. There is a trade-off b etween learning_rate and n_estimators.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -76,9 +73,8 @@ learning rate shrinks the contribution of each tree by `learning_rate`. There is
 
 
 ### 5.n_estimators
-+ Description
+'The number of boosting stages to perform. Gradient \n             boosting        is fairly robust to over-fitting s\n             o a large number usually        results in better \n             performance.'
 
-The number of boosting stages to perform. Gradient boosting is fairly robust to over-fitting s o a large number usually results in better performance.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -86,9 +82,8 @@ The number of boosting stages to perform. Gradient boosting is fairly robust to 
 
 
 ### 6.min_samples_leaf
-+ Description
+'The minimum number of samples required to be at a l\n             eaf node.        A split point at any depth will o\n             nly be considered if it leaves at        least ``m\n             in_samples_leaf`` training samples in each of the \n             left and        right branches.  This may have the\n              effect of smoothing the model,        especially \n             in regression.        - If int, then consider `min\n             _samples_leaf` as the minimum number.        - If \n             float, then `min_samples_leaf` is a fraction and  \n                     `ceil(min_samples_leaf * n_samples)` are t\n             he minimum'
 
-The minimum number of samples required to be at a l eaf node. A split point at any depth will o nly be considered if it leaves at least ``m in_samples_leaf`` training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression. - If int, then consider `min _samples_leaf` as the minimum number. - If float, then `min_samples_leaf` is a fraction and `ceil(min_samples_leaf * n_samples)` are t he minimum
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -96,9 +91,8 @@ The minimum number of samples required to be at a l eaf node. A split point at a
 
 
 ### 7.max_depth
-+ Description
+'maximum depth of the individual regression estimato\n             rs. The maximum        depth limits the number of \n             nodes in the tree. Tune this parameter        for \n             best performance; the best value depends on the in\n             teraction        of the input variables.'
 
-maximum depth of the individual regression estimato rs. The maximum depth limits the number of nodes in the tree. Tune this parameter for best performance; the best value depends on the in teraction of the input variables.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -106,9 +100,8 @@ maximum depth of the individual regression estimato rs. The maximum depth limits
 
 
 ### 8.tol
-+ Description
+'Tolerance for the early stopping. When the loss is \n             not improving        by at least tol for ``n_iter_\n             no_change`` iterations (if set to a        number)\n             , the training stops.'
 
-Tolerance for the early stopping. When the loss is not improving by at least tol for ``n_iter_ no_change`` iterations (if set to a number) , the training stops.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -117,9 +110,8 @@ Tolerance for the early stopping. When the loss is not improving by at least tol
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -127,9 +119,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

@@ -1,14 +1,15 @@
 # Affinity Propagation Clustering
-+ Description
+## Detailed Info
+### Description
+'Perform Affinity Propagation Clustering of data.'
 
-Perform Affinity Propagation Clustering of data.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Clustering | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -23,9 +24,8 @@ Perform Affinity Propagation Clustering of data.
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -33,9 +33,8 @@ input csv file for trainer
 
 
 ### 2.damping
-+ Description
+'Damping factor (between 0.5 and 1) is the extent to\n            which the current value is maintained relative to\n            incoming values (weighted 1 - damping). This in order\n            to avoid numerical oscillations when updating these\n            values (messages).'
 
-Damping factor (between 0.5 and 1) is the extent to which the current value is maintained relative to incoming values (weighted 1 - damping). This in order to avoid numerical oscillations when updating these values (messages).
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -43,9 +42,8 @@ Damping factor (between 0.5 and 1) is the extent to which the current value is m
 
 
 ### 3.max_iter
-+ Description
+'Maximum number of iterations.'
 
-Maximum number of iterations.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -53,9 +51,8 @@ Maximum number of iterations.
 
 
 ### 4.convergence_iter
-+ Description
+'Number of iterations with no change in the number\n            of estimated clusters that stops the convergence.'
 
-Number of iterations with no change in the number of estimated clusters that stops the convergence.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +61,8 @@ Number of iterations with no change in the number of estimated clusters that sto
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -74,9 +70,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

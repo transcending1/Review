@@ -66,10 +66,9 @@
         <div id='readme' style='width:70%;margin-left:20%;'>
           	<article class='markdown-body'>
             	<h1 id="svm-regression">SVM Regression</h1>
-<ul>
-<li>Description</li>
-</ul>
-<p>Epsilon-Support Vector Regression. The free para meters in the model are C and epsilon. The impl ementation is based on libsvm. The fit time comple xity is more than quadratic with the number of samples which makes it hard to scale to dataset s with more than a couple of 10000 samples. For la rge datasets consider using :class:<code>sklearn.svm .LinearSVR</code> or :class:<code>sklearn.linear_model.SGD Regressor</code> instead, possibly after a :class:<code>sk learn.kernel_approximation.Nystroem</code> transformer.</p>
+<h2 id="detailed-info">Detailed Info</h2>
+<h3 id="description">Description</h3>
+<p>&#39;Epsilon-Support Vector Regression.    The free para\n             meters in the model are C and epsilon.    The impl\n             ementation is based on libsvm. The fit time comple\n             xity    is more than quadratic with the number of \n             samples which makes it hard    to scale to dataset\n             s with more than a couple of 10000 samples. For la\n             rge    datasets consider using :class:<code>sklearn.svm\n             .LinearSVR</code> or    :class:<code>sklearn.linear_model.SGD\n             Regressor</code> instead, possibly after a    :class:<code>sk\n             learn.kernel_approximation.Nystroem</code> transformer.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -94,7 +93,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="parameter-detail">Parameter Detail</h1>
+<h3 id="parameter-detail">Parameter Detail</h3>
 <table>
 <thead>
 <tr>
@@ -200,10 +199,7 @@
 <h1 id="detailed-info-of-parameters">Detailed Info of Parameters</h1>
 <h2 id="input-parameters">Input Parameters</h2>
 <h3 id="1-label">1.label</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>target feature</p>
+<p>&#39;target feature&#39;</p>
 <table>
 <thead>
 <tr>
@@ -225,10 +221,7 @@
 </tbody>
 </table>
 <h3 id="2-input_file1">2.input_file1</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>input csv file for trainer</p>
+<p>&#39;input csv file for trainer&#39;</p>
 <table>
 <thead>
 <tr>
@@ -250,10 +243,7 @@
 </tbody>
 </table>
 <h3 id="3-kernel">3.kernel</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Specifies the kernel type to be used in the algorit hm. It must be one of &#39;linear&#39;, &#39;poly&#39;, &#39;r bf&#39;, &#39;sigmoid&#39;, &#39;precomputed&#39; or a callabl e. If none is given, &#39;rbf&#39; will be used. I f a callable is given it is used to precom pute the kernel matrix.</p>
+<p>&quot;Specifies the kernel type to be used in the algorit\n             hm.         It must be one of &#39;linear&#39;, &#39;poly&#39;, &#39;r\n             bf&#39;, &#39;sigmoid&#39;, &#39;precomputed&#39; or         a callabl\n             e.         If none is given, &#39;rbf&#39; will be used. I\n             f a callable is given it is         used to precom\n             pute the kernel matrix.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -307,10 +297,7 @@
 </tbody>
 </table>
 <h3 id="4-degree">4.degree</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Degree of the polynomial kernel function (&#39;poly&#39;). Ignored by all other kernels.</p>
+<p>&quot;Degree of the polynomial kernel function (&#39;poly&#39;). \n                    Ignored by all other kernels.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -332,10 +319,7 @@
 </tbody>
 </table>
 <h3 id="5-gamma">5.gamma</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Kernel coefficient for &#39;rbf&#39;, &#39;poly&#39; and &#39;sigmoid&#39;. - if <code>gamma=&#39;scale&#39;</code> (default) is passed then it uses 1 / (n_features * x.var()) as value of gamma, - if &#39;auto&#39;, uses 1 / n_ features..</p>
+<p>&quot;Kernel coefficient for &#39;rbf&#39;, &#39;poly&#39; and &#39;sigmoid&#39;.\n                     - if <code>gamma=&#39;scale&#39;</code> (default) is passed\n              then it uses          1 / (n_features * x.var()) \n             as value of gamma,        - if &#39;auto&#39;, uses 1 / n_\n             features..&quot;</p>
 <table>
 <thead>
 <tr>
@@ -357,10 +341,7 @@
 </tbody>
 </table>
 <h3 id="6-coef0">6.coef0</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Independent term in kernel function. It is o nly significant in &#39;poly&#39; and &#39;sigmoid&#39;.</p>
+<p>&quot;Independent term in kernel function.        It is o\n             nly significant in &#39;poly&#39; and &#39;sigmoid&#39;.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -382,10 +363,7 @@
 </tbody>
 </table>
 <h3 id="7-tol">7.tol</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Tolerance for stopping criterion.</p>
+<p>&#39;Tolerance for stopping criterion.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -407,10 +385,7 @@
 </tbody>
 </table>
 <h3 id="8-c">8.C</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Regularization parameter. The strength of the regul arization is inversely proportional to C. M ust be strictly positive. The penalty is a squared l2 penalty.</p>
+<p>&#39;Regularization parameter. The strength of the regul\n             arization is        inversely proportional to C. M\n             ust be strictly positive.        The penalty is a \n             squared l2 penalty.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -432,10 +407,7 @@
 </tbody>
 </table>
 <h3 id="9-max_iter">9.max_iter</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Hard limit on iterations within solver, or -1 for n o limit. Attributes</p>
+<p>&#39;Hard limit on iterations within solver, or -1 for n\n             o limit.    Attributes&#39;</p>
 <table>
 <thead>
 <tr>
@@ -458,10 +430,7 @@
 </table>
 <h2 id="output-parameters">Output Parameters</h2>
 <h3 id="1-output_model_file">1.output_model_file</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>output module</p>
+<p>&#39;output module&#39;</p>
 <table>
 <thead>
 <tr>
@@ -483,10 +452,7 @@
 </tbody>
 </table>
 <h3 id="2-output_model">2.output_model</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>output module</p>
+<p>&#39;output module&#39;</p>
 <table>
 <thead>
 <tr>

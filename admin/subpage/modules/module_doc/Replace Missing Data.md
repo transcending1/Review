@@ -1,14 +1,15 @@
 # Replace Missing Data
-+ Description
+## Detailed Info
+### Description
+'fill the missing value in your dataset with a certain value'
 
-fill the missing value in your dataset with a certain value
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Transformation | Manipulation | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -23,9 +24,8 @@ fill the missing value in your dataset with a certain value
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.columns1
-+ Description
+'column selector for field input_file1'
 
-column selector for field input_file1
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -33,9 +33,8 @@ column selector for field input_file1
 
 
 ### 2.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -43,9 +42,8 @@ csv file
 
 
 ### 3.filling_method
-+ Description
+"the strategy used for filling missing data who's type is number"
 
-the strategy used for filling missing data who's type is number
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -66,9 +64,8 @@ the strategy used for filling missing data who's type is number
 
 
 ### 4.value
-+ Description
+'replace with a certain value'
 
-replace with a certain value
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -77,9 +74,8 @@ replace with a certain value
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'merged csv file'
 
-merged csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -87,9 +83,8 @@ merged csv file
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

@@ -1,14 +1,15 @@
 # K-Means Clustering
-+ Description
+## Detailed Info
+### Description
+'K-Means clustering.'
 
-K-Means clustering.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Clustering | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -25,9 +26,8 @@ K-Means clustering.
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -35,9 +35,8 @@ input csv file for trainer
 
 
 ### 2.n_clusters
-+ Description
+'The number of clusters to form as well as the number of\n            centroids to generate.'
 
-The number of clusters to form as well as the number of centroids to generate.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -45,9 +44,8 @@ The number of clusters to form as well as the number of centroids to generate.
 
 
 ### 3.init
-+ Description
+"Method for initialization, defaults to 'k-means++': \n           clustering in a smart way to speed up convergence. \n           See section        Notes in k_init for more details.\n          'random': choose k observations (rows) at random from data for\n          the initial centroids.\n          If an ndarray is passed, it should be of shape (n_clusters, n_features)\n          and gives the initial centers."
 
-Method for initialization, defaults to 'k-means++': clustering in a smart way to speed up convergence. See section Notes in k_init for more details. 'random': choose k observations (rows) at random from data for the initial centroids. If an ndarray is passed, it should be of shape (n_clusters, n_features) and gives the initial centers.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +62,8 @@ Method for initialization, defaults to 'k-means++': clustering in a smart way to
 
 
 ### 4.n_init
-+ Description
+'Number of time the k-means algorithm will be run with different\n            centroid seeds. The final results will be the best output of\n            n_init consecutive runs in terms of inertia.'
 
-Number of time the k-means algorithm will be run with different centroid seeds. The final results will be the best output of n_init consecutive runs in terms of inertia.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -74,9 +71,8 @@ Number of time the k-means algorithm will be run with different centroid seeds. 
 
 
 ### 5.max_iter
-+ Description
+'Maximum number of iterations of the k-means algorithm for a\n            single run.'
 
-Maximum number of iterations of the k-means algorithm for a single run.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -84,9 +80,8 @@ Maximum number of iterations of the k-means algorithm for a single run.
 
 
 ### 6.tol
-+ Description
+'Relative tolerance with regards to inertia to declare convergence.'
 
-Relative tolerance with regards to inertia to declare convergence.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -95,9 +90,8 @@ Relative tolerance with regards to inertia to declare convergence.
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -105,9 +99,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -154,6 +147,6 @@ output module
 
 | result |
 | --- |
-| {'class': '1'} |
+| {'class': '0'} |
 
 

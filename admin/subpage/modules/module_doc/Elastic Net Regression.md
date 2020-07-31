@@ -1,14 +1,15 @@
 # Elastic Net Regression
-+ Description
+## Detailed Info
+### Description
+'Linear regression with combined L1 and L2 priors as\n              regularizer.    Minimizes the objective function:\n             :            1 / (2 * n_samples) * ||y - Xw||^2_2 \n                        + alpha * l1_ratio * ||w||_1           \n              + 0.5 * alpha * (1 - l1_ratio) * ||w||^2_2    If \n             you are interested in controlling the L1 and L2 pe\n             nalty    separately, keep in mind that this is equ\n             ivalent to::            a * L1 + b * L2    where::\n                         alpha = a + b and l1_ratio = a / (a + \n             b)    The parameter l1_ratio corresponds to alpha \n             in the glmnet R package while    alpha corresponds\n              to the lambda parameter in glmnet. Specifically, \n             l1_ratio    = 1 is the lasso penalty. Currently, l\n             1_ratio <= 0.01 is not reliable,    unless you sup\n             ply your own sequence of alpha.    Read more in th\n             e :ref:`User Guide <elastic_net>`.'
 
-Linear regression with combined L1 and L2 priors as regularizer. Minimizes the objective function: : 1 / (2 * n_samples) * ||y - Xw||^2_2 + alpha * l1_ratio * ||w||_1 + 0.5 * alpha * (1 - l1_ratio) * ||w||^2_2 If you are interested in controlling the L1 and L2 pe nalty separately, keep in mind that this is equ ivalent to:: a * L1 + b * L2 where:: alpha = a + b and l1_ratio = a / (a + b) The parameter l1_ratio corresponds to alpha in the glmnet R package while alpha corresponds to the lambda parameter in glmnet. Specifically, l1_ratio = 1 is the lasso penalty. Currently, l 1_ratio <= 0.01 is not reliable, unless you sup ply your own sequence of alpha. Read more in th e :ref:`User Guide <elastic_net>`.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Regression | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -25,9 +26,8 @@ Linear regression with combined L1 and L2 priors as regularizer. Minimizes the o
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -35,9 +35,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -45,9 +44,8 @@ input csv file for trainer
 
 
 ### 3.alpha
-+ Description
+'Constant that multiplies the penalty terms. Default\n             s to 1.0.        See the notes for the exact mathe\n             matical meaning of this        parameter. ``alpha \n             = 0`` is equivalent to an ordinary least square,  \n                   solved by the :class:`LinearRegression` obje\n             ct. For numerical        reasons, using ``alpha = \n             0`` with the ``Lasso`` object is not advised.     \n                Given this, you should use the :class:`LinearRe\n             gression` object.'
 
-Constant that multiplies the penalty terms. Default s to 1.0. See the notes for the exact mathe matical meaning of this parameter. ``alpha = 0`` is equivalent to an ordinary least square, solved by the :class:`LinearRegression` obje ct. For numerical reasons, using ``alpha = 0`` with the ``Lasso`` object is not advised. Given this, you should use the :class:`LinearRe gression` object.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -55,9 +53,8 @@ Constant that multiplies the penalty terms. Default s to 1.0. See the notes for 
 
 
 ### 4.l1_ratio
-+ Description
+'The ElasticNet mixing parameter, with ``0 <= l1_rat\n             io <= 1``. For        ``l1_ratio = 0`` the penalty\n              is an L2 penalty. ``For l1_ratio = 1`` it        \n             is an L1 penalty.  For ``0 < l1_ratio < 1``, the p\n             enalty is a        combination of L1 and L2.'
 
-The ElasticNet mixing parameter, with ``0 <= l1_rat io <= 1``. For ``l1_ratio = 0`` the penalty is an L2 penalty. ``For l1_ratio = 1`` it is an L1 penalty. For ``0 < l1_ratio < 1``, the p enalty is a combination of L1 and L2.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -65,9 +62,8 @@ The ElasticNet mixing parameter, with ``0 <= l1_rat io <= 1``. For ``l1_ratio = 
 
 
 ### 5.max_iter
-+ Description
+'The maximum number of iterations'
 
-The maximum number of iterations
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -75,9 +71,8 @@ The maximum number of iterations
 
 
 ### 6.tol
-+ Description
+'The tolerance for the optimization: if the updates \n             are        smaller than ``tol``, the optimization \n             code checks the        dual gap for optimality and\n              continues until it is smaller        than ``tol``\n             .'
 
-The tolerance for the optimization: if the updates are smaller than ``tol``, the optimization code checks the dual gap for optimality and continues until it is smaller than ``tol`` .
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -86,9 +81,8 @@ The tolerance for the optimization: if the updates are smaller than ``tol``, the
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -96,9 +90,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

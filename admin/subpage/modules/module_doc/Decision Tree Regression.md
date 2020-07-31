@@ -1,14 +1,15 @@
 # Decision Tree Regression
-+ Description
+## Detailed Info
+### Description
+'A decision tree regressor'
 
-A decision tree regressor
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Regression | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -24,9 +25,8 @@ A decision tree regressor
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -34,9 +34,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -44,9 +43,8 @@ input csv file for trainer
 
 
 ### 3.criterion
-+ Description
+'The function to measure the quality of a split. Sup\n             ported criteria        are "mse" for the mean squa\n             red error, which is equal to variance        reduc\n             tion as feature selection criterion and minimizes \n             the L2 loss        using the mean of each terminal\n              node, "friedman_mse", which uses mean        squa\n             red error with Friedman\'s improvement score for po\n             tential splits,        and "mae" for the mean abso\n             lute error, which minimizes the L1 loss        usi\n             ng the median of each terminal node.'
 
-The function to measure the quality of a split. Sup ported criteria are "mse" for the mean squa red error, which is equal to variance reduc tion as feature selection criterion and minimizes the L2 loss using the mean of each terminal node, "friedman_mse", which uses mean squa red error with Friedman's improvement score for po tential splits, and "mae" for the mean abso lute error, which minimizes the L1 loss usi ng the median of each terminal node.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +62,8 @@ The function to measure the quality of a split. Sup ported criteria are "mse" fo
 
 
 ### 4.max_depth
-+ Description
+'The maximum depth of the tree. If None, then nodes \n             are expanded until        all leaves are pure or u\n             ntil all leaves contain less than        min_sampl\n             es_split samples.'
 
-The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or u ntil all leaves contain less than min_sampl es_split samples.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -74,9 +71,8 @@ The maximum depth of the tree. If None, then nodes are expanded until all leaves
 
 
 ### 5.min_samples_leaf
-+ Description
+'The minimum number of samples required to be at a l\n             eaf node.        A split point at any depth will o\n             nly be considered if it leaves at        least ``m\n             in_samples_leaf`` training samples in each of the \n             left and        right branches.  This may have the\n              effect of smoothing the model,        especially \n             in regression.        - If int, then consider `min\n             _samples_leaf` as the minimum number.        - If \n             float, then `min_samples_leaf` is a fraction and  \n                     `ceil(min_samples_leaf * n_samples)` are t\n             he minimum          number of samples for each nod\n             e.'
 
-The minimum number of samples required to be at a l eaf node. A split point at any depth will o nly be considered if it leaves at least ``m in_samples_leaf`` training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression. - If int, then consider `min _samples_leaf` as the minimum number. - If float, then `min_samples_leaf` is a fraction and `ceil(min_samples_leaf * n_samples)` are t he minimum number of samples for each nod e.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -85,9 +81,8 @@ The minimum number of samples required to be at a l eaf node. A split point at a
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -95,9 +90,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -151,6 +145,6 @@ output module
 
 | result |
 | --- |
-| {'result': '25.776190476190475'} |
+| {'result': '25.77619047619048'} |
 
 

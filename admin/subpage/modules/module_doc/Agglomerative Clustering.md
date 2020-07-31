@@ -1,14 +1,15 @@
 # Agglomerative Clustering
-+ Description
+## Detailed Info
+### Description
+'Agglomerative Clustering\n        Recursively merges the pair of clusters that minimally increases\n        a given linkage distance.'
 
-Agglomerative Clustering Recursively merges the pair of clusters that minimally increases a given linkage distance.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Clustering | DOCKER | 1 | 0 | 2048 | deny |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -20,9 +21,8 @@ Agglomerative Clustering Recursively merges the pair of clusters that minimally 
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -30,9 +30,8 @@ input csv file for trainer
 
 
 ### 2.n_clusters
-+ Description
+'The number of clusters to find.'
 
-The number of clusters to find.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -41,9 +40,8 @@ The number of clusters to find.
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'output dataset'
 
-output dataset
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

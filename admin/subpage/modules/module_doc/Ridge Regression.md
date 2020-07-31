@@ -1,14 +1,15 @@
 # Ridge Regression
-+ Description
+## Detailed Info
+### Description
+'Linear least squares with l2 regularization.    Min\n             imizes the objective function::    ||y - Xw||^2_2 \n             + alpha * ||w||^2_2    This model solves a regress\n             ion model where the loss function is    the linear\n              least squares function and regularization is give\n             n by    the l2-norm. Also known as Ridge Regressio\n             n or Tikhonov regularization.    This estimator ha\n             s built-in support for multi-variate regression   \n              (i.e., when y is a 2d-array of shape (n_samples, \n             n_targets)).'
 
-Linear least squares with l2 regularization. Min imizes the objective function:: ||y - Xw||^2_2 + alpha * ||w||^2_2 This model solves a regress ion model where the loss function is the linear least squares function and regularization is give n by the l2-norm. Also known as Ridge Regressio n or Tikhonov regularization. This estimator ha s built-in support for multi-variate regression (i.e., when y is a 2d-array of shape (n_samples, n_targets)).
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Regression | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -23,9 +24,8 @@ Linear least squares with l2 regularization. Min imizes the objective function::
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -33,9 +33,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -43,9 +42,8 @@ input csv file for trainer
 
 
 ### 3.alpha
-+ Description
+'Regularization strength; must be a positive float. \n             Regularization        improves the conditioning of\n              the problem and reduces the variance of        th\n             e estimates. Larger values specify stronger regula\n             rization.        Alpha corresponds to ``C^-1`` in \n             other linear models such as        LogisticRegress\n             ion or LinearSVC. If an array is passed, penalties\n              are        assumed to be specific to the targets.\n              Hence they must correspond in        number.'
 
-Regularization strength; must be a positive float. Regularization improves the conditioning of the problem and reduces the variance of th e estimates. Larger values specify stronger regula rization. Alpha corresponds to ``C^-1`` in other linear models such as LogisticRegress ion or LinearSVC. If an array is passed, penalties are assumed to be specific to the targets. Hence they must correspond in number.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -53,9 +51,8 @@ Regularization strength; must be a positive float. Regularization improves the c
 
 
 ### 4.tol
-+ Description
+'Precision of the solution.'
 
-Precision of the solution.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +61,8 @@ Precision of the solution.
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -74,9 +70,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

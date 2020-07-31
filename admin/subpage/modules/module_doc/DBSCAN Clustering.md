@@ -1,14 +1,15 @@
 # DBSCAN Clustering
-+ Description
+## Detailed Info
+### Description
+'Perform DBSCAN clustering from vector array or distance matrix.\n            DBSCAN - Density-Based Spatial Clustering of Applications with Noise.\n            Finds core samples of high density and expands clusters from them.\n            Good for data which contains clusters of similar density.\n            Read more in the :ref:`User Guide <dbscan>`.'
 
-Perform DBSCAN clustering from vector array or distance matrix. DBSCAN - Density-Based Spatial Clustering of Applications with Noise. Finds core samples of high density and expands clusters from them. Good for data which contains clusters of similar density. Read more in the :ref:`User Guide <dbscan>`.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Clustering | DOCKER | 1 | 0 | 2048 | deny |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -21,9 +22,8 @@ Perform DBSCAN clustering from vector array or distance matrix. DBSCAN - Density
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -31,9 +31,8 @@ input csv file for trainer
 
 
 ### 2.eps
-+ Description
+'The maximum distance between two samples for one to be considered\n            as in the neighborhood of the other. This is not a maximum bound\n            on the distances of points within a cluster. This is the most\n            important DBSCAN parameter to choose appropriately for your data set\n            and distance function.'
 
-The maximum distance between two samples for one to be considered as in the neighborhood of the other. This is not a maximum bound on the distances of points within a cluster. This is the most important DBSCAN parameter to choose appropriately for your data set and distance function.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -41,9 +40,8 @@ The maximum distance between two samples for one to be considered as in the neig
 
 
 ### 3.min_samples
-+ Description
+'The number of samples (or total weight) in a neighborhood for a point\n    to be considered as a core point. This includes the point itself.'
 
-The number of samples (or total weight) in a neighborhood for a point to be considered as a core point. This includes the point itself.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -52,9 +50,8 @@ The number of samples (or total weight) in a neighborhood for a point to be cons
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'output dataset'
 
-output dataset
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

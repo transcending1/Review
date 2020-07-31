@@ -1,14 +1,15 @@
 # Export To HDFS
-+ Description
+## Detailed Info
+### Description
+'place your file to a place in hdfs'
 
-place your file to a place in hdfs
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Input and Output | Export | DOCKER | 1 | 0 | 2048 | deny |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -24,9 +25,8 @@ place your file to a place in hdfs
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'file you want to store in hdfs'
 
-file you want to store in hdfs
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -34,9 +34,8 @@ file you want to store in hdfs
 
 
 ### 2.url
-+ Description
+'Hostname or IP address of HDFS namenode, prefixed with protocol,\n    followed by WebHDFS port on namenode.  You may also specify multiple URLs\n    separated by semicolons for High Availability support.'
 
-Hostname or IP address of HDFS namenode, prefixed with protocol, followed by WebHDFS port on namenode. You may also specify multiple URLs separated by semicolons for High Availability support.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -44,9 +43,8 @@ Hostname or IP address of HDFS namenode, prefixed with protocol, followed by Web
 
 
 ### 3.file_path
-+ Description
+' Target HDFS path. If it already exists and is a\n      directory, files will be uploaded inside.'
 
- Target HDFS path. If it already exists and is a directory, files will be uploaded inside.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -54,9 +52,8 @@ Hostname or IP address of HDFS namenode, prefixed with protocol, followed by Web
 
 
 ### 4.root
-+ Description
+"Root path, this will be prefixed to all HDFS paths passed to the\n    client. If the root is relative, the path will be assumed relative to the\n    user's home directory"
 
-Root path, this will be prefixed to all HDFS paths passed to the client. If the root is relative, the path will be assumed relative to the user's home directory
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +61,8 @@ Root path, this will be prefixed to all HDFS paths passed to the client. If the 
 
 
 ### 5.proxy
-+ Description
+'User to proxy as'
 
-User to proxy as
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -74,9 +70,8 @@ User to proxy as
 
 
 ### 6.session
-+ Description
+'requests.Session` instance, used to emit all requests.'
 
-requests.Session` instance, used to emit all requests.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -84,9 +79,8 @@ requests.Session` instance, used to emit all requests.
 
 
 ### 7.timeout
-+ Description
+' Connection timeouts, forwarded to the request handler. How\n    long to wait for the server to send data before giving up, as a float, or a\n    `(connect_timeout, read_timeout)` tuple. If the timeout is reached, an\n    appropriate exception will be raised. See the requests_ documentation for\n    details.'
 
- Connection timeouts, forwarded to the request handler. How long to wait for the server to send data before giving up, as a float, or a `(connect_timeout, read_timeout)` tuple. If the timeout is reached, an appropriate exception will be raised. See the requests_ documentation for details.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

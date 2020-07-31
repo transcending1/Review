@@ -1,14 +1,15 @@
 # Bi-Class AdaBoost
-+ Description
+## Detailed Info
+### Description
+'An AdaBoost classifier.    An AdaBoost [1] classifi\n             er is a meta-estimator that begins by fitting a   \n              classifier on the original dataset and then fits \n             additional copies of the    classifier on the same\n              dataset but where the weights of incorrectly    c\n             lassified instances are adjusted such that subsequ\n             ent classifiers focus    more on difficult cases. \n                This class implements the algorithm known as Ad\n             aBoost-SAMME [2].'
 
-An AdaBoost classifier. An AdaBoost [1] classifi er is a meta-estimator that begins by fitting a classifier on the original dataset and then fits additional copies of the classifier on the same dataset but where the weights of incorrectly c lassified instances are adjusted such that subsequ ent classifiers focus more on difficult cases. This class implements the algorithm known as Ad aBoost-SAMME [2].
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Binary Classification | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -24,9 +25,8 @@ An AdaBoost classifier. An AdaBoost [1] classifi er is a meta-estimator that beg
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -34,9 +34,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -44,9 +43,8 @@ input csv file for trainer
 
 
 ### 3.n_estimators
-+ Description
+'The maximum number of estimators at which boosting \n             is terminated.        In case of perfect fit, the \n             learning procedure is stopped early.'
 
-The maximum number of estimators at which boosting is terminated. In case of perfect fit, the learning procedure is stopped early.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -54,9 +52,8 @@ The maximum number of estimators at which boosting is terminated. In case of per
 
 
 ### 4.learning_rate
-+ Description
+'Learning rate shrinks the contribution of each clas\n             sifier by        ``learning_rate``. There is a tra\n             de-off between ``learning_rate`` and        ``n_es\n             timators``.'
 
-Learning rate shrinks the contribution of each clas sifier by ``learning_rate``. There is a tra de-off between ``learning_rate`` and ``n_es timators``.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +61,8 @@ Learning rate shrinks the contribution of each clas sifier by ``learning_rate``.
 
 
 ### 5.algorithm
-+ Description
+"If 'SAMME.R' then use the SAMME.R real boosting alg\n             orithm.        ``base_estimator`` must support cal\n             culation of class probabilities.        If 'SAMME'\n              then use the SAMME discrete boosting algorithm.  \n                   The SAMME.R algorithm typically converges fa\n             ster than SAMME,        achieving a lower test err\n             or with fewer boosting iterations."
 
-If 'SAMME.R' then use the SAMME.R real boosting alg orithm. ``base_estimator`` must support cal culation of class probabilities. If 'SAMME' then use the SAMME discrete boosting algorithm. The SAMME.R algorithm typically converges fa ster than SAMME, achieving a lower test err or with fewer boosting iterations.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -84,9 +80,8 @@ If 'SAMME.R' then use the SAMME.R real boosting alg orithm. ``base_estimator`` m
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -94,9 +89,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

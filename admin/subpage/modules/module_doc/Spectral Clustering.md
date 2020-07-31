@@ -1,14 +1,15 @@
 # Spectral Clustering
-+ Description
+## Detailed Info
+### Description
+'Apply clustering to a projection of the normalized Laplacian.\n            In practice Spectral Clustering is very useful when the structure of\n            the individual clusters is highly non-convex or more generally when\n            a measure of the center and spread of the cluster is not a suitable\n            description of the complete cluster. For instance when clusters are\n            nested circles on the 2D plane.\n            If affinity is the adjacency matrix of a graph, this method can be\n            used to find normalized graph cuts.\n            When calling ``fit``, an affinity matrix is constructed using either\n            kernel function such the Gaussian (aka RBF) kernel of the euclidean\n            distanced ``d(X, X)``::\n            np.exp(-gamma * d(X,X) ** 2)    or a k-nearest neighbors connectivity matrix.\n            Alternatively, using ``precomputed``, a user-provided affinity    matrix can be used.\n            '
 
-Apply clustering to a projection of the normalized Laplacian. In practice Spectral Clustering is very useful when the structure of the individual clusters is highly non-convex or more generally when a measure of the center and spread of the cluster is not a suitable description of the complete cluster. For instance when clusters are nested circles on the 2D plane. If affinity is the adjacency matrix of a graph, this method can be used to find normalized graph cuts. When calling ``fit``, an affinity matrix is constructed using either kernel function such the Gaussian (aka RBF) kernel of the euclidean distanced ``d(X, X)``:: np.exp(-gamma * d(X,X) ** 2) or a k-nearest neighbors connectivity matrix. Alternatively, using ``precomputed``, a user-provided affinity matrix can be used. 
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Clustering | DOCKER | 1 | 0 | 2048 | deny |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -23,9 +24,8 @@ Apply clustering to a projection of the normalized Laplacian. In practice Spectr
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -33,9 +33,8 @@ input csv file for trainer
 
 
 ### 2.n_clusters
-+ Description
+'The dimension of the projection subspace.'
 
-The dimension of the projection subspace.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -43,9 +42,8 @@ The dimension of the projection subspace.
 
 
 ### 3.n_init
-+ Description
+'Number of time the k-means algorithm will be run with different\n            centroid seeds. The final results will be the best output o\n            f        n_init consecutive runs in terms of inertia.'
 
-Number of time the k-means algorithm will be run with different centroid seeds. The final results will be the best output o f n_init consecutive runs in terms of inertia.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -53,9 +51,8 @@ Number of time the k-means algorithm will be run with different centroid seeds. 
 
 
 ### 4.assign_labels
-+ Description
+'The strategy to use to assign labels in the embedding\n            space. There are two ways to assign labels after the laplacian\n        embedding. k-means can be applied and is a popular choice. But it can\n        also be sensitive to initialization. Discretization is another approach \n        which is less sensitive to random initialization.'
 
-The strategy to use to assign labels in the embedding space. There are two ways to assign labels after the laplacian embedding. k-means can be applied and is a popular choice. But it can also be sensitive to initialization. Discretization is another approach which is less sensitive to random initialization.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -72,9 +69,8 @@ The strategy to use to assign labels in the embedding space. There are two ways 
 
 
 ### 5.gamma
-+ Description
+"Kernel coefficient for rbf, poly, sigmoid, laplacian and chi2 kernels.\n            Ignored for ``affinity='nearest_neighbors'``."
 
-Kernel coefficient for rbf, poly, sigmoid, laplacian and chi2 kernels. Ignored for ``affinity='nearest_neighbors'``.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -83,9 +79,8 @@ Kernel coefficient for rbf, poly, sigmoid, laplacian and chi2 kernels. Ignored f
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'output dataset'
 
-output dataset
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

@@ -1,14 +1,15 @@
 # Bi-Class Logistic Regression
-+ Description
+## Detailed Info
+### Description
+"    Logistic Regression (aka logit, MaxEnt) classif\n             ier.    In the multiclass case, the training algor\n             ithm uses the one-vs-rest (OvR)    scheme if the '\n             multi_class' option is set to 'ovr', and uses the \n                cross-entropy loss if the 'multi_class' option \n             is set to 'multinomial'.    (Currently the 'multin\n             omial' option is supported only by the 'lbfgs',   \n              'sag', 'saga' and 'newton-cg' solvers.)    This c\n             lass implements regularized logistic regression us\n             ing the    'liblinear' library, 'newton-cg', 'sag'\n             , 'saga' and 'lbfgs' solvers. **Note    that regul\n             arization is applied by default**. It can handle b\n             oth dense    and sparse input. Use C-ordered array\n             s or CSR matrices containing 64-bit    floats for \n             optimal performance; any other input format will b\n             e converted    (and copied).    The 'newton-cg', '\n             sag', and 'lbfgs' solvers support only L2 regulari\n             zation    with primal formulation, or no regulariz\n             ation. The 'liblinear' solver    supports both L1 \n             and L2 regularization, with a dual formulation onl\n             y for    the L2 penalty. The Elastic-Net regulariz\n             ation is only supported by the    'saga' solver.  \n             "
 
- Logistic Regression (aka logit, MaxEnt) classif ier. In the multiclass case, the training algor ithm uses the one-vs-rest (OvR) scheme if the ' multi_class' option is set to 'ovr', and uses the cross-entropy loss if the 'multi_class' option is set to 'multinomial'. (Currently the 'multin omial' option is supported only by the 'lbfgs', 'sag', 'saga' and 'newton-cg' solvers.) This c lass implements regularized logistic regression us ing the 'liblinear' library, 'newton-cg', 'sag' , 'saga' and 'lbfgs' solvers. **Note that regul arization is applied by default**. It can handle b oth dense and sparse input. Use C-ordered array s or CSR matrices containing 64-bit floats for optimal performance; any other input format will b e converted (and copied). The 'newton-cg', ' sag', and 'lbfgs' solvers support only L2 regulari zation with primal formulation, or no regulariz ation. The 'liblinear' solver supports both L1 and L2 regularization, with a dual formulation onl y for the L2 penalty. The Elastic-Net regulariz ation is only supported by the 'saga' solver. 
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Binary Classification | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -28,9 +29,8 @@
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -38,9 +38,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -48,9 +47,8 @@ input csv file for trainer
 
 
 ### 3.penalty
-+ Description
+"Used to specify the norm used in the penalization. \n             The 'newton-cg',        'sag' and 'lbfgs' solvers \n             support only l2 penalties. 'elasticnet' is        \n             only supported by the 'saga' solver. If 'none' (no\n             t supported by the        liblinear solver), no re\n             gularization is applied."
 
-Used to specify the norm used in the penalization. The 'newton-cg', 'sag' and 'lbfgs' solvers support only l2 penalties. 'elasticnet' is only supported by the 'saga' solver. If 'none' (no t supported by the liblinear solver), no re gularization is applied.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -69,9 +67,8 @@ Used to specify the norm used in the penalization. The 'newton-cg', 'sag' and 'l
 
 
 ### 4.tol
-+ Description
+'Tolerance for stopping criteria.'
 
-Tolerance for stopping criteria.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -79,9 +76,8 @@ Tolerance for stopping criteria.
 
 
 ### 5.C
-+ Description
+'Inverse of regularization strength; must be a posit\n             ive float.        Like in support vector machines,\n              smaller values specify stronger        regulariza\n             tion.'
 
-Inverse of regularization strength; must be a posit ive float. Like in support vector machines, smaller values specify stronger regulariza tion.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -89,9 +85,8 @@ Inverse of regularization strength; must be a posit ive float. Like in support v
 
 
 ### 6.fit_intercept
-+ Description
+'Specifies if a constant (a.k.a. bias or intercept) \n             should be        added to the decision function.'
 
-Specifies if a constant (a.k.a. bias or intercept) should be added to the decision function.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -99,9 +94,8 @@ Specifies if a constant (a.k.a. bias or intercept) should be added to the decisi
 
 
 ### 7.max_iter
-+ Description
+'Maximum number of iterations taken for the solvers \n             to converge.'
 
-Maximum number of iterations taken for the solvers to converge.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -109,9 +103,8 @@ Maximum number of iterations taken for the solvers to converge.
 
 
 ### 8.multi_class
-+ Description
+"If the option chosen is 'ovr', then a binary proble\n             m is fit for each        label. For 'multinomial' \n             the loss minimised is the multinomial loss fit    \n                 across the entire probability distribution, *e\n             ven when the data is        binary*. 'multinomial'\n              is unavailable when solver='liblinear'.        'a\n             uto' selects 'ovr' if the data is binary, or if so\n             lver='liblinear',        and otherwise selects 'mu\n             ltinomial'."
 
-If the option chosen is 'ovr', then a binary proble m is fit for each label. For 'multinomial' the loss minimised is the multinomial loss fit across the entire probability distribution, *e ven when the data is binary*. 'multinomial' is unavailable when solver='liblinear'. 'a uto' selects 'ovr' if the data is binary, or if so lver='liblinear', and otherwise selects 'mu ltinomial'.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -119,9 +112,8 @@ If the option chosen is 'ovr', then a binary proble m is fit for each label. For
 
 
 ### 9.l1_ratio
-+ Description
+"The Elastic-Net mixing parameter, with ``0 <= l1_ra\n             tio <= 1``. Only        used if ``penalty='elastic\n             net'`. Setting ``l1_ratio=0`` is equivalent       \n              to using ``penalty='l2'``, while setting ``l1_rat\n             io=1`` is equivalent        to using ``penalty='l1\n             '``. For ``0 < l1_ratio <1``, the penalty is a    \n                 combination of L1 and L2.    Attributes"
 
-The Elastic-Net mixing parameter, with ``0 <= l1_ra tio <= 1``. Only used if ``penalty='elastic net'`. Setting ``l1_ratio=0`` is equivalent to using ``penalty='l2'``, while setting ``l1_rat io=1`` is equivalent to using ``penalty='l1 '``. For ``0 < l1_ratio <1``, the penalty is a combination of L1 and L2. Attributes
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -130,9 +122,8 @@ The Elastic-Net mixing parameter, with ``0 <= l1_ra tio <= 1``. Only used if ``p
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -140,9 +131,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

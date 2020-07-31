@@ -1,14 +1,15 @@
 # Mini-Batch K-Means Clustering
-+ Description
+## Detailed Info
+### Description
+'    Mini-Batch K-Means clustering.'
 
- Mini-Batch K-Means clustering.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Clustering | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -26,9 +27,8 @@
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -36,9 +36,8 @@ input csv file for trainer
 
 
 ### 2.n_clusters
-+ Description
+'The number of clusters to form as well as the number of centroids to generate.'
 
-The number of clusters to form as well as the number of centroids to generate.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -46,9 +45,8 @@ The number of clusters to form as well as the number of centroids to generate.
 
 
 ### 3.init
-+ Description
+"Method for initialization\n            clustering in a smart way to speed up convergence. See section\n            Notes in k_init for more details.\n            'random': choose k observations (rows) at random from data for\n            the initial centroids.\n            If an ndarray is passed, it should be of shape (n_clusters, n_features)\n            and gives the initial centers."
 
-Method for initialization clustering in a smart way to speed up convergence. See section Notes in k_init for more details. 'random': choose k observations (rows) at random from data for the initial centroids. If an ndarray is passed, it should be of shape (n_clusters, n_features) and gives the initial centers.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -56,9 +54,8 @@ Method for initialization clustering in a smart way to speed up convergence. See
 
 
 ### 4.max_iter
-+ Description
+'Maximum number of iterations over the complete dataset before\n           stopping independently of any early stopping criterion heuristics.'
 
-Maximum number of iterations over the complete dataset before stopping independently of any early stopping criterion heuristics.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -66,9 +63,8 @@ Maximum number of iterations over the complete dataset before stopping independe
 
 
 ### 5.batch_size
-+ Description
+'Size of the mini batches.'
 
-Size of the mini batches.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -76,9 +72,8 @@ Size of the mini batches.
 
 
 ### 6.tol
-+ Description
+'Control early stopping based on the relative center changes as\n            measured by a smoothed, variance-normalized of the mean center\n            squared position changes. This early stopping heuristics is\n            closer to the one used for the batch variant of the algorithms\n            but induces a slight computational and memory overhead over the\n            inertia heuristic.To disable convergence detection based on normalized center\n            change, set tol to 0.0 (default).'
 
-Control early stopping based on the relative center changes as measured by a smoothed, variance-normalized of the mean center squared position changes. This early stopping heuristics is closer to the one used for the batch variant of the algorithms but induces a slight computational and memory overhead over the inertia heuristic.To disable convergence detection based on normalized center change, set tol to 0.0 (default).
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -86,9 +81,8 @@ Control early stopping based on the relative center changes as measured by a smo
 
 
 ### 7.n_init
-+ Description
+'Number of random initializations that are tried.\n        In contrast to KMeans, the algorithm is only run once,\n        using the best of the ``n_init`` initializations as measured by inertia.'
 
-Number of random initializations that are tried. In contrast to KMeans, the algorithm is only run once, using the best of the ``n_init`` initializations as measured by inertia.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -97,9 +91,8 @@ Number of random initializations that are tried. In contrast to KMeans, the algo
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -107,9 +100,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -157,6 +149,6 @@ output module
 
 | result |
 | --- |
-| {'class': '5'} |
+| {'class': '1'} |
 
 

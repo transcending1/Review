@@ -1,14 +1,15 @@
 # Multi-Class Gaussian Naive Bayes
-+ Description
+## Detailed Info
+### Description
+'Gaussian Naive Bayes (GaussianNB)    Can perfor\n             m online updates to model parameters via :meth:`pa\n             rtial_fit'
 
-Gaussian Naive Bayes (GaussianNB) Can perfor m online updates to model parameters via :meth:`pa rtial_fit
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Multi Classification | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -21,9 +22,8 @@ Gaussian Naive Bayes (GaussianNB) Can perfor m online updates to model parameter
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -31,9 +31,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,9 +41,8 @@ input csv file for trainer
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -52,9 +50,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

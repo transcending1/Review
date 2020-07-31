@@ -1,14 +1,15 @@
 # Import From Database
-+ Description
+## Detailed Info
+### Description
+'import data from database to csv'
 
-import data from database to csv
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Input and Output | Import | DOCKER | 1 | 0 | 2048 | deny |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -25,9 +26,8 @@ import data from database to csv
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.type
-+ Description
+'database type'
 
-database type
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -44,9 +44,8 @@ database type
 
 
 ### 2.host
-+ Description
+'database host'
 
-database host
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -54,9 +53,8 @@ database host
 
 
 ### 3.user
-+ Description
+'database user'
 
-database user
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +62,8 @@ database user
 
 
 ### 4.password
-+ Description
+'database user'
 
-database user
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -74,9 +71,8 @@ database user
 
 
 ### 5.port
-+ Description
+'database port'
 
-database port
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -84,9 +80,8 @@ database port
 
 
 ### 6.db
-+ Description
+'which database you want to use'
 
-which database you want to use
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -94,9 +89,8 @@ which database you want to use
 
 
 ### 7.sql
-+ Description
+'sql search sentence to get the data you want from db'
 
-sql search sentence to get the data you want from db
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -105,9 +99,8 @@ sql search sentence to get the data you want from db
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'csv file you import from db'
 
-csv file you import from db
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

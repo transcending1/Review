@@ -66,10 +66,9 @@
         <div id='readme' style='width:70%;margin-left:20%;'>
           	<article class='markdown-body'>
             	<h1 id="mean-shift-clustering">Mean Shift Clustering</h1>
-<ul>
-<li>Description</li>
-</ul>
-<p>Mean shift clustering using a flat kernel. Mean shift clustering aims to discover &quot;blobs&quot; in a smooth density of samples. It is a centroid-based algorithm, which works by updating candidates for centroids to be the mean of the points within a given region. These candidates are then filtered in a post-processing stage to eliminate near-duplicates to form the final set of centroids. Seeding is performed using a binning technique for scalability.</p>
+<h2 id="detailed-info">Detailed Info</h2>
+<h3 id="description">Description</h3>
+<p>&#39;Mean shift clustering using a flat kernel.\n    Mean shift clustering aims to discover &quot;blobs&quot; in a smooth density of\n    samples. It is a centroid-based algorithm, which works by updating\n    candidates for centroids to be the mean of the points within a given\n    region. These candidates are then filtered in a post-processing stage to\n    eliminate near-duplicates to form the final set of centroids.\n    Seeding is performed using a binning technique for scalability.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -94,7 +93,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="parameter-detail">Parameter Detail</h1>
+<h3 id="parameter-detail">Parameter Detail</h3>
 <table>
 <thead>
 <tr>
@@ -152,10 +151,7 @@
 <h1 id="detailed-info-of-parameters">Detailed Info of Parameters</h1>
 <h2 id="input-parameters">Input Parameters</h2>
 <h3 id="1-input_file1">1.input_file1</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>input csv file for trainer</p>
+<p>&#39;input csv file for trainer&#39;</p>
 <table>
 <thead>
 <tr>
@@ -177,10 +173,7 @@
 </tbody>
 </table>
 <h3 id="2-min_bin_freq">2.min_bin_freq</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>To speed up the algorithm, accept only those bins with at least min_bin_freq points as seeds. If not defined, set to 1.</p>
+<p>&#39;To speed up the algorithm, accept only those bins with at least\n           min_bin_freq points as seeds. If not defined, set to 1.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -202,10 +195,7 @@
 </tbody>
 </table>
 <h3 id="3-max_iter">3.max_iter</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Maximum number of iterations, per seed point before the clustering operation terminates (for that seed point), if has not converged yet.</p>
+<p>&#39;Maximum number of iterations, per seed point before the clustering\n        operation terminates (for that seed point), if has not converged yet.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -228,10 +218,7 @@
 </table>
 <h2 id="output-parameters">Output Parameters</h2>
 <h3 id="1-output_model_file">1.output_model_file</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>output module</p>
+<p>&#39;output module&#39;</p>
 <table>
 <thead>
 <tr>
@@ -253,10 +240,7 @@
 </tbody>
 </table>
 <h3 id="2-output_model">2.output_model</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>output module</p>
+<p>&#39;output module&#39;</p>
 <table>
 <thead>
 <tr>

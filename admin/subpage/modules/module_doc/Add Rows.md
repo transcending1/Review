@@ -1,14 +1,15 @@
 # Add Rows
-+ Description
+## Detailed Info
+### Description
+'merge two csv files into one csv file by rows,encoding:utf8  sep:,'
 
-merge two csv files into one csv file by rows,encoding:utf8 sep:,
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Transformation | Manipulation | DOCKER | 1 | 0 | 2048 | allow |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -20,9 +21,8 @@ merge two csv files into one csv file by rows,encoding:utf8 sep:,
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -30,9 +30,8 @@ csv file
 
 
 ### 2.input_file2
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -41,9 +40,8 @@ csv file
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'merged csv file'
 
-merged csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

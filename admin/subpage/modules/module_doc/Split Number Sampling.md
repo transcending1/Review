@@ -1,14 +1,15 @@
 # Split Number Sampling
-+ Description
+## Detailed Info
+### Description
+'The method of random sampling a certain number of small sample data in the original data set of each group This module is often used to extract small samples for data visualization'
 
-The method of random sampling a certain number of small sample data in the original data set of each group This module is often used to extract small samples for data visualization
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Transformation | Sampling And Split | DOCKER | 1 | 0 | 2048 | allow |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -22,9 +23,8 @@ The method of random sampling a certain number of small sample data in the origi
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.group
-+ Description
+'target group'
 
-target group
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -32,9 +32,8 @@ target group
 
 
 ### 2.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,9 +41,8 @@ csv file
 
 
 ### 3.group_sampling
-+ Description
+'Number of samples of each group,Example:{1:2,0:4,2:5}'
 
-Number of samples of each group,Example:{1:2,0:4,2:5}
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -52,9 +50,8 @@ Number of samples of each group,Example:{1:2,0:4,2:5}
 
 
 ### 4.is_putback
-+ Description
+'is sampling putback'
 
-is sampling putback
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -63,9 +60,8 @@ is sampling putback
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'merged csv file'
 
-merged csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

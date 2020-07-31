@@ -1,14 +1,15 @@
 # SVM Regression
-+ Description
+## Detailed Info
+### Description
+'Epsilon-Support Vector Regression.    The free para\n             meters in the model are C and epsilon.    The impl\n             ementation is based on libsvm. The fit time comple\n             xity    is more than quadratic with the number of \n             samples which makes it hard    to scale to dataset\n             s with more than a couple of 10000 samples. For la\n             rge    datasets consider using :class:`sklearn.svm\n             .LinearSVR` or    :class:`sklearn.linear_model.SGD\n             Regressor` instead, possibly after a    :class:`sk\n             learn.kernel_approximation.Nystroem` transformer.'
 
-Epsilon-Support Vector Regression. The free para meters in the model are C and epsilon. The impl ementation is based on libsvm. The fit time comple xity is more than quadratic with the number of samples which makes it hard to scale to dataset s with more than a couple of 10000 samples. For la rge datasets consider using :class:`sklearn.svm .LinearSVR` or :class:`sklearn.linear_model.SGD Regressor` instead, possibly after a :class:`sk learn.kernel_approximation.Nystroem` transformer.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Regression | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -28,9 +29,8 @@ Epsilon-Support Vector Regression. The free para meters in the model are C and e
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -38,9 +38,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -48,9 +47,8 @@ input csv file for trainer
 
 
 ### 3.kernel
-+ Description
+"Specifies the kernel type to be used in the algorit\n             hm.         It must be one of 'linear', 'poly', 'r\n             bf', 'sigmoid', 'precomputed' or         a callabl\n             e.         If none is given, 'rbf' will be used. I\n             f a callable is given it is         used to precom\n             pute the kernel matrix."
 
-Specifies the kernel type to be used in the algorit hm. It must be one of 'linear', 'poly', 'r bf', 'sigmoid', 'precomputed' or a callabl e. If none is given, 'rbf' will be used. I f a callable is given it is used to precom pute the kernel matrix.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -70,9 +68,8 @@ Specifies the kernel type to be used in the algorit hm. It must be one of 'linea
 
 
 ### 4.degree
-+ Description
+"Degree of the polynomial kernel function ('poly'). \n                    Ignored by all other kernels."
 
-Degree of the polynomial kernel function ('poly'). Ignored by all other kernels.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -80,9 +77,8 @@ Degree of the polynomial kernel function ('poly'). Ignored by all other kernels.
 
 
 ### 5.gamma
-+ Description
+"Kernel coefficient for 'rbf', 'poly' and 'sigmoid'.\n                     - if ``gamma='scale'`` (default) is passed\n              then it uses          1 / (n_features * x.var()) \n             as value of gamma,        - if 'auto', uses 1 / n_\n             features.."
 
-Kernel coefficient for 'rbf', 'poly' and 'sigmoid'. - if ``gamma='scale'`` (default) is passed then it uses 1 / (n_features * x.var()) as value of gamma, - if 'auto', uses 1 / n_ features..
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -90,9 +86,8 @@ Kernel coefficient for 'rbf', 'poly' and 'sigmoid'. - if ``gamma='scale'`` (defa
 
 
 ### 6.coef0
-+ Description
+"Independent term in kernel function.        It is o\n             nly significant in 'poly' and 'sigmoid'."
 
-Independent term in kernel function. It is o nly significant in 'poly' and 'sigmoid'.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -100,9 +95,8 @@ Independent term in kernel function. It is o nly significant in 'poly' and 'sigm
 
 
 ### 7.tol
-+ Description
+'Tolerance for stopping criterion.'
 
-Tolerance for stopping criterion.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -110,9 +104,8 @@ Tolerance for stopping criterion.
 
 
 ### 8.C
-+ Description
+'Regularization parameter. The strength of the regul\n             arization is        inversely proportional to C. M\n             ust be strictly positive.        The penalty is a \n             squared l2 penalty.'
 
-Regularization parameter. The strength of the regul arization is inversely proportional to C. M ust be strictly positive. The penalty is a squared l2 penalty.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -120,9 +113,8 @@ Regularization parameter. The strength of the regul arization is inversely propo
 
 
 ### 9.max_iter
-+ Description
+'Hard limit on iterations within solver, or -1 for n\n             o limit.    Attributes'
 
-Hard limit on iterations within solver, or -1 for n o limit. Attributes
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -131,9 +123,8 @@ Hard limit on iterations within solver, or -1 for n o limit. Attributes
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -141,9 +132,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

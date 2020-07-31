@@ -1,14 +1,15 @@
 # Select Columns
-+ Description
+## Detailed Info
+### Description
+'select columns from csv file'
 
-select columns from csv file
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Transformation | Manipulation | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -22,9 +23,8 @@ select columns from csv file
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.include_columns
-+ Description
+'columns included'
 
-columns included
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -32,9 +32,8 @@ columns included
 
 
 ### 2.exclude_columns
-+ Description
+'columns excluded'
 
-columns excluded
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,9 +41,8 @@ columns excluded
 
 
 ### 3.input_file1
-+ Description
+'input csv file'
 
-input csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -53,9 +51,8 @@ input csv file
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'result after select columns'
 
-result after select columns
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -63,9 +60,8 @@ result after select columns
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

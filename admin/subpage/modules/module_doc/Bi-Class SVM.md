@@ -1,14 +1,15 @@
 # Bi-Class SVM
-+ Description
+## Detailed Info
+### Description
+'C-Support Vector Classification.    The implementat\n             ion is based on libsvm. The fit time scales at lea\n             st    quadratically with the number of samples and\n              may be impractical    beyond tens of thousands of\n              samples. For large datasets    consider using :cl\n             ass:`sklearn.svm.LinearSVC` or    :class:`sklearn.\n             linear_model.SGDClassifier` instead, possibly afte\n             r a    :class:`sklearn.kernel_approximation.Nystro\n             em` transformer.    The multiclass support is hand\n             led according to a one-vs-one scheme.    For detai\n             ls on the precise mathematical formulation of the \n             provided    kernel functions and how `gamma`, `coe\n             f0` and `degree` affect each    other, see the cor\n             responding section in the narrative documentation:\n                 :ref:`svm_kernels`.'
 
-C-Support Vector Classification. The implementat ion is based on libsvm. The fit time scales at lea st quadratically with the number of samples and may be impractical beyond tens of thousands of samples. For large datasets consider using :cl ass:`sklearn.svm.LinearSVC` or :class:`sklearn. linear_model.SGDClassifier` instead, possibly afte r a :class:`sklearn.kernel_approximation.Nystro em` transformer. The multiclass support is hand led according to a one-vs-one scheme. For detai ls on the precise mathematical formulation of the provided kernel functions and how `gamma`, `coe f0` and `degree` affect each other, see the cor responding section in the narrative documentation: :ref:`svm_kernels`.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Binary Classification | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -28,9 +29,8 @@ C-Support Vector Classification. The implementat ion is based on libsvm. The fit
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -38,9 +38,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -48,9 +47,8 @@ input csv file for trainer
 
 
 ### 3.C
-+ Description
+'float, optional (default=1.0)\n        Regularization parameter. The strength of the regularization is\n        inversely proportional to C. Must be strictly positive. The penalty\n        is a squared l2 penalty.'
 
-float, optional (default=1.0) Regularization parameter. The strength of the regularization is inversely proportional to C. Must be strictly positive. The penalty is a squared l2 penalty.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -58,9 +56,8 @@ float, optional (default=1.0) Regularization parameter. The strength of the regu
 
 
 ### 4.kernel
-+ Description
+"string, optional (default='rbf')\n        Specifies the kernel type to be used in the algorithm.\n        It must be one of 'linear', 'poly', 'rbf', 'sigmoid', 'precomputed' or\n        a callable.\n        If none is given, 'rbf' will be used. If a callable is given it is\n        used to pre-compute the kernel matrix from data matrices; that matrix\n        should be an array of shape ``(n_samples, n_samples)``."
 
-string, optional (default='rbf') Specifies the kernel type to be used in the algorithm. It must be one of 'linear', 'poly', 'rbf', 'sigmoid', 'precomputed' or a callable. If none is given, 'rbf' will be used. If a callable is given it is used to pre-compute the kernel matrix from data matrices; that matrix should be an array of shape ``(n_samples, n_samples)``.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -80,9 +77,8 @@ string, optional (default='rbf') Specifies the kernel type to be used in the alg
 
 
 ### 5.gamma
-+ Description
+"{'scale', 'auto'} or float, optional (default='scale')\n        Kernel coefficient for 'rbf', 'poly' and 'sigmoid'.\n\n        - if ``gamma='scale'`` (default) is passed then it uses\n          1 / (n_features * x.var()) as value of gamma,\n        - if 'auto', uses 1 / n_features."
 
-{'scale', 'auto'} or float, optional (default='scale') Kernel coefficient for 'rbf', 'poly' and 'sigmoid'. - if ``gamma='scale'`` (default) is passed then it uses 1 / (n_features * x.var()) as value of gamma, - if 'auto', uses 1 / n_features.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -90,9 +86,8 @@ string, optional (default='rbf') Specifies the kernel type to be used in the alg
 
 
 ### 6.degree
-+ Description
+"Degree of the polynomial kernel function ('poly').\n        Ignored by all other kernels."
 
-Degree of the polynomial kernel function ('poly'). Ignored by all other kernels.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -100,9 +95,8 @@ Degree of the polynomial kernel function ('poly'). Ignored by all other kernels.
 
 
 ### 7.coef0
-+ Description
+"Independent term in kernel function.\n        It is only significant in 'poly' and 'sigmoid'."
 
-Independent term in kernel function. It is only significant in 'poly' and 'sigmoid'.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -110,9 +104,8 @@ Independent term in kernel function. It is only significant in 'poly' and 'sigmo
 
 
 ### 8.tol
-+ Description
+'Tolerance for stopping criterion.'
 
-Tolerance for stopping criterion.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -120,9 +113,8 @@ Tolerance for stopping criterion.
 
 
 ### 9.max_iter
-+ Description
+'Hard limit on iterations within solver, or -1 for n\n             o limit.'
 
-Hard limit on iterations within solver, or -1 for n o limit.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -131,9 +123,8 @@ Hard limit on iterations within solver, or -1 for n o limit.
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -141,9 +132,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

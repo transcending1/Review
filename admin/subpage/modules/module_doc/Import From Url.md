@@ -1,14 +1,15 @@
 # Import From Url
-+ Description
+## Detailed Info
+### Description
+'import from web url to csv'
 
-import from web url to csv
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Input and Output | Import | DOCKER | 1 | 0 | 2048 | deny |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -21,9 +22,8 @@ import from web url to csv
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.url_path
-+ Description
+'static web url'
 
-static web url
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -31,9 +31,8 @@ static web url
 
 
 ### 2.input_file_encoding
-+ Description
+'file encoding'
 
-file encoding
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -41,9 +40,8 @@ file encoding
 
 
 ### 3.sep
-+ Description
+'sep of static file'
 
-sep of static file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -52,9 +50,8 @@ sep of static file
 
 ## Output Parameters
 ### 1.output_file1
-+ Description
+'file generated from web url'
 
-file generated from web url
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

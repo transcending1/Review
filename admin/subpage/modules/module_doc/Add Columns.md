@@ -1,14 +1,15 @@
 # Add Columns
-+ Description
+## Detailed Info
+### Description
+'merge two csv files into one csv file by columns,encoding:utf8  sep:,'
 
-merge two csv files into one csv file by columns,encoding:utf8 sep:,
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Transformation | Manipulation | DOCKER | 1 | 0 | 2048 | deny |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -22,9 +23,8 @@ merge two csv files into one csv file by columns,encoding:utf8 sep:,
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.columns1
-+ Description
+'column selector for field input_file1'
 
-column selector for field input_file1
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -32,9 +32,8 @@ column selector for field input_file1
 
 
 ### 2.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,9 +41,8 @@ csv file
 
 
 ### 3.columns2
-+ Description
+'column selector for field input_file2'
 
-column selector for field input_file2
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -52,9 +50,8 @@ column selector for field input_file2
 
 
 ### 4.input_file2
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -63,9 +60,8 @@ csv file
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'merged csv file'
 
-merged csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

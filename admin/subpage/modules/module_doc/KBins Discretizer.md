@@ -1,14 +1,15 @@
 # KBins Discretizer
-+ Description
+## Detailed Info
+### Description
+'Discretization of continuous features, \n    advantages: more robust, introduction of non-linear (after box coding)'
 
-Discretization of continuous features, advantages: more robust, introduction of non-linear (after box coding)
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Feature Engineering | Feature Conversion | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -23,9 +24,8 @@ Discretization of continuous features, advantages: more robust, introduction of 
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.columns1
-+ Description
+'column selector for field input_file1'
 
-column selector for field input_file1
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -33,9 +33,8 @@ column selector for field input_file1
 
 
 ### 2.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -43,9 +42,8 @@ csv file
 
 
 ### 3.keep_columns
-+ Description
+'keep old columns or not'
 
-keep old columns or not
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -62,9 +60,8 @@ keep old columns or not
 
 
 ### 4.bins
-+ Description
+'how many bins you want to split'
 
-how many bins you want to split
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -73,9 +70,8 @@ how many bins you want to split
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'output dataset'
 
-output dataset
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -83,9 +79,8 @@ output dataset
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

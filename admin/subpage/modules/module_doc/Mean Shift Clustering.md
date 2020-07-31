@@ -1,14 +1,15 @@
 # Mean Shift Clustering
-+ Description
+## Detailed Info
+### Description
+'Mean shift clustering using a flat kernel.\n    Mean shift clustering aims to discover "blobs" in a smooth density of\n    samples. It is a centroid-based algorithm, which works by updating\n    candidates for centroids to be the mean of the points within a given\n    region. These candidates are then filtered in a post-processing stage to\n    eliminate near-duplicates to form the final set of centroids.\n    Seeding is performed using a binning technique for scalability.'
 
-Mean shift clustering using a flat kernel. Mean shift clustering aims to discover "blobs" in a smooth density of samples. It is a centroid-based algorithm, which works by updating candidates for centroids to be the mean of the points within a given region. These candidates are then filtered in a post-processing stage to eliminate near-duplicates to form the final set of centroids. Seeding is performed using a binning technique for scalability.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Clustering | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -22,9 +23,8 @@ Mean shift clustering using a flat kernel. Mean shift clustering aims to discove
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -32,9 +32,8 @@ input csv file for trainer
 
 
 ### 2.min_bin_freq
-+ Description
+'To speed up the algorithm, accept only those bins with at least\n           min_bin_freq points as seeds. If not defined, set to 1.'
 
-To speed up the algorithm, accept only those bins with at least min_bin_freq points as seeds. If not defined, set to 1.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,9 +41,8 @@ To speed up the algorithm, accept only those bins with at least min_bin_freq poi
 
 
 ### 3.max_iter
-+ Description
+'Maximum number of iterations, per seed point before the clustering\n        operation terminates (for that seed point), if has not converged yet.'
 
-Maximum number of iterations, per seed point before the clustering operation terminates (for that seed point), if has not converged yet.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -53,9 +51,8 @@ Maximum number of iterations, per seed point before the clustering operation ter
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -63,9 +60,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

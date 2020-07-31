@@ -1,14 +1,15 @@
 # Remove Duplicate Rows
-+ Description
+## Detailed Info
+### Description
+'drop duplicate rows in your dataset'
 
-drop duplicate rows in your dataset
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Transformation | Manipulation | DOCKER | 1 | 0 | 2048 | allow |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -20,9 +21,8 @@ drop duplicate rows in your dataset
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.subset
-+ Description
+'for example: you can put in rowA,rowBwhich means you can drop the rows duplicated in union rowA and rowB'
 
-for example: you can put in rowA,rowBwhich means you can drop the rows duplicated in union rowA and rowB
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -30,9 +30,8 @@ for example: you can put in rowA,rowBwhich means you can drop the rows duplicate
 
 
 ### 2.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -41,9 +40,8 @@ csv file
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'merged csv file'
 
-merged csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

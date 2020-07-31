@@ -1,14 +1,15 @@
 # AdaBoost Regression
-+ Description
+## Detailed Info
+### Description
+'An AdaBoost regressor.    An AdaBoost [1] regressor\n              is a meta-estimator that begins by fitting a    r\n             egressor on the original dataset and then fits add\n             itional copies of the    regressor on the same dat\n             aset but where the weights of instances are    adj\n             usted according to the error of the current predic\n             tion. As such,    subsequent regressors focus more\n              on difficult cases.    This class implements the \n             algorithm known as AdaBoost.R2 [2]'
 
-An AdaBoost regressor. An AdaBoost [1] regressor is a meta-estimator that begins by fitting a r egressor on the original dataset and then fits add itional copies of the regressor on the same dat aset but where the weights of instances are adj usted according to the error of the current predic tion. As such, subsequent regressors focus more on difficult cases. This class implements the algorithm known as AdaBoost.R2 [2]
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Regression | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -24,9 +25,8 @@ An AdaBoost regressor. An AdaBoost [1] regressor is a meta-estimator that begins
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -34,9 +34,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -44,9 +43,8 @@ input csv file for trainer
 
 
 ### 3.n_estimators
-+ Description
+'The maximum number of estimators at which boosting \n             is terminated.        In case of perfect fit, the \n             learning procedure is stopped early.'
 
-The maximum number of estimators at which boosting is terminated. In case of perfect fit, the learning procedure is stopped early.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -54,9 +52,8 @@ The maximum number of estimators at which boosting is terminated. In case of per
 
 
 ### 4.learning_rate
-+ Description
+'Learning rate shrinks the contribution of each regr\n             essor by        ``learning_rate``. There is a trad\n             e-off between ``learning_rate`` and        ``n_est\n             imators``.'
 
-Learning rate shrinks the contribution of each regr essor by ``learning_rate``. There is a trad e-off between ``learning_rate`` and ``n_est imators``.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +61,8 @@ Learning rate shrinks the contribution of each regr essor by ``learning_rate``. 
 
 
 ### 5.loss
-+ Description
+'The loss function to use when updating the weights \n             after each        boosting iteration.'
 
-The loss function to use when updating the weights after each boosting iteration.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -85,9 +81,8 @@ The loss function to use when updating the weights after each boosting iteration
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -95,9 +90,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -151,6 +145,6 @@ output module
 
 | result |
 | --- |
-| {'result': '28.46666666666666'} |
+| {'result': '28.150769230769225'} |
 
 

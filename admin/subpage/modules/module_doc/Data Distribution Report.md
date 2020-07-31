@@ -1,14 +1,15 @@
 # Data Distribution Report
-+ Description
+## Detailed Info
+### Description
+'data distribution report'
 
-data distribution report
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Visualization | Statistical Analysis | DOCKER | 1 | 0 | 2048 | deny |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -19,9 +20,8 @@ data distribution report
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'the csv file you want to evaluate'
 
-the csv file you want to evaluate
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -30,9 +30,8 @@ the csv file you want to evaluate
 
 ## Output Parameters
 ### 1.output_directory
-+ Description
+'directory output'
 
-directory output
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

@@ -1,14 +1,15 @@
 # Clustering Evaluation
-+ Description
+## Detailed Info
+### Description
+'clustering evaluation'
 
-clustering evaluation
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Evaluation | DOCKER | 1 | 0 | 2048 | deny |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -20,9 +21,8 @@ clustering evaluation
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_model
-+ Description
+'module after training by trainer'
 
-module after training by trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -30,9 +30,8 @@ module after training by trainer
 
 
 ### 2.input_file1
-+ Description
+'test csv dataset to have a test about clustering'
 
-test csv dataset to have a test about clustering
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -41,9 +40,8 @@ test csv dataset to have a test about clustering
 
 ## Output Parameters
 ### 1.output_directory
-+ Description
+'clustering evaluation report'
 
-clustering evaluation report
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

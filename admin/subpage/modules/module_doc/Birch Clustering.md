@@ -1,14 +1,15 @@
 # Birch Clustering
-+ Description
+## Detailed Info
+### Description
+'Implements the Birch clustering algorithm.\n        It is a memory-efficient, online-learning algorithm provided as an    alternative to :class:`MiniBatchKMeans`. \n        It constructs a tree    data structure with the cluster centroids being read off the leaf.\n        These can be either the final cluster centroids or can be provided as input\n        to another clustering algorithm such as :class:`AgglomerativeClustering'
 
-Implements the Birch clustering algorithm. It is a memory-efficient, online-learning algorithm provided as an alternative to :class:`MiniBatchKMeans`. It constructs a tree data structure with the cluster centroids being read off the leaf. These can be either the final cluster centroids or can be provided as input to another clustering algorithm such as :class:`AgglomerativeClustering
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Clustering | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -23,9 +24,8 @@ Implements the Birch clustering algorithm. It is a memory-efficient, online-lear
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -33,9 +33,8 @@ input csv file for trainer
 
 
 ### 2.threshold
-+ Description
+'The radius of the subcluster obtained by merging a new sample and the\n    closest subcluster should be lesser than the threshold. Otherwise a new\n    subcluster is started. Setting this value to be very low promotes\n    splitting and vice-versa.'
 
-The radius of the subcluster obtained by merging a new sample and the closest subcluster should be lesser than the threshold. Otherwise a new subcluster is started. Setting this value to be very low promotes splitting and vice-versa.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -43,9 +42,8 @@ The radius of the subcluster obtained by merging a new sample and the closest su
 
 
 ### 3.branching_factor
-+ Description
+'Maximum number of CF subclusters in each node. If a new samples enters\n    such that the number of subclusters exceed the branching_factor then\n    that node is split into two nodes with the subclusters redistributed\n    in each. The parent subcluster of that node is removed and two new\n    subclusters are added as parents of the 2 split nodes.'
 
-Maximum number of CF subclusters in each node. If a new samples enters such that the number of subclusters exceed the branching_factor then that node is split into two nodes with the subclusters redistributed in each. The parent subcluster of that node is removed and two new subclusters are added as parents of the 2 split nodes.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -53,9 +51,8 @@ Maximum number of CF subclusters in each node. If a new samples enters such that
 
 
 ### 4.n_clusters
-+ Description
+'Number of clusters after the final clustering step, which treats the\n    subclusters from the leaves as new samples.\n    subclusters are returned as they are.\n    is fit treating the subclusters as new samples and the initial data\n    is mapped to the label of the closest subcluster.\n    `n_clusters` set to be equal to the int.'
 
-Number of clusters after the final clustering step, which treats the subclusters from the leaves as new samples. subclusters are returned as they are. is fit treating the subclusters as new samples and the initial data is mapped to the label of the closest subcluster. `n_clusters` set to be equal to the int.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +61,8 @@ Number of clusters after the final clustering step, which treats the subclusters
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -74,9 +70,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

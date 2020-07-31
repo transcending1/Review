@@ -19,6 +19,6 @@ def collect_unittest_report():
 
 
 if __name__ == "__main__":
-    # collect_module_html()
-    # collect_framework_doc()
+    collect_module_html()
+    collect_framework_doc()
     collect_unittest_report()

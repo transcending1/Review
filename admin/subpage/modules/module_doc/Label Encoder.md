@@ -1,14 +1,15 @@
 # Label Encoder
-+ Description
+## Detailed Info
+### Description
+'String index converts string characteristics in a dataset into indexes.'
 
-String index converts string characteristics in a dataset into indexes.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Feature Engineering | Feature Conversion | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -21,9 +22,8 @@ String index converts string characteristics in a dataset into indexes.
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'the column you want to convert to number,it is usually used to convert label to number and then reverse the label'
 
-the column you want to convert to number,it is usually used to convert label to number and then reverse the label
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -31,9 +31,8 @@ the column you want to convert to number,it is usually used to convert label to 
 
 
 ### 2.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,9 +41,8 @@ csv file
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'output dataset'
 
-output dataset
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -52,9 +50,8 @@ output dataset
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

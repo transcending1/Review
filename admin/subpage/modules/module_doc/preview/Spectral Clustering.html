@@ -66,10 +66,9 @@
         <div id='readme' style='width:70%;margin-left:20%;'>
           	<article class='markdown-body'>
             	<h1 id="spectral-clustering">Spectral Clustering</h1>
-<ul>
-<li>Description</li>
-</ul>
-<p>Apply clustering to a projection of the normalized Laplacian. In practice Spectral Clustering is very useful when the structure of the individual clusters is highly non-convex or more generally when a measure of the center and spread of the cluster is not a suitable description of the complete cluster. For instance when clusters are nested circles on the 2D plane. If affinity is the adjacency matrix of a graph, this method can be used to find normalized graph cuts. When calling <code>fit</code>, an affinity matrix is constructed using either kernel function such the Gaussian (aka RBF) kernel of the euclidean distanced <code>d(X, X)</code>:: np.exp(-gamma * d(X,X) ** 2) or a k-nearest neighbors connectivity matrix. Alternatively, using <code>precomputed</code>, a user-provided affinity matrix can be used. </p>
+<h2 id="detailed-info">Detailed Info</h2>
+<h3 id="description">Description</h3>
+<p>&#39;Apply clustering to a projection of the normalized Laplacian.\n            In practice Spectral Clustering is very useful when the structure of\n            the individual clusters is highly non-convex or more generally when\n            a measure of the center and spread of the cluster is not a suitable\n            description of the complete cluster. For instance when clusters are\n            nested circles on the 2D plane.\n            If affinity is the adjacency matrix of a graph, this method can be\n            used to find normalized graph cuts.\n            When calling <code>fit</code>, an affinity matrix is constructed using either\n            kernel function such the Gaussian (aka RBF) kernel of the euclidean\n            distanced <code>d(X, X)</code>::\n            np.exp(-gamma * d(X,X) ** 2)    or a k-nearest neighbors connectivity matrix.\n            Alternatively, using <code>precomputed</code>, a user-provided affinity    matrix can be used.\n            &#39;</p>
 <table>
 <thead>
 <tr>
@@ -94,7 +93,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="parameter-detail">Parameter Detail</h1>
+<h3 id="parameter-detail">Parameter Detail</h3>
 <table>
 <thead>
 <tr>
@@ -160,10 +159,7 @@
 <h1 id="detailed-info-of-parameters">Detailed Info of Parameters</h1>
 <h2 id="input-parameters">Input Parameters</h2>
 <h3 id="1-input_file1">1.input_file1</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>input csv file for trainer</p>
+<p>&#39;input csv file for trainer&#39;</p>
 <table>
 <thead>
 <tr>
@@ -185,10 +181,7 @@
 </tbody>
 </table>
 <h3 id="2-n_clusters">2.n_clusters</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The dimension of the projection subspace.</p>
+<p>&#39;The dimension of the projection subspace.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -210,10 +203,7 @@
 </tbody>
 </table>
 <h3 id="3-n_init">3.n_init</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Number of time the k-means algorithm will be run with different centroid seeds. The final results will be the best output o f n_init consecutive runs in terms of inertia.</p>
+<p>&#39;Number of time the k-means algorithm will be run with different\n            centroid seeds. The final results will be the best output o\n            f        n_init consecutive runs in terms of inertia.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -235,10 +225,7 @@
 </tbody>
 </table>
 <h3 id="4-assign_labels">4.assign_labels</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The strategy to use to assign labels in the embedding space. There are two ways to assign labels after the laplacian embedding. k-means can be applied and is a popular choice. But it can also be sensitive to initialization. Discretization is another approach which is less sensitive to random initialization.</p>
+<p>&#39;The strategy to use to assign labels in the embedding\n            space. There are two ways to assign labels after the laplacian\n        embedding. k-means can be applied and is a popular choice. But it can\n        also be sensitive to initialization. Discretization is another approach \n        which is less sensitive to random initialization.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -280,10 +267,7 @@
 </tbody>
 </table>
 <h3 id="5-gamma">5.gamma</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Kernel coefficient for rbf, poly, sigmoid, laplacian and chi2 kernels. Ignored for <code>affinity=&#39;nearest_neighbors&#39;</code>.</p>
+<p>&quot;Kernel coefficient for rbf, poly, sigmoid, laplacian and chi2 kernels.\n            Ignored for <code>affinity=&#39;nearest_neighbors&#39;</code>.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -306,10 +290,7 @@
 </table>
 <h2 id="output-parameters">Output Parameters</h2>
 <h3 id="1-output_file">1.output_file</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>output dataset</p>
+<p>&#39;output dataset&#39;</p>
 <table>
 <thead>
 <tr>

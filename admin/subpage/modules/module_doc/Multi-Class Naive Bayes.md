@@ -1,14 +1,15 @@
 # Multi-Class Naive Bayes
-+ Description
+## Detailed Info
+### Description
+'    Naive Bayes classifier for multinomial models  \n               The multinomial Naive Bayes classifier is suitab\n             le for classification with    discrete features (e\n             .g., word counts for text classification). The    \n             multinomial distribution normally requires integer\n              feature counts. However,    in practice, fraction\n             al counts such as tf-idf may also work.'
 
- Naive Bayes classifier for multinomial models The multinomial Naive Bayes classifier is suitab le for classification with discrete features (e .g., word counts for text classification). The multinomial distribution normally requires integer feature counts. However, in practice, fraction al counts such as tf-idf may also work.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Multi Classification | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -22,9 +23,8 @@
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -32,9 +32,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,9 +41,8 @@ input csv file for trainer
 
 
 ### 3.alpha
-+ Description
+'Additive (Laplace/Lidstone) smoothing parameter    \n                 (0 for no smoothing).'
 
-Additive (Laplace/Lidstone) smoothing parameter (0 for no smoothing).
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -53,9 +51,8 @@ Additive (Laplace/Lidstone) smoothing parameter (0 for no smoothing).
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -63,9 +60,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

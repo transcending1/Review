@@ -1,14 +1,15 @@
 # Neutral Network Regression
-+ Description
+## Detailed Info
+### Description
+'Multi-layer Perceptron regressor.    This model opt\n             imizes the squared-loss using LBFGS or stochastic \n             gradient    descent.'
 
-Multi-layer Perceptron regressor. This model opt imizes the squared-loss using LBFGS or stochastic gradient descent.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Regression | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -34,9 +35,8 @@ Multi-layer Perceptron regressor. This model opt imizes the squared-loss using L
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -44,9 +44,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -54,9 +53,8 @@ input csv file for trainer
 
 
 ### 3.hidden_layer_sizes
-+ Description
+'The ith element represents the number of neurons in\n              the ith        hidden layer.'
 
-The ith element represents the number of neurons in the ith hidden layer.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +62,8 @@ The ith element represents the number of neurons in the ith hidden layer.
 
 
 ### 4.activation
-+ Description
+"Activation function for the hidden layer.        - \n             'identity', no-op activation, useful to implement \n             linear bottleneck,          returns f(x) = x      \n               - 'logistic', the logistic sigmoid function,    \n                   returns f(x) = 1 / (1 + exp(-x)).        - '\n             tanh', the hyperbolic tan function,          retur\n             ns f(x) = tanh(x).        - 'relu', the rectified \n             linear unit function,          returns f(x) = max(\n             0, x)"
 
-Activation function for the hidden layer. - 'identity', no-op activation, useful to implement linear bottleneck, returns f(x) = x - 'logistic', the logistic sigmoid function, returns f(x) = 1 / (1 + exp(-x)). - ' tanh', the hyperbolic tan function, retur ns f(x) = tanh(x). - 'relu', the rectified linear unit function, returns f(x) = max( 0, x)
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -85,9 +82,8 @@ Activation function for the hidden layer. - 'identity', no-op activation, useful
 
 
 ### 5.solver
-+ Description
+"The solver for weight optimization.        - 'lbfgs\n             ' is an optimizer in the family of quasi-Newton me\n             thods.        - 'sgd' refers to stochastic gradien\n             t descent.        - 'adam' refers to a stochastic \n             gradient-based optimizer proposed          by King\n             ma, Diederik, and Jimmy Ba        Note: The defaul\n             t solver 'adam' works pretty well on relatively   \n                  large datasets (with thousands of training sa\n             mples or more) in terms of        both training ti\n             me and validation score.        For small datasets\n             , however, 'lbfgs' can converge faster and perform\n                     better."
 
-The solver for weight optimization. - 'lbfgs ' is an optimizer in the family of quasi-Newton me thods. - 'sgd' refers to stochastic gradien t descent. - 'adam' refers to a stochastic gradient-based optimizer proposed by King ma, Diederik, and Jimmy Ba Note: The defaul t solver 'adam' works pretty well on relatively large datasets (with thousands of training sa mples or more) in terms of both training ti me and validation score. For small datasets , however, 'lbfgs' can converge faster and perform better.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -105,9 +101,8 @@ The solver for weight optimization. - 'lbfgs ' is an optimizer in the family of 
 
 
 ### 6.alpha
-+ Description
+'L2 penalty (regularization term) parameter.'
 
-L2 penalty (regularization term) parameter.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -115,9 +110,8 @@ L2 penalty (regularization term) parameter.
 
 
 ### 7.batch_size
-+ Description
+'Size of minibatches for stochastic optimizers.     \n                If the solver is \'lbfgs\', the classifier will n\n             ot use minibatch.        When set to "auto", `batc\n             h_size=min(200, n_samples)`'
 
-Size of minibatches for stochastic optimizers. If the solver is 'lbfgs', the classifier will n ot use minibatch. When set to "auto", `batc h_size=min(200, n_samples)`
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -125,9 +119,8 @@ Size of minibatches for stochastic optimizers. If the solver is 'lbfgs', the cla
 
 
 ### 8.learning_rate
-+ Description
+"Learning rate schedule for weight updates.        -\n              'constant' is a constant learning rate given by  \n                     'learning_rate_init'.        - 'invscaling\n             ' gradually decreases the learning rate at each   \n                    time step 't' using an inverse scaling expo\n             nent of 'power_t'.          effective_learning_rat\n             e = learning_rate_init / pow(t, power_t)        - \n             'adaptive' keeps the learning rate constant to    \n                   'learning_rate_init' as long as training los\n             s keeps decreasing.          Each time two consecu\n             tive epochs fail to decrease training loss by at  \n                     least tol, or fail to increase validation \n             score by at least tol if          'early_stopping'\n              is on, the current learning rate is divided by 5.\n                     Only used when ``solver='sgd'``."
 
-Learning rate schedule for weight updates. - 'constant' is a constant learning rate given by 'learning_rate_init'. - 'invscaling ' gradually decreases the learning rate at each time step 't' using an inverse scaling expo nent of 'power_t'. effective_learning_rat e = learning_rate_init / pow(t, power_t) - 'adaptive' keeps the learning rate constant to 'learning_rate_init' as long as training los s keeps decreasing. Each time two consecu tive epochs fail to decrease training loss by at least tol, or fail to increase validation score by at least tol if 'early_stopping' is on, the current learning rate is divided by 5. Only used when ``solver='sgd'``.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -145,9 +138,8 @@ Learning rate schedule for weight updates. - 'constant' is a constant learning r
 
 
 ### 9.learning_rate_init
-+ Description
+"The initial learning rate used. It controls the ste\n             p-size        in updating the weights. Only used w\n             hen solver='sgd' or 'adam'."
 
-The initial learning rate used. It controls the ste p-size in updating the weights. Only used w hen solver='sgd' or 'adam'.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -155,9 +147,8 @@ The initial learning rate used. It controls the ste p-size in updating the weigh
 
 
 ### 10.power_t
-+ Description
+"The exponent for inverse scaling learning rate.    \n                 It is used in updating effective learning rate\n              when the learning_rate        is set to 'invscali\n             ng'. Only used when solver='sgd'."
 
-The exponent for inverse scaling learning rate. It is used in updating effective learning rate when the learning_rate is set to 'invscali ng'. Only used when solver='sgd'.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -165,9 +156,8 @@ The exponent for inverse scaling learning rate. It is used in updating effective
 
 
 ### 11.max_iter
-+ Description
+"Maximum number of iterations. The solver iterates u\n             ntil convergence        (determined by 'tol') or t\n             his number of iterations. For stochastic        so\n             lvers ('sgd', 'adam'), note that this determines t\n             he number of epochs        (how many times each da\n             ta point will be used), not the number of        g\n             radient steps."
 
-Maximum number of iterations. The solver iterates u ntil convergence (determined by 'tol') or t his number of iterations. For stochastic so lvers ('sgd', 'adam'), note that this determines t he number of epochs (how many times each da ta point will be used), not the number of g radient steps.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -175,9 +165,8 @@ Maximum number of iterations. The solver iterates u ntil convergence (determined
 
 
 ### 12.shuffle
-+ Description
+"Whether to shuffle samples in each iteration. Only \n             used when        solver='sgd' or 'adam'."
 
-Whether to shuffle samples in each iteration. Only used when solver='sgd' or 'adam'.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -185,9 +174,8 @@ Whether to shuffle samples in each iteration. Only used when solver='sgd' or 'ad
 
 
 ### 13.tol
-+ Description
+"Tolerance for the optimization. When the loss or sc\n             ore is not improving        by at least ``tol`` fo\n             r ``n_iter_no_change`` consecutive iterations,    \n                 unless ``learning_rate`` is set to 'adaptive',\n              convergence is        considered to be reached an\n             d training stops."
 
-Tolerance for the optimization. When the loss or sc ore is not improving by at least ``tol`` fo r ``n_iter_no_change`` consecutive iterations, unless ``learning_rate`` is set to 'adaptive', convergence is considered to be reached an d training stops.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -195,9 +183,8 @@ Tolerance for the optimization. When the loss or sc ore is not improving by at l
 
 
 ### 14.momentum
-+ Description
+"Momentum for gradient descent update. Should be bet\n             ween 0 and 1. Only        used when solver='sgd'."
 
-Momentum for gradient descent update. Should be bet ween 0 and 1. Only used when solver='sgd'.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -205,9 +192,8 @@ Momentum for gradient descent update. Should be bet ween 0 and 1. Only used when
 
 
 ### 15.early_stopping
-+ Description
+"Whether to use early stopping to terminate training\n              when validation        score is not improving. If\n              set to true, it will automatically set        asi\n             de 10% of training data as validation and terminat\n             e training when        validation score is not imp\n             roving by at least tol for        ``n_iter_no_chan\n             ge`` consecutive epochs. The split is stratified, \n                    except in a multilabel setting.        Only\n              effective when solver='sgd' or 'adam"
 
-Whether to use early stopping to terminate training when validation score is not improving. If set to true, it will automatically set asi de 10% of training data as validation and terminat e training when validation score is not imp roving by at least tol for ``n_iter_no_chan ge`` consecutive epochs. The split is stratified, except in a multilabel setting. Only effective when solver='sgd' or 'adam
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -216,9 +202,8 @@ Whether to use early stopping to terminate training when validation score is not
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -226,9 +211,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -292,6 +276,6 @@ output module
 
 | result |
 | --- |
-| {'result': '30.086113303816184'} |
+| {'result': '29.649208236011518'} |
 
 

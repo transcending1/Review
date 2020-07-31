@@ -1,14 +1,15 @@
 # Clean Missing Data
-+ Description
+## Detailed Info
+### Description
+'delete the missing value in your dataset by missing percent of your columns or rows'
 
-delete the missing value in your dataset by missing percent of your columns or rows
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Transformation | Manipulation | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -22,9 +23,8 @@ delete the missing value in your dataset by missing percent of your columns or r
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -32,9 +32,8 @@ csv file
 
 
 ### 2.delete_method
-+ Description
+"the strategy used for delete missing data who's type is number"
 
-the strategy used for delete missing data who's type is number
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -51,9 +50,8 @@ the strategy used for delete missing data who's type is number
 
 
 ### 3.missing_percent
-+ Description
+'the percent of the missing values of columns or rows you want to delete'
 
-the percent of the missing values of columns or rows you want to delete
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -62,9 +60,8 @@ the percent of the missing values of columns or rows you want to delete
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'merged csv file'
 
-merged csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -72,9 +69,8 @@ merged csv file
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

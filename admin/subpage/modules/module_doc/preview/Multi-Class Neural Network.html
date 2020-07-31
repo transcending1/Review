@@ -66,10 +66,9 @@
         <div id='readme' style='width:70%;margin-left:20%;'>
           	<article class='markdown-body'>
             	<h1 id="multi-class-neural-network">Multi-Class Neural Network</h1>
-<ul>
-<li>Description</li>
-</ul>
-<p>Multi-layer Perceptron classifier. This model op timizes the log-loss function using LBFGS or stoch astic gradient descent.</p>
+<h2 id="detailed-info">Detailed Info</h2>
+<h3 id="description">Description</h3>
+<p>&#39;Multi-layer Perceptron classifier.    This model op\n             timizes the log-loss function using LBFGS or stoch\n             astic    gradient descent.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -94,7 +93,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="parameter-detail">Parameter Detail</h1>
+<h3 id="parameter-detail">Parameter Detail</h3>
 <table>
 <thead>
 <tr>
@@ -248,10 +247,7 @@
 <h1 id="detailed-info-of-parameters">Detailed Info of Parameters</h1>
 <h2 id="input-parameters">Input Parameters</h2>
 <h3 id="1-label">1.label</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>target feature</p>
+<p>&#39;target feature&#39;</p>
 <table>
 <thead>
 <tr>
@@ -273,10 +269,7 @@
 </tbody>
 </table>
 <h3 id="2-input_file1">2.input_file1</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>input csv file for trainer</p>
+<p>&#39;input csv file for trainer&#39;</p>
 <table>
 <thead>
 <tr>
@@ -298,10 +291,7 @@
 </tbody>
 </table>
 <h3 id="3-hidden_layer_sizes">3.hidden_layer_sizes</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The ith element represents the number of neurons in the ith hidden layer.</p>
+<p>&#39;The ith element represents the number of neurons in\n              the ith        hidden layer.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -323,10 +313,7 @@
 </tbody>
 </table>
 <h3 id="4-activation">4.activation</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Activation function for the hidden layer. - &#39;identity&#39;, no-op activation, useful to implement linear bottleneck, returns f(x) = x - &#39;logistic&#39;, the logistic sigmoid function, returns f(x) = 1 / (1 + exp(-x)). - &#39; tanh&#39;, the hyperbolic tan function, retur ns f(x) = tanh(x). - &#39;relu&#39;, the rectified linear unit function, returns f(x) = max( 0, x)</p>
+<p>&quot;Activation function for the hidden layer.        - \n             &#39;identity&#39;, no-op activation, useful to implement \n             linear bottleneck,          returns f(x) = x      \n               - &#39;logistic&#39;, the logistic sigmoid function,    \n                   returns f(x) = 1 / (1 + exp(-x)).        - &#39;\n             tanh&#39;, the hyperbolic tan function,          retur\n             ns f(x) = tanh(x).        - &#39;relu&#39;, the rectified \n             linear unit function,          returns f(x) = max(\n             0, x)&quot;</p>
 <table>
 <thead>
 <tr>
@@ -376,10 +363,7 @@
 </tbody>
 </table>
 <h3 id="5-solver">5.solver</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The solver for weight optimization. - &#39;lbfgs &#39; is an optimizer in the family of quasi-Newton me thods. - &#39;sgd&#39; refers to stochastic gradien t descent. - &#39;adam&#39; refers to a stochastic gradient-based optimizer proposed by King ma, Diederik, and Jimmy Ba Note: The defaul t solver &#39;adam&#39; works pretty well on relatively large datasets (with thousands of training sa mples or more) in terms of both training ti me and validation score. For small datasets , however, &#39;lbfgs&#39; can converge faster and perform better.</p>
+<p>&quot;The solver for weight optimization.        - &#39;lbfgs\n             &#39; is an optimizer in the family of quasi-Newton me\n             thods.        - &#39;sgd&#39; refers to stochastic gradien\n             t descent.        - &#39;adam&#39; refers to a stochastic \n             gradient-based optimizer proposed          by King\n             ma, Diederik, and Jimmy Ba        Note: The defaul\n             t solver &#39;adam&#39; works pretty well on relatively   \n                  large datasets (with thousands of training sa\n             mples or more) in terms of        both training ti\n             me and validation score.        For small datasets\n             , however, &#39;lbfgs&#39; can converge faster and perform\n                     better.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -425,10 +409,7 @@
 </tbody>
 </table>
 <h3 id="6-alpha">6.alpha</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>L2 penalty (regularization term) parameter.</p>
+<p>&#39;L2 penalty (regularization term) parameter.&#39;</p>
 <table>
 <thead>
 <tr>
@@ -450,10 +431,7 @@
 </tbody>
 </table>
 <h3 id="7-batch_size">7.batch_size</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Size of minibatches for stochastic optimizers. If the solver is &#39;lbfgs&#39;, the classifier will n ot use minibatch. When set to &quot;auto&quot;, <code>batc h_size=min(200, n_samples)</code></p>
+<p>&#39;Size of minibatches for stochastic optimizers.     \n                If the solver is \&#39;lbfgs\&#39;, the classifier will n\n             ot use minibatch.        When set to &quot;auto&quot;, <code>batc\n             h_size=min(200, n_samples)</code>&#39;</p>
 <table>
 <thead>
 <tr>
@@ -475,10 +453,7 @@
 </tbody>
 </table>
 <h3 id="8-learning_rate">8.learning_rate</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Learning rate schedule for weight updates. - &#39;constant&#39; is a constant learning rate given by &#39;learning_rate_init&#39;. - &#39;invscaling &#39; gradually decreases the learning rate at each time step &#39;t&#39; using an inverse scaling expo nent of &#39;power_t&#39;. effective_learning_rat e = learning_rate_init / pow(t, power_t) - &#39;adaptive&#39; keeps the learning rate constant to &#39;learning_rate_init&#39; as long as training los s keeps decreasing. Each time two consecu tive epochs fail to decrease training loss by at least tol, or fail to increase validation score by at least tol if &#39;early_stopping&#39; is on, the current learning rate is divided by 5. Only used when <code>solver=&#39;sgd&#39;</code>.</p>
+<p>&quot;Learning rate schedule for weight updates.        -\n              &#39;constant&#39; is a constant learning rate given by  \n                     &#39;learning_rate_init&#39;.        - &#39;invscaling\n             &#39; gradually decreases the learning rate at each   \n                    time step &#39;t&#39; using an inverse scaling expo\n             nent of &#39;power_t&#39;.          effective_learning_rat\n             e = learning_rate_init / pow(t, power_t)        - \n             &#39;adaptive&#39; keeps the learning rate constant to    \n                   &#39;learning_rate_init&#39; as long as training los\n             s keeps decreasing.          Each time two consecu\n             tive epochs fail to decrease training loss by at  \n                     least tol, or fail to increase validation \n             score by at least tol if          &#39;early_stopping&#39;\n              is on, the current learning rate is divided by 5.\n                     Only used when <code>solver=&#39;sgd&#39;</code>.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -524,10 +499,7 @@
 </tbody>
 </table>
 <h3 id="9-learning_rate_init">9.learning_rate_init</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The initial learning rate used. It controls the ste p-size in updating the weights. Only used w hen solver=&#39;sgd&#39; or &#39;adam&#39;.</p>
+<p>&quot;The initial learning rate used. It controls the ste\n             p-size        in updating the weights. Only used w\n             hen solver=&#39;sgd&#39; or &#39;adam&#39;.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -549,10 +521,7 @@
 </tbody>
 </table>
 <h3 id="10-power_t">10.power_t</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>The exponent for inverse scaling learning rate. It is used in updating effective learning rate when the learning_rate is set to &#39;invscali ng&#39;. Only used when solver=&#39;sgd&#39;.</p>
+<p>&quot;The exponent for inverse scaling learning rate.    \n                 It is used in updating effective learning rate\n              when the learning_rate        is set to &#39;invscali\n             ng&#39;. Only used when solver=&#39;sgd&#39;.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -574,10 +543,7 @@
 </tbody>
 </table>
 <h3 id="11-max_iter">11.max_iter</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Maximum number of iterations. The solver iterates u ntil convergence (determined by &#39;tol&#39;) or t his number of iterations. For stochastic so lvers (&#39;sgd&#39;, &#39;adam&#39;), note that this determines t he number of epochs (how many times each da ta point will be used), not the number of g radient steps.</p>
+<p>&quot;Maximum number of iterations. The solver iterates u\n             ntil convergence        (determined by &#39;tol&#39;) or t\n             his number of iterations. For stochastic        so\n             lvers (&#39;sgd&#39;, &#39;adam&#39;), note that this determines t\n             he number of epochs        (how many times each da\n             ta point will be used), not the number of        g\n             radient steps.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -599,10 +565,7 @@
 </tbody>
 </table>
 <h3 id="12-shuffle">12.shuffle</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Whether to shuffle samples in each iteration. Only used when solver=&#39;sgd&#39; or &#39;adam&#39;.</p>
+<p>&quot;Whether to shuffle samples in each iteration. Only \n             used when        solver=&#39;sgd&#39; or &#39;adam&#39;.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -624,10 +587,7 @@
 </tbody>
 </table>
 <h3 id="13-tol">13.tol</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Tolerance for the optimization. When the loss or sc ore is not improving by at least <code>tol</code> fo r <code>n_iter_no_change</code> consecutive iterations, unless <code>learning_rate</code> is set to &#39;adaptive&#39;, convergence is considered to be reached an d training stops.</p>
+<p>&quot;Tolerance for the optimization. When the loss or sc\n             ore is not improving        by at least <code>tol</code> fo\n             r <code>n_iter_no_change</code> consecutive iterations,    \n                 unless <code>learning_rate</code> is set to &#39;adaptive&#39;,\n              convergence is        considered to be reached an\n             d training stops.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -649,10 +609,7 @@
 </tbody>
 </table>
 <h3 id="14-momentum">14.momentum</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Momentum for gradient descent update. Should be bet ween 0 and 1. Only used when solver=&#39;sgd&#39;.</p>
+<p>&quot;Momentum for gradient descent update. Should be bet\n             ween 0 and 1. Only        used when solver=&#39;sgd&#39;.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -674,10 +631,7 @@
 </tbody>
 </table>
 <h3 id="15-early_stopping">15.early_stopping</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>Whether to use early stopping to terminate training when validation score is not improving. If set to true, it will automatically set asi de 10% of training data as validation and terminat e training when validation score is not imp roving by at least tol for <code>n_iter_no_chan ge</code> consecutive epochs. The split is stratified, except in a multilabel setting. Only effective when solver=&#39;sgd&#39; or &#39;adam</p>
+<p>&quot;Whether to use early stopping to terminate training\n              when validation        score is not improving. If\n              set to true, it will automatically set        asi\n             de 10% of training data as validation and terminat\n             e training when        validation score is not imp\n             roving by at least tol for        <code>n_iter_no_chan\n             ge</code> consecutive epochs. The split is stratified, \n                    except in a multilabel setting.        Only\n              effective when solver=&#39;sgd&#39; or &#39;adam&quot;</p>
 <table>
 <thead>
 <tr>
@@ -700,10 +654,7 @@
 </table>
 <h2 id="output-parameters">Output Parameters</h2>
 <h3 id="1-output_model_file">1.output_model_file</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>output module</p>
+<p>&#39;output module&#39;</p>
 <table>
 <thead>
 <tr>
@@ -725,10 +676,7 @@
 </tbody>
 </table>
 <h3 id="2-output_model">2.output_model</h3>
-<ul>
-<li>Description</li>
-</ul>
-<p>output module</p>
+<p>&#39;output module&#39;</p>
 <table>
 <thead>
 <tr>
@@ -894,7 +842,7 @@
 </thead>
 <tbody>
 <tr>
-<td>{&#39;class&#39;: &#39;0&#39;, &#39;score&#39;: {&#39;0&#39;: 0.9777988545922525, &#39;1&#39;: 0.022121891179033775, &#39;2&#39;: 7.925422871368746e-05}}</td>
+<td>{&#39;class&#39;: &#39;0&#39;, &#39;score&#39;: {&#39;0&#39;: 0.9657017490210094, &#39;1&#39;: 0.03336900189431088, &#39;2&#39;: 0.000929249084679783}}</td>
 </tr>
 </tbody>
 </table>

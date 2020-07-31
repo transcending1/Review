@@ -1,14 +1,15 @@
 # PCA
-+ Description
+## Detailed Info
+### Description
+'Principal component analysis is a statistical feature dimension reduction method,\n    which projects data from the original coordinate system to the new coordinate system,\n    and measures the importance of each dimension by the variance of each dimension.\n    Select the features with the top k importance as new features to achieve\n    the purpose of data dimensionality reduction'
 
-Principal component analysis is a statistical feature dimension reduction method, which projects data from the original coordinate system to the new coordinate system, and measures the importance of each dimension by the variance of each dimension. Select the features with the top k importance as new features to achieve the purpose of data dimensionality reduction
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Feature Engineering | Feature Conversion | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -23,9 +24,8 @@ Principal component analysis is a statistical feature dimension reduction method
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.columns1
-+ Description
+'column selector for field input_file1'
 
-column selector for field input_file1
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -33,9 +33,8 @@ column selector for field input_file1
 
 
 ### 2.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -43,9 +42,8 @@ csv file
 
 
 ### 3.keep_columns
-+ Description
+'keep old columns or not'
 
-keep old columns or not
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -62,9 +60,8 @@ keep old columns or not
 
 
 ### 4.components
-+ Description
+'1.input int value means Feature dimension after dimension reduction such as 52.input float value means the percentage to keep after dimension reduction such as 0.95'
 
-1.input int value means Feature dimension after dimension reduction such as 52.input float value means the percentage to keep after dimension reduction such as 0.95
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -73,9 +70,8 @@ keep old columns or not
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'output dataset'
 
-output dataset
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -83,9 +79,8 @@ output dataset
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

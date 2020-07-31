@@ -1,14 +1,15 @@
 # Bi-Class Model Selector
-+ Description
+## Detailed Info
+### Description
+'choose the best model of different models'
 
-choose the best model of different models
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Evaluation | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -31,9 +32,8 @@ choose the best model of different models
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.evaluation_metrics
-+ Description
+'index of evaluating several given modules'
 
-index of evaluating several given modules
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -51,9 +51,8 @@ index of evaluating several given modules
 
 
 ### 2.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -61,9 +60,8 @@ target feature
 
 
 ### 3.input_file1
-+ Description
+'input test file'
 
-input test file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -71,9 +69,8 @@ input test file
 
 
 ### 4.input_module1
-+ Description
+'input module'
 
-input module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -81,9 +78,8 @@ input module
 
 
 ### 5.input_module2
-+ Description
+'input module'
 
-input module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -91,9 +87,8 @@ input module
 
 
 ### 6.input_module3
-+ Description
+'input module'
 
-input module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -101,9 +96,8 @@ input module
 
 
 ### 7.input_module4
-+ Description
+'input module'
 
-input module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -111,9 +105,8 @@ input module
 
 
 ### 8.input_module5
-+ Description
+'input module'
 
-input module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -121,9 +114,8 @@ input module
 
 
 ### 9.input_module6
-+ Description
+'input module'
 
-input module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -131,9 +123,8 @@ input module
 
 
 ### 10.input_module7
-+ Description
+'input module'
 
-input module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -141,9 +132,8 @@ input module
 
 
 ### 11.input_module8
-+ Description
+'input module'
 
-input module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -151,9 +141,8 @@ input module
 
 
 ### 12.input_module9
-+ Description
+'input module'
 
-input module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -162,9 +151,8 @@ input module
 
 ## Output Parameters
 ### 1.output_statistic_file
-+ Description
+'output statistic file'
 
-output statistic file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -172,9 +160,8 @@ output statistic file
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

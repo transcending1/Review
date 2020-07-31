@@ -1,14 +1,15 @@
 # Optics Clustering
-+ Description
+## Detailed Info
+### Description
+"Estimate clustering structure from vector array.\n    OPTICS (Ordering Points To Identify the Clustering Structure), closely \n    related to DBSCAN, finds core sample of high density and expands clusters\n    from them [1]_. Unlike DBSCAN, keeps cluster hierarchy for a variable\n    neighborhood radius. Better suited for usage on large datasets than the\n    current sklearn implementation of DBSCAN.\n    Clusters are then extracted using a DBSCAN-like method \n    (cluster_method = 'dbscan') or an automatic    technique proposed in [1]_ (cluster_method = 'xi').\n    This implementation deviates from the original OPTICS by first performing \n    k-nearest-neighborhood searches on all points to identify core sizes, then \n    computing only the distances to unprocessed points when constructing the\n    cluster order. Note that we do not employ a heap to manage the expansion \n    candidates, so the time complexity will be O(n^2)."
 
-Estimate clustering structure from vector array. OPTICS (Ordering Points To Identify the Clustering Structure), closely related to DBSCAN, finds core sample of high density and expands clusters from them [1]_. Unlike DBSCAN, keeps cluster hierarchy for a variable neighborhood radius. Better suited for usage on large datasets than the current sklearn implementation of DBSCAN. Clusters are then extracted using a DBSCAN-like method (cluster_method = 'dbscan') or an automatic technique proposed in [1]_ (cluster_method = 'xi'). This implementation deviates from the original OPTICS by first performing k-nearest-neighborhood searches on all points to identify core sizes, then computing only the distances to unprocessed points when constructing the cluster order. Note that we do not employ a heap to manage the expansion candidates, so the time complexity will be O(n^2).
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Clustering | DOCKER | 1 | 0 | 2048 | deny |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -22,9 +23,8 @@ Estimate clustering structure from vector array. OPTICS (Ordering Points To Iden
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -32,9 +32,8 @@ input csv file for trainer
 
 
 ### 2.min_samples
-+ Description
+"The number of samples in a neighborhood for a point to be considered as\n        a core point. Also, up and down steep regions can't have more then\n        ``min_samples`` consecutive non-steep points. Expressed as an absolute\n        number or a fraction of the number of samples (rounded to be at least 2)."
 
-The number of samples in a neighborhood for a point to be considered as a core point. Also, up and down steep regions can't have more then ``min_samples`` consecutive non-steep points. Expressed as an absolute number or a fraction of the number of samples (rounded to be at least 2).
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,9 +41,8 @@ The number of samples in a neighborhood for a point to be considered as a core p
 
 
 ### 3.cluster_method
-+ Description
+'The extraction method used to extract clusters using the calculated\n            reachability and ordering. Possible values are "xi" and "dbscan".'
 
-The extraction method used to extract clusters using the calculated reachability and ordering. Possible values are "xi" and "dbscan".
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -61,9 +59,8 @@ The extraction method used to extract clusters using the calculated reachability
 
 
 ### 4.xi
-+ Description
+"Determines the minimum steepness on the reachability plot that\n        constitutes a cluster boundary. For example, an upwards point in the\n        reachability plot is defined by the ratio from one point to its\n        successor being at most 1-xi.        Used only when ``cluster_method='xi'``."
 
-Determines the minimum steepness on the reachability plot that constitutes a cluster boundary. For example, an upwards point in the reachability plot is defined by the ratio from one point to its successor being at most 1-xi. Used only when ``cluster_method='xi'``.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -72,9 +69,8 @@ Determines the minimum steepness on the reachability plot that constitutes a clu
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'output dataset'
 
-output dataset
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

@@ -1,14 +1,15 @@
 # Multi-Class K_neighbors
-+ Description
+## Detailed Info
+### Description
+'Classifier implementing the k-nearest neighbors vote.'
 
-Classifier implementing the k-nearest neighbors vote.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Multi Classification | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -24,9 +25,8 @@ Classifier implementing the k-nearest neighbors vote.
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -34,9 +34,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -44,9 +43,8 @@ input csv file for trainer
 
 
 ### 3.n_neighbors
-+ Description
+'Number of neighbors to use by default for :meth:`kneighbors` queries.'
 
-Number of neighbors to use by default for :meth:`kneighbors` queries.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -54,9 +52,8 @@ Number of neighbors to use by default for :meth:`kneighbors` queries.
 
 
 ### 4.algorithm
-+ Description
+"Algorithm used to compute the nearest neighbors:   \n                  - 'ball_tree' will use :class:`BallTree`     \n                - 'kd_tree' will use :class:`KDTree`        - '\n             brute' will use a brute-force search.        - 'au\n             to' will attempt to decide the most appropriate al\n             gorithm          based on the values passed to :me\n             th:`fit` method.        Note: fitting on sparse in\n             put will override the setting of        this param\n             eter, using brute force."
 
-Algorithm used to compute the nearest neighbors: - 'ball_tree' will use :class:`BallTree` - 'kd_tree' will use :class:`KDTree` - ' brute' will use a brute-force search. - 'au to' will attempt to decide the most appropriate al gorithm based on the values passed to :me th:`fit` method. Note: fitting on sparse in put will override the setting of this param eter, using brute force.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -75,9 +72,8 @@ Algorithm used to compute the nearest neighbors: - 'ball_tree' will use :class:`
 
 
 ### 5.leaf_size
-+ Description
+'Leaf size passed to BallTree or KDTree.  This can a\n             ffect the        speed of the construction and que\n             ry, as well as the memory        required to store\n              the tree.  The optimal value depends on the      \n               nature of the problem.'
 
-Leaf size passed to BallTree or KDTree. This can a ffect the speed of the construction and que ry, as well as the memory required to store the tree. The optimal value depends on the nature of the problem.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -86,9 +82,8 @@ Leaf size passed to BallTree or KDTree. This can a ffect the speed of the constr
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -96,9 +91,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

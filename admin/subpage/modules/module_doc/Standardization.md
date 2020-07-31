@@ -1,14 +1,15 @@
 # Standardization
-+ Description
+## Detailed Info
+### Description
+'In the original data, the range of each variable is very different. For some machine learning algorithms, if not standardized, the objective function will not work properly. For example, most classifiers use the distance between two points to calculate the difference between two points. If one of the features has a very wide range, the difference between the two points will be around the feature. Therefore, some features should be standardized so that each feature can affect the distance between the two points in proportion. Another reason for feature scaling is that it can make the gradient descent method converge. Standard normalization makes the average value of each feature become 0 (the value of each feature is subtracted from the mean value of the feature in the original data), and the standard deviation become 1.'
 
-In the original data, the range of each variable is very different. For some machine learning algorithms, if not standardized, the objective function will not work properly. For example, most classifiers use the distance between two points to calculate the difference between two points. If one of the features has a very wide range, the difference between the two points will be around the feature. Therefore, some features should be standardized so that each feature can affect the distance between the two points in proportion. Another reason for feature scaling is that it can make the gradient descent method converge. Standard normalization makes the average value of each feature become 0 (the value of each feature is subtracted from the mean value of the feature in the original data), and the standard deviation become 1.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Feature Engineering | Feature Conversion | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -21,9 +22,8 @@ In the original data, the range of each variable is very different. For some mac
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.columns1
-+ Description
+'column selector for field input_file1'
 
-column selector for field input_file1
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -31,9 +31,8 @@ column selector for field input_file1
 
 
 ### 2.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,9 +41,8 @@ csv file
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'output dataset'
 
-output dataset
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -52,9 +50,8 @@ output dataset
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

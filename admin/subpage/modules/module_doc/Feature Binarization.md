@@ -1,20 +1,30 @@
 # Feature Binarization
-+ Description
+## Detailed Info
+### Description
+#### En_desc
++ Binarization is a process of transforming numerical features into binary features. The threshold parameter represents the threshold that determines the binarization. The feature whose value is greater than the threshold is binarized to 1, otherwise it is binarized to 0.
 
-Binarization is a process of transforming numerical features into binary features. The threshold parameter represents the threshold that determines the binarization. The feature whose value is greater than the threshold is binarized to 1, otherwise it is binarized to 0.
+#### Zh_desc
++ 把连续值分成两种类型的离散值
+
+#### Scene
++ 二分类标签标注
+
+
+
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Feature Engineering | Feature Conversion | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
 | columns1 | True | STRING |  | True | MULTIPLE |
 | input_file1 | True | FILE |  | True | None |
-| threshold | True | FILE |  | True | None |
+| threshold | True | STRING |  | False | None |
 | output_file | False | FILE |  | False | None |
 | output_model | False | DIRECTORY | module | False | None |
 
@@ -22,9 +32,8 @@ Binarization is a process of transforming numerical features into binary feature
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.columns1
-+ Description
+'column selector for field input_file1'
 
-column selector for field input_file1
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -32,9 +41,11 @@ column selector for field input_file1
 
 
 ### 2.input_file1
-+ Description
+#### En_desc
++ csv file
 
-csv file
+
+
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -42,20 +53,18 @@ csv file
 
 
 ### 3.threshold
-+ Description
+'is sampling putback'
 
-is sampling putback
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
-| FILE |  | Yes | None | None |
+| STRING |  | No | None | None |
 
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'output dataset'
 
-output dataset
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -63,9 +72,8 @@ output dataset
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -81,6 +89,7 @@ output module
 | field | value | desc |
 | --- | --- | --- |
 | columns1 | ['PASSENGERID', 'FARE'] | 选取成员id做实验 |
+| threshold | 200 | 阈值选为200,大于200为1,小于200为0 |
 
 
 ### Post Json Format
@@ -131,7 +140,7 @@ output module
 
 | field | value |
 | --- | --- |
-| PASSENGERID | 1.0 |
+| PASSENGERID | 0.0 |
 | SURVIVED | 0 |
 | PCLASS | 3 |
 | NAME | Braund, Mr. Owen Harris |
@@ -140,7 +149,7 @@ output module
 | SIBSP | 1 |
 | PARCH | 0 |
 | TICKET | A/5 21171 |
-| FARE | 1.0 |
+| FARE | 0.0 |
 | CABIN | nan |
 | EMBARKED | S |
 

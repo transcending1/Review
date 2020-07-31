@@ -1,14 +1,15 @@
 # Proportional Sampling
-+ Description
+## Detailed Info
+### Description
+'It provides a method of randomly extracting small sample data with a specific proportion from the original data set. This module is often used to extract small samples for data visualization'
 
-It provides a method of randomly extracting small sample data with a specific proportion from the original data set. This module is often used to extract small samples for data visualization
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Transformation | Sampling And Split | DOCKER | 1 | 0 | 2048 | allow |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -21,9 +22,8 @@ It provides a method of randomly extracting small sample data with a specific pr
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'csv file'
 
-csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -31,9 +31,8 @@ csv file
 
 
 ### 2.proportion
-+ Description
+'proportion of samples'
 
-proportion of samples
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -41,9 +40,8 @@ proportion of samples
 
 
 ### 3.is_putback
-+ Description
+'is sampling putback'
 
-is sampling putback
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -52,9 +50,8 @@ is sampling putback
 
 ## Output Parameters
 ### 1.output_file
-+ Description
+'merged csv file'
 
-merged csv file
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

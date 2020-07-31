@@ -1,14 +1,15 @@
 # Export To Dataset
-+ Description
+## Detailed Info
+### Description
+'convert your csv file to a form in certain database'
 
-convert your csv file to a form in certain database
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Data Input and Output | Export | DOCKER | 1 | 0 | 2048 | deny |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -25,9 +26,8 @@ convert your csv file to a form in certain database
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.input_file1
-+ Description
+'csv file you want to store in a form of a database'
 
-csv file you want to store in a form of a database
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -35,9 +35,8 @@ csv file you want to store in a form of a database
 
 
 ### 2.type
-+ Description
+'database type'
 
-database type
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -54,9 +53,8 @@ database type
 
 
 ### 3.host
-+ Description
+'database host'
 
-database host
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +62,8 @@ database host
 
 
 ### 4.user
-+ Description
+'database user'
 
-database user
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -74,9 +71,8 @@ database user
 
 
 ### 5.password
-+ Description
+'database user'
 
-database user
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -84,9 +80,8 @@ database user
 
 
 ### 6.port
-+ Description
+'database port'
 
-database port
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -94,9 +89,8 @@ database port
 
 
 ### 7.db
-+ Description
+'which database you want to use'
 
-which database you want to use
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -104,9 +98,8 @@ which database you want to use
 
 
 ### 8.table
-+ Description
+'which table you want to put your data to'
 
-which table you want to put your data to
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |

@@ -1,14 +1,15 @@
 # Lasso Regression
-+ Description
+## Detailed Info
+### Description
+'Linear Model trained with L1 prior as regularizer (\n             aka the Lasso)    The optimization objective for L\n             asso is::        (1 / (2 * n_samples)) * ||y - Xw|\n             |^2_2 + alpha * ||w||_1    Technically the Lasso m\n             odel is optimizing the same objective function as \n                the Elastic Net with ``l1_ratio=1.0`` (no L2 pe\n             nalty).    Read more in the :ref:`User Guide <lass\n             o>`.'
 
-Linear Model trained with L1 prior as regularizer ( aka the Lasso) The optimization objective for L asso is:: (1 / (2 * n_samples)) * ||y - Xw| |^2_2 + alpha * ||w||_1 Technically the Lasso m odel is optimizing the same objective function as the Elastic Net with ``l1_ratio=1.0`` (no L2 pe nalty). Read more in the :ref:`User Guide <lass o>`.
 
 | category | sub_category | type | cpu | gpu | memory | pipe_status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Machine Learning | Regression | DOCKER | 1 | 0 | 2048 | keep |
 
 
-# Parameter Detail
+### Parameter Detail
 
 | name | is_input | category | default | required | selector_model |
 | --- | --- | --- | --- | --- | --- |
@@ -24,9 +25,8 @@ Linear Model trained with L1 prior as regularizer ( aka the Lasso) The optimizat
 # Detailed Info of Parameters
 ## Input Parameters
 ### 1.label
-+ Description
+'target feature'
 
-target feature
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -34,9 +34,8 @@ target feature
 
 
 ### 2.input_file1
-+ Description
+'input csv file for trainer'
 
-input csv file for trainer
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -44,9 +43,8 @@ input csv file for trainer
 
 
 ### 3.alpha
-+ Description
+'Constant that multiplies the L1 term. Defaults to 1\n             .0.        ``alpha = 0`` is equivalent to an ordin\n             ary least square, solved        by the :class:`Lin\n             earRegression` object. For numerical        reason\n             s, using ``alpha = 0`` with the ``Lasso`` object i\n             s not advised.        Given this, you should use t\n             he :class:`LinearRegression` object.'
 
-Constant that multiplies the L1 term. Defaults to 1 .0. ``alpha = 0`` is equivalent to an ordin ary least square, solved by the :class:`Lin earRegression` object. For numerical reason s, using ``alpha = 0`` with the ``Lasso`` object i s not advised. Given this, you should use t he :class:`LinearRegression` object.
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -54,9 +52,8 @@ Constant that multiplies the L1 term. Defaults to 1 .0. ``alpha = 0`` is equival
 
 
 ### 4.max_iter
-+ Description
+'The maximum number of iterations'
 
-The maximum number of iterations
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -64,9 +61,8 @@ The maximum number of iterations
 
 
 ### 5.tol
-+ Description
+'The tolerance for the optimization: if the updates \n             are        smaller than ``tol``, the optimization \n             code checks the        dual gap for optimality and\n              continues until it is smaller        than ``tol``\n             .'
 
-The tolerance for the optimization: if the updates are smaller than ``tol``, the optimization code checks the dual gap for optimality and continues until it is smaller than ``tol`` .
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -75,9 +71,8 @@ The tolerance for the optimization: if the updates are smaller than ``tol``, the
 
 ## Output Parameters
 ### 1.output_model_file
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
@@ -85,9 +80,8 @@ output module
 
 
 ### 2.output_model
-+ Description
+'output module'
 
-output module
 
 | Category | Default Value | Is Required | Selector Model | Selector Super Field |
 | --- | --- | --- | --- | --- |
